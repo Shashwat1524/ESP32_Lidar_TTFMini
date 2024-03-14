@@ -1,0 +1,638 @@
+on:[0m
+[0;32mI (213) cpu_start: Project name:     lidar[0m
+[0;32mI (218) cpu_start: App version:      1[0m
+[0;32mI (222) cpu_start: Compile time: ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-1288-g5524b692ee-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb 23 2024 13:22:45[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0adc0h ( 44480) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ade8 vaddr=3ffb0000 size=02268h (  8808) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001d058 vaddr=40080000 size=02fc0h ( 12224) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1658ch ( 91532) map[0m
+[0;32mI (166) esp_image: segment 4: paddr=000365b4 vaddr=40082fc0 size=0a7fch ( 43004) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     lidar[0m
+[0;32mI (218) cpu_start: App version:      1[0m
+[0;32mI (222) cpu_start: Compile time:     Feb 23 2024 13:22:39[0m
+[0;32mI (228) cpu_start: ELF file SHA256:  fc29cad2e...[0m
+[0;32mI (233) cpu_start: ESP-IDF:          v5.3-dev-1288-g5524b692ee-dirty[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B40 len 0002D4C0 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D7BC len 00012844 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) main_task: Returned from app_main()[0m
+[0;32mI (346) RX_TASK: dist = 3[0m
+[0;32mI (346) RX_TASK: strength = 5902[0m
+[0;32mI (346) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (356) RX_TASK: dist = 3[0m
+[0;32mI (356) RX_TASK: strength = 5900[0m
+[0;32mI (356) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (376) RX_TASK: dist = 3[0m
+[0;32mI (376) RX_TASK: strength = 5910[0m
+[0;32mI (376) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (396) RX_TASK: dist = 3[0m
+[0;32mI (396) RX_TASK: strength = 5907[0m
+[0;32mI (396) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (416) RX_TASK: dist = 3[0m
+[0;32mI (416) RX_TASK: strength = 5907[0m
+[0;32mI (416) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (426) RX_TASK: dist = 3[0m
+[0;32mI (426) RX_TASK: strength = 5908[0m
+[0;32mI (426) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (446) RX_TASK: dist = 3[0m
+[0;32mI (446) RX_TASK: strength = 5904[0m
+[0;32mI (446) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (466) RX_TASK: dist = 3[0m
+[0;32mI (466) RX_TASK: strength = 5909[0m
+[0;32mI (466) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (486) RX_TASK: dist = 3[0m
+[0;32mI (486) RX_TASK: strength = 5907[0m
+[0;32mI (486) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (506) RX_TASK: dist = 3[0m
+[0;32mI (506) RX_TASK: strength = 5906[0m
+[0;32mI (506) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (526) RX_TASK: dist = 3[0m
+[0;32mI (526) RX_TASK: strength = 5903[0m
+[0;32mI (526) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (536) RX_TASK: dist = 3[0m
+[0;32mI (536) RX_TASK: strength = 5900[0m
+[0;32mI (536) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (556) RX_TASK: dist = 3[0m
+[0;32mI (556) RX_TASK: strength = 5906[0m
+[0;32mI (556) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (576) RX_TASK: dist = 3[0m
+[0;32mI (576) RX_TASK: strength = 5905[0m
+[0;32mI (576) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (596) RX_TASK: dist = 3[0m
+[0;32mI (596) RX_TASK: strength = 5904[0m
+[0;32mI (596) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (616) RX_TASK: dist = 3[0m
+[0;32mI (616) RX_TASK: strength = 5902[0m
+[0;32mI (616) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (626) RX_TASK: dist = 3[0m
+[0;32mI (626) RX_TASK: strength = 5903[0m
+[0;32mI (626) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (646) RX_TASK: dist = 3[0m
+[0;32mI (646) RX_TASK: strength = 5910[0m
+[0;32mI (646) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (666) RX_TASK: dist = 3[0m
+[0;32mI (666) RX_TASK: strength = 5915[0m
+[0;32mI (666) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (686) RX_TASK: dist = 3[0m
+[0;32mI (686) RX_TASK: strength = 5910[0m
+[0;32mI (686) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (706) RX_TASK: dist = 3[0m
+[0;32mI (706) RX_TASK: strength = 5906[0m
+[0;32mI (706) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (726) RX_TASK: dist = 3[0m
+[0;32mI (726) RX_TASK: strength = 5907[0m
+[0;32mI (726) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (736) RX_TASK: dist = 3[0m
+[0;32mI (736) RX_TASK: strength = 5909[0m
+[0;32mI (736) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (756) RX_TASK: dist = 3[0m
+[0;32mI (756) RX_TASK: strength = 5912[0m
+[0;32mI (756) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (776) RX_TASK: dist = 3[0m
+[0;32mI (776) RX_TASK: strength = 5907[0m
+[0;32mI (776) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (796) RX_TASK: dist = 3[0m
+[0;32mI (796) RX_TASK: strength = 5902[0m
+[0;32mI (796) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (816) RX_TASK: dist = 3[0m
+[0;32mI (816) RX_TASK: strength = 5904[0m
+[0;32mI (816) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (826) RX_TASK: dist = 3[0m
+[0;32mI (826) RX_TASK: strength = 5908[0m
+[0;32mI (826) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (846) RX_TASK: dist = 3[0m
+[0;32mI (846) RX_TASK: strength = 5906[0m
+[0;32mI (846) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (866) RX_TASK: dist = 3[0m
+[0;32mI (866) RX_TASK: strength = 5905[0m
+[0;32mI (866) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (886) RX_TASK: dist = 3[0m
+[0;32mI (886) RX_TASK: strength = 5916[0m
+[0;32mI (886) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (906) RX_TASK: dist = 3[0m
+[0;32mI (906) RX_TASK: strength = 5904[0m
+[0;32mI (906) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (916) RX_TASK: dist = 3[0m
+[0;32mI (916) RX_TASK: strength = 5910[0m
+[0;32mI (916) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (936) RX_TASK: dist = 3[0m
+[0;32mI (936) RX_TASK: strength = 5908[0m
+[0;32mI (936) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (956) RX_TASK: dist = 3[0m
+[0;32mI (956) RX_TASK: strength = 5903[0m
+[0;32mI (956) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (976) RX_TASK: dist = 3[0m
+[0;32mI (976) RX_TASK: strength = 5909[0m
+[0;32mI (976) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (996) RX_TASK: dist = 3[0m
+[0;32mI (996) RX_TASK: strength = 5906[0m
+[0;32mI (996) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1016) RX_TASK: dist = 3[0m
+[0;32mI (1016) RX_TASK: strength = 5908[0m
+[0;32mI (1016) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1026) RX_TASK: dist = 3[0m
+[0;32mI (1026) RX_TASK: strength = 5901[0m
+[0;32mI (1026) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1046) RX_TASK: dist = 3[0m
+[0;32mI (1046) RX_TASK: strength = 5913[0m
+[0;32mI (1046) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1066) RX_TASK: dist = 3[0m
+[0;32mI (1066) RX_TASK: strength = 5905[0m
+[0;32mI (1066) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1086) RX_TASK: dist = 3[0m
+[0;32mI (1086) RX_TASK: strength = 5909[0m
+[0;32mI (1086) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1106) RX_TASK: dist = 3[0m
+[0;32mI (1106) RX_TASK: strength = 5897[0m
+[0;32mI (1106) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1126) RX_TASK: dist = 3[0m
+[0;32mI (1126) RX_TASK: strength = 5906[0m
+[0;32mI (1126) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1136) RX_TASK: dist = 3[0m
+[0;32mI (1136) RX_TASK: strength = 5910[0m
+[0;32mI (1136) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1156) RX_TASK: dist = 3[0m
+[0;32mI (1156) RX_TASK: strength = 5911[0m
+[0;32mI (1156) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1176) RX_TASK: dist = 3[0m
+[0;32mI (1176) RX_TASK: strength = 5912[0m
+[0;32mI (1176) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1196) RX_TASK: dist = 3[0m
+[0;32mI (1196) RX_TASK: strength = 5909[0m
+[0;32mI (1196) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1216) RX_TASK: dist = 3[0m
+[0;32mI (1216) RX_TASK: strength = 5906[0m
+[0;32mI (1216) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1236) RX_TASK: dist = 3[0m
+[0;32mI (1236) RX_TASK: strength = 5910[0m
+[0;32mI (1236) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1256) RX_TASK: dist = 3[0m
+[0;32mI (1256) RX_TASK: strength = 5908[0m
+[0;32mI (1256) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1266) RX_TASK: dist = 3[0m
+[0;32mI (1266) RX_TASK: strength = 5912[0m
+[0;32mI (1266) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1286) RX_TASK: dist = 3[0m
+[0;32mI (1286) RX_TASK: strength = 5912[0m
+[0;32mI (1286) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1306) RX_TASK: dist = 3[0m
+[0;32mI (1306) RX_TASK: strength = 5902[0m
+[0;32mI (1306) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1326) RX_TASK: dist = 3[0m
+[0;32mI (1326) RX_TASK: strength = 5908[0m
+[0;32mI (1326) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1346) RX_TASK: dist = 3[0m
+[0;32mI (1346) RX_TASK: strength = 5908[0m
+[0;32mI (1346) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1366) RX_TASK: dist = 3[0m
+[0;32mI (1366) RX_TASK: strength = 5907[0m
+[0;32mI (1366) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1386) RX_TASK: dist = 3[0m
+[0;32mI (1386) RX_TASK: strength = 5905[0m
+[0;32mI (1386) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1396) RX_TASK: dist = 3[0m
+[0;32mI (1396) RX_TASK: strength = 5904[0m
+[0;32mI (1396) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (1406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1416) RX_TASK: dist = 3[0m
+[0;32mI (1416) RX_TASK: strength = 5912[0m
+[0;32mI (1416) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (1416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1436) RX_TASK: dist = 3[0m
+[0;32mI (1436) RX_TASK: strength = 5901[0m
+[0;32mI (1436) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1456) RX_TASK: dist = 3[0m
+[0;32mI (1456) RX_TASK: strength = 5899[0m
+[0;32mI (1456) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (1456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1476) RX_TASK: dist = 3[0m
+[0;32mI (1476) RX_TASK: strength = 5902[0m
+[0;32mI (1476) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1496) RX_TASK: dist = 3[0m
+[0;32mI (1496) RX_TASK: strength = 5908[0m
+[0;32mI (1496) RX_TASK: Chip Temperature = 53.000000[0m
+[0;31mE (1496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1506) RX_TASK: dist = 3[0m
+[0;32mI (1506) RX_TASK: strength = 5907[0m
+[0;32mI (1506) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1526) RX_TASK: dist = 3[0m
+[0;32mI (1526) RX_TASK: strength = 5901[0m
+[0;32mI (1526) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1546) RX_TASK: dist = 3[0m
+[0;32mI (1546) RX_TASK: strength = 5904[0m
+[0;32mI (1546) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (1546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1566) RX_TASK: dist = 3[0m
+[0;32mI (1566) RX_TASK: strength = 5909[0m
+[0;32mI (1566) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1586) RX_TASK: dist = 3[0m
+[0;32mI (1586) RX_TASK: strength = 5912[0m
+[0;32mI (1586) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1606) RX_TASK: dist = 3[0m
+[0;32mI (1606) RX_TASK: strength = 5907[0m
+[0;32mI (1606) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (1606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1626) RX_TASK: dist = 3[0m
+[0;32mI (1626) RX_TASK: strength = 5906[0m
+[0;32mI (1626) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (1626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1636) RX_TASK: dist = 3[0m
+[0;32mI (1636) RX_TASK: strength = 5910[0m
+[0;32mI (1636) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1656) RX_TASK: dist = 3[0m
+[0;32mI (1656) RX_TASK: strength = 5910[0m
+[0;32mI (1656) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (1656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1676) RX_TASK: dist = 3[0m
+[0;32mI (1676) RX_TASK: strength = 5906[0m
+[0;32mI (1676) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1696) RX_TASK: dist = 3[0m
+[0;32mI (1696) RX_TASK: strength = 5910[0m
+[0;32mI (1696) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1716) RX_TASK: dist = 3[0m
+[0;32mI (1716) RX_TASK: strength = 5915[0m
+[0;32mI (1716) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1736) RX_TASK: dist = 3[0m
+[0;32mI (1736) RX_TASK: strength = 5908[0m
+[0;32mI (1736) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1746) RX_TASK: dist = 3[0m
+[0;32mI (1746) RX_TASK: strength = 5905[0m
+[0;32mI (1746) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (1756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1766) RX_TASK: dist = 3[0m
+[0;32mI (1766) RX_TASK: strength = 5903[0m
+[0;32mI (1766) RX_TASK: Chip Temperature = 53.000000[0m
+[0;31mE (1776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1786) RX_TASK: dist = 3[0m
+[0;32mI (1786) RX_TASK: strength = 5913[0m
+[0;32mI (1786) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (1786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1806) RX_TASK: dist = 3[0m
+[0;32mI (1806) RX_TASK: strength = 5913[0m
+[0;32mI (1806) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1826) RX_TASK: dist = 3[0m
+[0;32mI (1826) RX_TASK: strength = 5916[0m
+[0;32mI (1826) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (1826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1846) RX_TASK: dist = 3[0m
+[0;32mI (1846) RX_TASK: strength = 5917[0m
+[0;32mI (1846) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1866) RX_TASK: dist = 3[0m
+[0;32mI (1866) RX_TASK: strength = 5906[0m
+[0;32mI (1866) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (1866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1876) RX_TASK: dist = 3[0m
+[0;32mI (1876) RX_TASK: strength = 5904[0m
+[0;32mI (1876) RX_TASK: Chip Temperature = 52.500000[0m
+[0;31mE (1886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1896) RX_TASK: dist = 3[0m
+[0;32mI (1896) RX_TASK: strength = 5903[0m
+[0;32mI (1896) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1916) RX_TASK: dist = 3[0m
+[0;32mI (1916) RX_TASK: strength = 5907[0m
+[0;32mI (1916) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1936) RX_TASK: dist = 3[0m
+[0;32mI (1936) RX_TASK: strength = 5909[0m
+[0;32mI (1936) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1956) RX_TASK: dist = 3[0m
+[0;32mI (1956) RX_TASK: strength = 5909[0m
+[0;32mI (1956) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1976) RX_TASK: dist = 3[0m
+[0;32mI (1976) RX_TASK: strength = 5906[0m
+[0;32mI (1976) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1996) RX_TASK: dist = 3[0m
+[0;32mI (1996) RX_TASK: strength = 5906[0m
+[0;32mI (1996) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (1996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2006) RX_TASK: dist = 3[0m
+[0;32mI (2006) RX_TASK: strength = 5910[0m
+[0;32mI (2006) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (2016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2026) RX_TASK: dist = 3[0m
+[0;32mI (2026) RX_TASK: strength = 5903[0m
+[0;32mI (2026) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2046) RX_TASK: dist = 3[0m
+[0;32mI (2046) RX_TASK: strength = 5905[0m
+[0;32mI (2046) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2066) RX_TASK: dist = 4[0m
+[0;32mI (2066) RX_TASK: strength = 5905[0m
+[0;32mI (2066) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2086) RX_TASK: dist = 3[0m
+[0;32mI (2086) RX_TASK: strength = 5905[0m
+[0;32mI (2086) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2106) RX_TASK: dist = 3[0m
+[0;32mI (2106) RX_TASK: strength = 5905[0m
+[0;32mI (2106) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2116) RX_TASK: dist = 3[0m
+[0;32mI (2116) RX_TASK: strength = 5905[0m
+[0;32mI (2116) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2136) RX_TASK: dist = 3[0m
+[0;32mI (2136) RX_TASK: strength = 5916[0m
+[0;32mI (2136) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2156) RX_TASK: dist = 3[0m
+[0;32mI (2156) RX_TASK: strength = 5905[0m
+[0;32mI (2156) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2176) RX_TASK: dist = 3[0m
+[0;32mI (2176) RX_TASK: strength = 5899[0m
+[0;32mI (2176) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2196) RX_TASK: dist = 3[0m
+[0;32mI (2196) RX_TASK: strength = 5905[0m
+[0;32mI (2196) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2216) RX_TASK: dist = 3[0m
+[0;32mI (2216) RX_TASK: strength = 5913[0m
+[0;32mI (2216) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2236) RX_TASK: dist = 3[0m
+[0;32mI (2236) RX_TASK: strength = 5911[0m
+[0;32mI (2236) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2246) RX_TASK: dist = 3[0m
+[0;32mI (2246) RX_TASK: strength = 5907[0m
+[0;32mI (2246) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2266) RX_TASK: dist = 3[0m
+[0;32mI (2266) RX_TASK: strength = 5910[0m
+[0;32mI (2266) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2286) RX_TASK: dist = 3[0m
+[0;32mI (2286) RX_TASK: strength = 5909[0m
+[0;32mI (2286) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2306) RX_TASK: dist = 3[0m
+[0;32mI (2306) RX_TASK: strength = 5903[0m
+[0;32mI (2306) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2326) RX_TASK: dist = 3[0m
+[0;32mI (2326) RX_TASK: strength = 5905[0m
+[0;32mI (2326) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2346) RX_TASK: dist = 3[0m
+[0;32mI (2346) RX_TASK: strength = 5901[0m
+[0;32mI (2346) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2366) RX_TASK: dist = 3[0m
+[0;32mI (2366) RX_TASK: strength = 5902[0m
+[0;32mI (2366) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2376) RX_TASK: dist = 3[0m
+[0;32mI (2376) RX_TASK: strength = 5911[0m
+[0;32mI (2376) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2396) RX_TASK: dist = 3[0m
+[0;32mI (2396) RX_TASK: strength = 5908[0m
+[0;32mI (2396) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2416) RX_TASK: dist = 3[0m
+[0;32mI (2416) RX_TASK: strength = 5905[0m
+[0;32mI (2416) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2436) RX_TASK: dist = 3[0m
+[0;32mI (2436) RX_TASK: strength = 5908[0m
+[0;32mI (2436) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2456) RX_TASK: dist = 3[0m
+[0;32mI (2456) RX_TASK: strength = 5903[0m
+[0;32mI (2456) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2476) RX_TASK: dist = 3[0m
+[0;32mI (2476) RX_TASK: strength = 5906[0m
+[0;32mI (2476) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2486) RX_TASK: dist = 3[0m
+[0;32mI (2486) RX_TASK: strength = 5910[0m
+[0;32mI (2486) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2506) RX_TASK: dist = 3[0m
+[0;32mI (2506) RX_TASK: strength = 5906[0m
+[0;32mI (2506) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2526) RX_TASK: dist = 3[0m
+[0;32mI (2526) RX_TASK: strength = 5910[0m
+[0;32mI (2526) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2546) RX_TASK: dist = 3[0m
+[0;32mI (2546) RX_TASK: strength = 5914[0m
+[0;32mI (2546) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2566) RX_TASK: dist = 3[0m
+[0;32mI (2566) RX_TASK: strength = 5914[0m
+[0;32mI (2566) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2586) RX_TASK: dist = 3[0m
+[0;32mI (2586) RX_TASK: strength = 5908[0m
+[0;32mI (2586) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2606) RX_TASK: dist = 4[0m
+[0;32mI (2606) RX_TASK: strength = 5904[0m
+[0;32mI (2606) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2616) RX_TASK: dist = 4[0m
+[0;32mI (2616) RX_TASK: strength = 5912[0m
+[0;32mI (2616) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2636) RX_TASK: dist = 3[0m
+[0;32mI (2636) RX_TASK: strength = 5907[0m
+[0;32mI (2636) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2656) RX_TASK: dist = 3[0m
+[0;32mI (2656) RX_TASK: strength = 5898[0m
+[0;32mI (2656) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2676) RX_TASK: dist = 3[0m
+[0;32mI (2676) RX_TASK: strength = 5904[0m
+[0;32mI (2676) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2696) RX_TASK: dist = 3[0m
+[0;32mI (2696) RX_TASK: strength = 5907[0m
+[0;32mI (2696) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2716) RX_TASK: dist = 3[0m
+[0;32mI (2716) RX_TASK: strength = 5903[0m
+[0;32mI (2716) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2726) RX_TASK: dist = 3[0m
+[0;32mI (2726) RX_TASK: strength = 5908[0m
+[0;32mI (2726) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2746) RX_TASK: dist = 3[0m
+[0;32mI (2746) RX_TASK: strength = 5911[0m
+[0;32mI (2746) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2766) RX_TASK: dist = 3[0m
+[0;32mI (2766) RX_TASK: strength = 5913[0m
+[0;32mI (2766) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2786) RX_TASK: dist = 3[0m
+[0;32mI (2786) RX_TASK: strength = 5907[0m
+[0;32mI (2786) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2806) RX_TASK: dist = 3[0m
+[0;32mI (2806) RX_TASK: strength = 5907[0m
+[0;32mI (2806) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2826) RX_TASK: dist = 3[0m
+[0;32mI (2826) RX_TASK: strength = 5916[0m
+[0;32mI (2826) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2846) RX_TASK: dist = 3[0m
+[0;32mI (2846) RX_TASK: strength = 5912[0m
+[0;32mI (2846) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2856) RX_TASK: dist = 3[0m
+[0;32mI (2856) RX_TASK: strength = 5910[0m
+[0;32mI (2856) RX_TASK: Chip Temperature = 52.750000[0m
+[0;31mE (2866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2876) RX_TASK: dist = 3[0m
+[0;32mI (2876) RX_TASK: strength = 5912[0m
+[0;32mI (2876) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2896) RX_TASK: dist = 3[0m
+[0;32mI (2896) RX_TASK: strength = 5907[0m
+[0;32mI (2896) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2916) RX_TASK: dist = 3[0m
+[0;32mI (2916) RX_TASK: strength = 5909[0m
+[0;32mI (2916) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2936) RX_TASK: dist = 3[0m
+[0;32mI (2936) RX_TASK: strength = 5906[0m
+[0;32mI (2936) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2956) RX_TASK: dist = 3[0m
+[0;32mI (2956) RX_TASK: strength = 5913[0m
+[0;32mI (2956) RX_TASK: Chip Temperature = 52.000000[0m
+[0;31mE (2956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2976) RX_TASK: dist = 3[0m
+[0;32mI (2976) RX_TASK: strength = 5917[0m
+[0;32mI (2976) RX_TASK: Chip Temperature = 52.250000[0m
+[0;31mE (2976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2986) RX_TASK: dist = 4[0m
+[0;32mI (2986) RX_TASK: strength = 5909[0m
+[0;32mI (2986) RX_TASK: Chip Temperature = 52.250000[0m

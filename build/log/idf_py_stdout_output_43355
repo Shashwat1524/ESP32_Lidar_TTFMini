@@ -1,0 +1,600 @@
+e[0m
+[0;32mI (215) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (215) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     lidar�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-1288-g5524b692ee-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb 23 2024 13:22:45[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b128h ( 45352) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b150 vaddr=3ffb0000 size=02268h (  8808) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d3c0 vaddr=40080000 size=02c58h ( 11352) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=19d8ch (105868) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00039db4 vaddr=40082c58 size=0ab84h ( 43908) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (215) cpu_start: Pro cpu start user code[0m
+[0;32mI (215) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (215) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     lidar[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (228) cpu_start: Compile time:     Feb 23 2024 13:22:39[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  6524f4052...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.3-dev-1288-g5524b692ee-dirty[0m
+[0;32mI (246) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (251) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (256) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (261) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFB2B30 len 0002D4D0 (181 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 4008D7DC len 00012824 (74 KiB): IRAM[0m
+[0;32mI (300) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (321) main_task: Started on CPU0[0m
+[0;32mI (331) main_task: Calling app_main()[0m
+[0;32mI (331) TX_TASK: Wrote 11 bytes[0m
+[0;32mI (331) main_task: Returned from app_main()[0m
+[0;32mI (1491) RX_TASK: Read 1024 bytes: 'YY'[0m
+[0;32mI (1491) RX_TASK: 0x3ffb7214   59 59 03 00 98 15 70 09  db 59 59 03 00 9b 15 70  |YY....p..YY....p|[0m
+[0;32mI (1491) RX_TASK: 0x3ffb7224   09 de 59 59 03 00 9f 15  70 09 e2 59 59 03 00 9c  |..YY....p..YY...|[0m
+[0;32mI (1501) RX_TASK: 0x3ffb7234   15 70 09 df 59 59 03 00  9e 15 70 09 e1 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1511) RX_TASK: 0x3ffb7244   00 a0 15 70 09 e3 59 59  03 00 a0 15 70 09 e3 59  |...p..YY....p..Y|[0m
+[0;32mI (1521) RX_TASK: 0x3ffb7254   59 03 00 9c 15 70 09 df  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1531) RX_TASK: 0x3ffb7264   e3 59 59 03 00 9e 15 70  09 e1 59 59 03 00 a5 15  |.YY....p..YY....|[0m
+[0;32mI (1541) RX_TASK: 0x3ffb7274   70 09 e8 59 59 03 00 a5  15 70 09 e8 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1551) RX_TASK: 0x3ffb7284   a3 15 70 09 e6 59 59 03  00 9e 15 70 09 e1 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1561) RX_TASK: 0x3ffb7294   03 00 a0 15 70 09 e3 59  59 03 00 9e 15 70 09 e1  |....p..YY....p..|[0m
+[0;32mI (1571) RX_TASK: 0x3ffb72a4   59 59 03 00 a6 15 70 09  e9 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (1581) RX_TASK: 0x3ffb72b4   09 e4 59 59 03 00 a4 15  70 09 e7 59 59 03 00 a4  |..YY....p..YY...|[0m
+[0;32mI (1591) RX_TASK: 0x3ffb72c4   15 70 09 e7 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1601) RX_TASK: 0x3ffb72d4   00 a6 15 70 09 e9 59 59  03 00 a0 15 70 09 e3 59  |...p..YY....p..Y|[0m
+[0;32mI (1611) RX_TASK: 0x3ffb72e4   59 03 00 ad 15 70 09 f0  59 59 03 00 a7 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1621) RX_TASK: 0x3ffb72f4   ea 59 59 03 00 9f 15 70  09 e2 59 59 03 00 a1 15  |.YY....p..YY....|[0m
+[0;32mI (1631) RX_TASK: 0x3ffb7304   70 09 e4 59 59 03 00 a1  15 70 09 e4 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1641) RX_TASK: 0x3ffb7314   a3 15 70 09 e6 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1651) RX_TASK: 0x3ffb7324   03 00 a0 15 70 09 e3 59  59 03 00 a7 15 70 09 ea  |....p..YY....p..|[0m
+[0;32mI (1661) RX_TASK: 0x3ffb7334   59 59 03 00 a6 15 70 09  e9 59 59 03 00 a3 15 70  |YY....p..YY....p|[0m
+[0;32mI (1671) RX_TASK: 0x3ffb7344   09 e6 59 59 03 00 a1 15  70 09 e4 59 59 03 00 a1  |..YY....p..YY...|[0m
+[0;32mI (1681) RX_TASK: 0x3ffb7354   15 70 09 e4 59 59 03 00  a1 15 70 09 e4 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1691) RX_TASK: 0x3ffb7364   00 9c 15 70 09 df 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (1701) RX_TASK: 0x3ffb7374   59 03 00 9e 15 70 09 e1  59 59 03 00 a4 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1711) RX_TASK: 0x3ffb7384   e7 59 59 03 00 a7 15 70  09 ea 59 59 03 00 a4 15  |.YY....p..YY....|[0m
+[0;32mI (1721) RX_TASK: 0x3ffb7394   70 09 e7 59 59 03 00 a2  15 70 09 e5 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1731) RX_TASK: 0x3ffb73a4   a5 15 70 09 e8 59 59 03  00 a4 15 70 09 e7 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1741) RX_TASK: 0x3ffb73b4   03 00 a7 15 70 09 ea 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (1751) RX_TASK: 0x3ffb73c4   59 59 03 00 9c 15 70 09  df 59 59 03 00 98 15 70  |YY....p..YY....p|[0m
+[0;32mI (1751) RX_TASK: 0x3ffb73d4   09 db 59 59 03 00 9c 15  70 09 df 59 59 03 00 a0  |..YY....p..YY...|[0m
+[0;32mI (1761) RX_TASK: 0x3ffb73e4   15 70 09 e3 59 59 03 00  a1 15 70 09 e4 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1771) RX_TASK: 0x3ffb73f4   00 9b 15 70 09 de 59 59  03 00 9b 15 70 09 de 59  |...p..YY....p..Y|[0m
+[0;32mI (1781) RX_TASK: 0x3ffb7404   59 03 00 9e 15 70 09 e1  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1791) RX_TASK: 0x3ffb7414   e1 59 59 03 00 9d 15 70  09 e0 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (1801) RX_TASK: 0x3ffb7424   70 09 e0 59 59 03 00 a1  15 70 09 e4 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1811) RX_TASK: 0x3ffb7434   9e 15 70 09 e1 59 59 03  00 9b 15 70 09 de 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1821) RX_TASK: 0x3ffb7444   03 00 9f 15 70 09 e2 59  59 03 00 99 15 70 09 dc  |....p..YY....p..|[0m
+[0;32mI (1831) RX_TASK: 0x3ffb7454   59 59 03 00 a0 15 70 09  e3 59 59 03 00 a5 15 70  |YY....p..YY....p|[0m
+[0;32mI (1841) RX_TASK: 0x3ffb7464   09 e8 59 59 03 00 9d 15  70 09 e0 59 59 03 00 9d  |..YY....p..YY...|[0m
+[0;32mI (1851) RX_TASK: 0x3ffb7474   15 70 09 e0 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1861) RX_TASK: 0x3ffb7484   00 9b 15 70 09 de 59 59  03 00 a7 15 70 09 ea 59  |...p..YY....p..Y|[0m
+[0;32mI (1871) RX_TASK: 0x3ffb7494   59 03 00 a3 15 70 09 e6  59 59 03 00 a4 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1881) RX_TASK: 0x3ffb74a4   e7 59 59 03 00 a1 15 70  09 e4 59 59 03 00 a0 15  |.YY....p..YY....|[0m
+[0;32mI (1891) RX_TASK: 0x3ffb74b4   70 09 e3 59 59 03 00 9b  15 70 09 de 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1901) RX_TASK: 0x3ffb74c4   a4 15 70 09 e7 59 59 03  00 a5 15 70 09 e8 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1911) RX_TASK: 0x3ffb74d4   03 00 a2 15 70 09 e5 59  59 03 00 a5 15 70 09 e8  |....p..YY....p..|[0m
+[0;32mI (1921) RX_TASK: 0x3ffb74e4   59 59 03 00 9e 15 70 09  e1 59 59 03 00 a7 15 70  |YY....p..YY....p|[0m
+[0;32mI (1931) RX_TASK: 0x3ffb74f4   09 ea 59 59 03 00 a4 15  70 09 e7 59 59 03 00 a3  |..YY....p..YY...|[0m
+[0;32mI (1941) RX_TASK: 0x3ffb7504   15 70 09 e6 59 59 03 00  99 15 70 09 dc 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1951) RX_TASK: 0x3ffb7514   00 99 15 70 09 dc 59 59  03 00 a0 15 70 09 e3 59  |...p..YY....p..Y|[0m
+[0;32mI (1961) RX_TASK: 0x3ffb7524   59 03 00 a0 15 70 09 e3  59 59 03 00 9f 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1971) RX_TASK: 0x3ffb7534   e2 59 59 03 00 99 15 70  09 dc 59 59 03 00 9e 15  |.YY....p..YY....|[0m
+[0;32mI (1981) RX_TASK: 0x3ffb7544   70 09 e1 59 59 03 00 9e  15 70 09 e1 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1991) RX_TASK: 0x3ffb7554   a2 15 70 09 e5 59 59 03  00 9d 15 70 09 e0 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2001) RX_TASK: 0x3ffb7564   03 00 a1 15 70 09 e4 59  59 03 00 a7 15 70 09 ea  |....p..YY....p..|[0m
+[0;32mI (2011) RX_TASK: 0x3ffb7574   59 59 03 00 9b 15 70 09  de 59 59 03 00 a3 15 70  |YY....p..YY....p|[0m
+[0;32mI (2021) RX_TASK: 0x3ffb7584   09 e6 59 59 03 00 9e 15  70 09 e1 59 59 03 00 a1  |..YY....p..YY...|[0m
+[0;32mI (2031) RX_TASK: 0x3ffb7594   15 70 09 e4 59 59 03 00  a2 15 70 09 e5 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2041) RX_TASK: 0x3ffb75a4   00 9f 15 70 09 e2 59 59  03 00 9c 15 70 09 df 59  |...p..YY....p..Y|[0m
+[0;32mI (2051) RX_TASK: 0x3ffb75b4   59 03 00 a4 15 70 09 e7  59 59 03 00 a1 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2061) RX_TASK: 0x3ffb75c4   e4 59 59 03 00 9a 15 70  09 dd 59 59 03 00 9b 15  |.YY....p..YY....|[0m
+[0;32mI (2071) RX_TASK: 0x3ffb75d4   70 09 de 59 59 03 00 9f  15 70 09 e2 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2081) RX_TASK: 0x3ffb75e4   96 15 70 09 d9 59 59 03  00 9b 15 70 09 de 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2091) RX_TASK: 0x3ffb75f4   03 00 9c 15 70 09 df 59  59 03 00 a1 15 70 09 e4  |....p..YY....p..|[0m
+[0;32mI (2101) RX_TASK: 0x3ffb7604   59 59 03 00 a2 15 70 09  e5 59 59 03 00 9b 15 70  |YY....p..YY....p|[0m
+[0;32mI (2331) TX_TASK: Wrote 11 bytes[0m
+[0;32mI (2651) RX_TASK: Read 1024 bytes: '	�YY'[0m
+[0;32mI (2651) RX_TASK: 0x3ffb7214   09 de 59 59 03 00 a3 15  70 09 e6 59 59 03 00 a1  |..YY....p..YY...|[0m
+[0;32mI (2651) RX_TASK: 0x3ffb7224   15 70 09 e4 59 59 03 00  a1 15 70 09 e4 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2661) RX_TASK: 0x3ffb7234   00 a0 15 70 09 e3 59 59  03 00 9c 15 70 09 df 59  |...p..YY....p..Y|[0m
+[0;32mI (2671) RX_TASK: 0x3ffb7244   59 03 00 9b 15 70 09 de  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2681) RX_TASK: 0x3ffb7254   e3 59 59 03 00 9c 15 70  09 df 59 59 03 00 9e 15  |.YY....p..YY....|[0m
+[0;32mI (2691) RX_TASK: 0x3ffb7264   70 09 e1 59 59 03 00 a0  15 70 09 e3 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2701) RX_TASK: 0x3ffb7274   a8 15 70 09 eb 59 59 03  00 9c 15 70 09 df 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2711) RX_TASK: 0x3ffb7284   03 00 9e 15 70 09 e1 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (2721) RX_TASK: 0x3ffb7294   59 59 03 00 9e 15 70 09  e1 59 59 03 00 9e 15 70  |YY....p..YY....p|[0m
+[0;32mI (2731) RX_TASK: 0x3ffb72a4   09 e1 59 59 03 00 a3 15  70 09 e6 59 59 03 00 9c  |..YY....p..YY...|[0m
+[0;32mI (2741) RX_TASK: 0x3ffb72b4   15 70 09 df 59 59 03 00  9e 15 70 09 e1 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2751) RX_TASK: 0x3ffb72c4   00 a0 15 70 09 e3 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (2761) RX_TASK: 0x3ffb72d4   59 03 00 9d 15 70 09 e0  59 59 03 00 a3 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2771) RX_TASK: 0x3ffb72e4   e6 59 59 03 00 9d 15 70  09 e0 59 59 03 00 9c 15  |.YY....p..YY....|[0m
+[0;32mI (2781) RX_TASK: 0x3ffb72f4   70 09 df 59 59 03 00 9c  15 70 09 df 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2791) RX_TASK: 0x3ffb7304   9e 15 70 09 e1 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2801) RX_TASK: 0x3ffb7314   03 00 a3 15 70 09 e6 59  59 03 00 a2 15 70 09 e5  |....p..YY....p..|[0m
+[0;32mI (2811) RX_TASK: 0x3ffb7324   59 59 03 00 9b 15 70 09  de 59 59 03 00 a3 15 70  |YY....p..YY....p|[0m
+[0;32mI (2821) RX_TASK: 0x3ffb7334   09 e6 59 59 03 00 a6 15  70 09 e9 59 59 03 00 9e  |..YY....p..YY...|[0m
+[0;32mI (2831) RX_TASK: 0x3ffb7344   15 70 09 e1 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2841) RX_TASK: 0x3ffb7354   00 a1 15 70 09 e4 59 59  03 00 a4 15 70 09 e7 59  |...p..YY....p..Y|[0m
+[0;32mI (2851) RX_TASK: 0x3ffb7364   59 03 00 9d 15 70 09 e0  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2861) RX_TASK: 0x3ffb7374   e1 59 59 03 00 a4 15 70  09 e7 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (2871) RX_TASK: 0x3ffb7384   70 09 e5 59 59 03 00 a0  15 70 09 e3 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2881) RX_TASK: 0x3ffb7394   a0 15 70 09 e3 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2891) RX_TASK: 0x3ffb73a4   03 00 a2 15 70 09 e5 59  59 03 00 a1 15 70 09 e4  |....p..YY....p..|[0m
+[0;32mI (2901) RX_TASK: 0x3ffb73b4   59 59 03 00 9a 15 70 09  dd 59 59 03 00 9e 15 70  |YY....p..YY....p|[0m
+[0;32mI (2911) RX_TASK: 0x3ffb73c4   09 e1 59 59 03 00 a4 15  70 09 e7 59 59 03 00 9e  |..YY....p..YY...|[0m
+[0;32mI (2921) RX_TASK: 0x3ffb73d4   15 70 09 e1 59 59 03 00  9b 15 70 09 de 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2931) RX_TASK: 0x3ffb73e4   00 aa 15 70 09 ed 59 59  03 00 a8 15 70 09 eb 59  |...p..YY....p..Y|[0m
+[0;32mI (2941) RX_TASK: 0x3ffb73f4   59 03 00 a8 15 70 09 eb  59 59 03 00 9f 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2951) RX_TASK: 0x3ffb7404   e2 59 59 03 00 a0 15 70  09 e3 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (2961) RX_TASK: 0x3ffb7414   70 09 e0 59 59 03 00 9f  15 70 09 e2 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2971) RX_TASK: 0x3ffb7424   9d 15 70 09 e0 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2971) RX_TASK: 0x3ffb7434   03 00 a6 15 70 09 e9 59  59 03 00 9d 15 70 09 e0  |....p..YY....p..|[0m
+[0;32mI (2981) RX_TASK: 0x3ffb7444   59 59 03 00 a2 15 70 09  e5 59 59 03 00 9d 15 70  |YY....p..YY....p|[0m
+[0;32mI (2991) RX_TASK: 0x3ffb7454   09 e0 59 59 03 00 a2 15  70 09 e5 59 59 03 00 a0  |..YY....p..YY...|[0m
+[0;32mI (3001) RX_TASK: 0x3ffb7464   15 70 09 e3 59 59 03 00  a0 15 70 09 e3 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3011) RX_TASK: 0x3ffb7474   00 a5 15 70 09 e8 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (3021) RX_TASK: 0x3ffb7484   59 03 00 9e 15 70 09 e1  59 59 03 00 a1 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3031) RX_TASK: 0x3ffb7494   e4 59 59 03 00 a0 15 70  09 e3 59 59 03 00 9f 15  |.YY....p..YY....|[0m
+[0;32mI (3041) RX_TASK: 0x3ffb74a4   70 09 e2 59 59 03 00 a2  15 70 09 e5 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3051) RX_TASK: 0x3ffb74b4   a0 15 70 09 e3 59 59 03  00 9e 15 70 09 e1 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3061) RX_TASK: 0x3ffb74c4   03 00 a5 15 70 09 e8 59  59 03 00 a6 15 70 09 e9  |....p..YY....p..|[0m
+[0;32mI (3071) RX_TASK: 0x3ffb74d4   59 59 03 00 9d 15 70 09  e0 59 59 03 00 a5 15 70  |YY....p..YY....p|[0m
+[0;32mI (3081) RX_TASK: 0x3ffb74e4   09 e8 59 59 03 00 9c 15  70 09 df 59 59 03 00 a6  |..YY....p..YY...|[0m
+[0;32mI (3091) RX_TASK: 0x3ffb74f4   15 70 09 e9 59 59 03 00  a4 15 70 09 e7 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3101) RX_TASK: 0x3ffb7504   00 9f 15 70 09 e2 59 59  03 00 9d 15 70 09 e0 59  |...p..YY....p..Y|[0m
+[0;32mI (3111) RX_TASK: 0x3ffb7514   59 03 00 a0 15 70 09 e3  59 59 03 00 99 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3121) RX_TASK: 0x3ffb7524   dc 59 59 03 00 a3 15 70  09 e6 59 59 03 00 a0 15  |.YY....p..YY....|[0m
+[0;32mI (3131) RX_TASK: 0x3ffb7534   70 09 e3 59 59 03 00 a0  15 70 09 e3 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3141) RX_TASK: 0x3ffb7544   9e 15 70 09 e1 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3151) RX_TASK: 0x3ffb7554   03 00 9e 15 70 09 e1 59  59 03 00 9d 15 70 09 e0  |....p..YY....p..|[0m
+[0;32mI (3161) RX_TASK: 0x3ffb7564   59 59 03 00 a4 15 70 09  e7 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (3171) RX_TASK: 0x3ffb7574   09 e4 59 59 03 00 9f 15  70 09 e2 59 59 03 00 9f  |..YY....p..YY...|[0m
+[0;32mI (3181) RX_TASK: 0x3ffb7584   15 70 09 e2 59 59 03 00  9e 15 70 09 e1 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3191) RX_TASK: 0x3ffb7594   00 a4 15 70 09 e7 59 59  03 00 a5 15 70 09 e8 59  |...p..YY....p..Y|[0m
+[0;32mI (3201) RX_TASK: 0x3ffb75a4   59 03 00 9d 15 70 09 e0  59 59 03 00 a3 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3211) RX_TASK: 0x3ffb75b4   e6 59 59 03 00 a7 15 70  09 ea 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (3221) RX_TASK: 0x3ffb75c4   70 09 e0 59 59 03 00 a2  15 70 09 e5 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3231) RX_TASK: 0x3ffb75d4   a0 15 70 09 e3 59 59 03  00 a0 15 70 09 e3 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3241) RX_TASK: 0x3ffb75e4   03 00 9b 15 70 09 de 59  59 03 00 a1 15 70 09 e4  |....p..YY....p..|[0m
+[0;32mI (3251) RX_TASK: 0x3ffb75f4   59 59 03 00 a1 15 70 09  e4 59 59 03 00 9f 15 70  |YY....p..YY....p|[0m
+[0;32mI (3261) RX_TASK: 0x3ffb7604   09 e2 59 59 03 00 a2 15  70 09 e5 59 59 03 00 9d  |..YY....p..YY...|[0m
+[0;32mI (3811) RX_TASK: Read 1024 bytes: 'p	�YY'[0m
+[0;32mI (3811) RX_TASK: 0x3ffb7214   15 70 09 e0 59 59 03 00  9f 15 70 09 e2 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3821) RX_TASK: 0x3ffb7224   00 a3 15 70 09 e6 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (3831) RX_TASK: 0x3ffb7234   59 03 00 a4 15 70 09 e7  59 59 03 00 a3 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3841) RX_TASK: 0x3ffb7244   e6 59 59 03 00 a1 15 70  09 e4 59 59 03 00 a7 15  |.YY....p..YY....|[0m
+[0;32mI (3851) RX_TASK: 0x3ffb7254   70 09 ea 59 59 03 00 a4  15 70 09 e7 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3851) RX_TASK: 0x3ffb7264   a4 15 70 09 e7 59 59 03  00 9f 15 70 09 e2 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3861) RX_TASK: 0x3ffb7274   03 00 a2 15 70 09 e5 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (3871) RX_TASK: 0x3ffb7284   59 59 03 00 a2 15 70 09  e5 59 59 03 00 9e 15 70  |YY....p..YY....p|[0m
+[0;32mI (3881) RX_TASK: 0x3ffb7294   09 e1 59 59 03 00 a0 15  70 09 e3 59 59 03 00 a2  |..YY....p..YY...|[0m
+[0;32mI (3891) RX_TASK: 0x3ffb72a4   15 70 09 e5 59 59 03 00  a3 15 70 09 e6 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3901) RX_TASK: 0x3ffb72b4   00 a0 15 70 09 e3 59 59  03 00 a0 15 70 09 e3 59  |...p..YY....p..Y|[0m
+[0;32mI (3911) RX_TASK: 0x3ffb72c4   59 03 00 9c 15 70 09 df  59 59 03 00 9d 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3921) RX_TASK: 0x3ffb72d4   e0 59 59 03 00 9d 15 70  09 e0 59 59 03 00 a5 15  |.YY....p..YY....|[0m
+[0;32mI (3931) RX_TASK: 0x3ffb72e4   70 09 e8 59 59 03 00 9d  15 70 09 e0 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3941) RX_TASK: 0x3ffb72f4   a2 15 70 09 e5 59 59 03  00 9d 15 70 09 e0 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3951) RX_TASK: 0x3ffb7304   03 00 9f 15 70 09 e2 59  59 03 00 a7 15 70 09 ea  |....p..YY....p..|[0m
+[0;32mI (3961) RX_TASK: 0x3ffb7314   59 59 03 00 a1 15 70 09  e4 59 59 03 00 a2 15 70  |YY....p..YY....p|[0m
+[0;32mI (3971) RX_TASK: 0x3ffb7324   09 e5 59 59 03 00 a3 15  70 09 e6 59 59 03 00 a1  |..YY....p..YY...|[0m
+[0;32mI (3981) RX_TASK: 0x3ffb7334   15 70 09 e4 59 59 03 00  a0 15 70 09 e3 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3991) RX_TASK: 0x3ffb7344   00 a0 15 70 09 e3 59 59  03 00 a3 15 70 09 e6 59  |...p..YY....p..Y|[0m
+[0;32mI (4001) RX_TASK: 0x3ffb7354   59 03 00 99 15 70 09 dc  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4011) RX_TASK: 0x3ffb7364   e1 59 59 03 00 9d 15 70  09 e0 59 59 03 00 9e 15  |.YY....p..YY....|[0m
+[0;32mI (4021) RX_TASK: 0x3ffb7374   70 09 e1 59 59 03 00 9d  15 70 09 e0 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4031) RX_TASK: 0x3ffb7384   9d 15 70 09 e0 59 59 03  00 a1 15 70 09 e4 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4041) RX_TASK: 0x3ffb7394   03 00 9f 15 70 09 e2 59  59 03 00 a6 15 70 09 e9  |....p..YY....p..|[0m
+[0;32mI (4051) RX_TASK: 0x3ffb73a4   59 59 03 00 9e 15 70 09  e1 59 59 03 00 aa 15 70  |YY....p..YY....p|[0m
+[0;32mI (4061) RX_TASK: 0x3ffb73b4   09 ed 59 59 03 00 9f 15  70 09 e2 59 59 03 00 9f  |..YY....p..YY...|[0m
+[0;32mI (4071) RX_TASK: 0x3ffb73c4   15 70 09 e2 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4081) RX_TASK: 0x3ffb73d4   00 a1 15 70 09 e4 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (4091) RX_TASK: 0x3ffb73e4   59 03 00 a2 15 70 09 e5  59 59 03 00 a5 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4101) RX_TASK: 0x3ffb73f4   e8 59 59 03 00 a1 15 70  09 e4 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (4111) RX_TASK: 0x3ffb7404   70 09 e5 59 59 03 00 a1  15 70 09 e4 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4121) RX_TASK: 0x3ffb7414   a0 15 70 09 e3 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4131) RX_TASK: 0x3ffb7424   03 00 a1 15 70 09 e4 59  59 03 00 9d 15 70 09 e0  |....p..YY....p..|[0m
+[0;32mI (4141) RX_TASK: 0x3ffb7434   59 59 03 00 a2 15 70 09  e5 59 59 03 00 a3 15 70  |YY....p..YY....p|[0m
+[0;32mI (4151) RX_TASK: 0x3ffb7444   09 e6 59 59 03 00 a9 15  70 09 ec 59 59 03 00 9e  |..YY....p..YY...|[0m
+[0;32mI (4161) RX_TASK: 0x3ffb7454   15 70 09 e1 59 59 03 00  97 15 70 09 da 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4171) RX_TASK: 0x3ffb7464   00 9a 15 70 09 dd 59 59  03 00 9a 15 70 09 dd 59  |...p..YY....p..Y|[0m
+[0;32mI (4181) RX_TASK: 0x3ffb7474   59 03 00 a4 15 70 09 e7  59 59 03 00 9a 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4191) RX_TASK: 0x3ffb7484   dd 59 59 03 00 a6 15 70  09 e9 59 59 03 00 a1 15  |.YY....p..YY....|[0m
+[0;32mI (4201) RX_TASK: 0x3ffb7494   70 09 e4 59 59 03 00 a6  15 70 09 e9 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4201) RX_TASK: 0x3ffb74a4   9e 15 70 09 e1 59 59 03  00 a2 15 70 09 e5 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4211) RX_TASK: 0x3ffb74b4   03 00 9d 15 70 09 e0 59  59 03 00 a5 15 70 09 e8  |....p..YY....p..|[0m
+[0;32mI (4221) RX_TASK: 0x3ffb74c4   59 59 03 00 a0 15 70 09  e3 59 59 03 00 a3 15 70  |YY....p..YY....p|[0m
+[0;32mI (4231) RX_TASK: 0x3ffb74d4   09 e6 59 59 03 00 a3 15  70 09 e6 59 59 03 00 a4  |..YY....p..YY...|[0m
+[0;32mI (4241) RX_TASK: 0x3ffb74e4   15 70 09 e7 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4251) RX_TASK: 0x3ffb74f4   00 9b 15 70 09 de 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (4261) RX_TASK: 0x3ffb7504   59 03 00 a5 15 70 09 e8  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4271) RX_TASK: 0x3ffb7514   e1 59 59 03 00 a1 15 70  09 e4 59 59 03 00 a7 15  |.YY....p..YY....|[0m
+[0;32mI (4281) RX_TASK: 0x3ffb7524   70 09 ea 59 59 03 00 a2  15 70 09 e5 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4291) RX_TASK: 0x3ffb7534   9d 15 70 09 e0 59 59 03  00 9a 15 70 09 dd 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4301) RX_TASK: 0x3ffb7544   03 00 a4 15 70 09 e7 59  59 03 00 9f 15 70 09 e2  |....p..YY....p..|[0m
+[0;32mI (4311) RX_TASK: 0x3ffb7554   59 59 03 00 a3 15 70 09  e6 59 59 03 00 9e 15 70  |YY....p..YY....p|[0m
+[0;32mI (4321) RX_TASK: 0x3ffb7564   09 e1 59 59 03 00 a7 15  70 09 ea 59 59 03 00 a1  |..YY....p..YY...|[0m
+
+***ERROR*** A stack overflow in task uart_rx_task has been detected.
+
+
+Backtrace: 0x40081956:0x3ffb68d0 0x40086675:0x3ffb68f0 0x40087486:0x3ffb6910 0x4008849f:0x3ffb6990 0x40087590:0x3ffb69b0 0x40087542:0x00000005 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 6524f4052
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-1288-g5524b692ee-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb 23 2024 13:22:45[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b128h ( 45352) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001b150 vaddr=3ffb0000 size=02268h (  8808) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d3c0 vaddr=40080000 size=02c58h ( 11352) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=19d8ch (105868) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00039db4 vaddr=40082c58 size=0ab84h ( 43908) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (206) cpu_start: Multicore app[0m
+[0;32mI (215) cpu_start: Pro cpu start user code[0m
+[0;32mI (215) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (215) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     lidar[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Feb 23 2024 13:22:39[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  6524f4052...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.3-dev-1288-g5524b692ee-dirty[0m
+[0;32mI (246) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (251) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (256) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (261) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFB2B30 len 0002D4D0 (181 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 4008D7DC len 00012824 (74 KiB): IRAM[0m
+[0;32mI (300) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (321) main_task: Started on CPU0[0m
+[0;32mI (331) main_task: Calling app_main()[0m
+[0;32mI (331) TX_TASK: Wrote 11 bytes[0m
+[0;32mI (331) main_task: Returned from app_main()[0m
+[0;32mI (1491) RX_TASK: Read 1024 bytes: 'YY'[0m
+[0;32mI (1491) RX_TASK: 0x3ffb7214   59 59 03 00 9d 15 70 09  e0 59 59 03 00 9f 15 70  |YY....p..YY....p|[0m
+[0;32mI (1491) RX_TASK: 0x3ffb7224   09 e2 59 59 03 00 9f 15  70 09 e2 59 59 03 00 a4  |..YY....p..YY...|[0m
+[0;32mI (1501) RX_TASK: 0x3ffb7234   15 70 09 e7 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1511) RX_TASK: 0x3ffb7244   00 9f 15 70 09 e2 59 59  03 00 a2 15 70 09 e5 59  |...p..YY....p..Y|[0m
+[0;32mI (1521) RX_TASK: 0x3ffb7254   59 03 00 9b 15 70 09 de  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1531) RX_TASK: 0x3ffb7264   e3 59 59 03 00 a6 15 70  09 e9 59 59 03 00 a4 15  |.YY....p..YY....|[0m
+[0;32mI (1541) RX_TASK: 0x3ffb7274   70 09 e7 59 59 03 00 a7  15 70 09 ea 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1551) RX_TASK: 0x3ffb7284   9d 15 70 09 e0 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1561) RX_TASK: 0x3ffb7294   03 00 a2 15 70 09 e5 59  59 03 00 9b 15 70 09 de  |....p..YY....p..|[0m
+[0;32mI (1571) RX_TASK: 0x3ffb72a4   59 59 03 00 a1 15 70 09  e4 59 59 03 00 a5 15 70  |YY....p..YY....p|[0m
+[0;32mI (1581) RX_TASK: 0x3ffb72b4   09 e8 59 59 03 00 a2 15  70 09 e5 59 59 03 00 a6  |..YY....p..YY...|[0m
+[0;32mI (1591) RX_TASK: 0x3ffb72c4   15 70 09 e9 59 59 03 00  a4 15 70 09 e7 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1601) RX_TASK: 0x3ffb72d4   00 a7 15 70 09 ea 59 59  03 00 a3 15 70 09 e6 59  |...p..YY....p..Y|[0m
+[0;32mI (1611) RX_TASK: 0x3ffb72e4   59 03 00 99 15 70 09 dc  59 59 03 00 a3 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1621) RX_TASK: 0x3ffb72f4   e6 59 59 03 00 9b 15 70  09 de 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (1631) RX_TASK: 0x3ffb7304   70 09 e5 59 59 03 00 a1  15 70 09 e4 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1641) RX_TASK: 0x3ffb7314   a5 15 70 09 e8 59 59 03  00 aa 15 70 09 ed 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1651) RX_TASK: 0x3ffb7324   03 00 a2 15 70 09 e5 59  59 03 00 a2 15 70 09 e5  |....p..YY....p..|[0m
+[0;32mI (1661) RX_TASK: 0x3ffb7334   59 59 03 00 a0 15 70 09  e3 59 59 03 00 a2 15 70  |YY....p..YY....p|[0m
+[0;32mI (1661) RX_TASK: 0x3ffb7344   09 e5 59 59 03 00 a7 15  70 09 ea 59 59 03 00 a1  |..YY....p..YY...|[0m
+[0;32mI (1671) RX_TASK: 0x3ffb7354   15 70 09 e4 59 59 03 00  9e 15 70 09 e1 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1681) RX_TASK: 0x3ffb7364   00 9d 15 70 09 e0 59 59  03 00 a2 15 70 09 e5 59  |...p..YY....p..Y|[0m
+[0;32mI (1691) RX_TASK: 0x3ffb7374   59 03 00 a5 15 70 09 e8  59 59 03 00 9f 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1701) RX_TASK: 0x3ffb7384   e2 59 59 03 00 9b 15 70  09 de 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (1711) RX_TASK: 0x3ffb7394   70 09 e5 59 59 03 00 9d  15 70 09 e0 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1721) RX_TASK: 0x3ffb73a4   9e 15 70 09 e1 59 59 03  00 9d 15 70 09 e0 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1731) RX_TASK: 0x3ffb73b4   03 00 a1 15 70 09 e4 59  59 03 00 9b 15 70 09 de  |....p..YY....p..|[0m
+[0;32mI (1741) RX_TASK: 0x3ffb73c4   59 59 03 00 97 15 70 09  da 59 59 03 00 9a 15 70  |YY....p..YY....p|[0m
+[0;32mI (1751) RX_TASK: 0x3ffb73d4   09 dd 59 59 03 00 a1 15  70 09 e4 59 59 03 00 9c  |..YY....p..YY...|[0m
+[0;32mI (1761) RX_TASK: 0x3ffb73e4   15 70 09 df 59 59 03 00  a1 15 70 09 e4 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1771) RX_TASK: 0x3ffb73f4   00 a3 15 70 09 e6 59 59  03 00 a2 15 70 09 e5 59  |...p..YY....p..Y|[0m
+[0;32mI (1781) RX_TASK: 0x3ffb7404   59 03 00 a2 15 70 09 e5  59 59 03 00 a2 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1791) RX_TASK: 0x3ffb7414   e5 59 59 03 00 9a 15 70  09 dd 59 59 03 00 9c 15  |.YY....p..YY....|[0m
+[0;32mI (1801) RX_TASK: 0x3ffb7424   70 09 df 59 59 03 00 9e  15 70 09 e1 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1811) RX_TASK: 0x3ffb7434   a5 15 70 09 e8 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1821) RX_TASK: 0x3ffb7444   03 00 a1 15 70 09 e4 59  59 03 00 a5 15 70 09 e8  |....p..YY....p..|[0m
+[0;32mI (1831) RX_TASK: 0x3ffb7454   59 59 03 00 9c 15 70 09  df 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (1841) RX_TASK: 0x3ffb7464   09 e4 59 59 03 00 9e 15  70 09 e1 59 59 03 00 a2  |..YY....p..YY...|[0m
+[0;32mI (1851) RX_TASK: 0x3ffb7474   15 70 09 e5 59 59 03 00  a5 15 70 09 e8 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1861) RX_TASK: 0x3ffb7484   00 a1 15 70 09 e4 59 59  03 00 a4 15 70 09 e7 59  |...p..YY....p..Y|[0m
+[0;32mI (1871) RX_TASK: 0x3ffb7494   59 03 00 9c 15 70 09 df  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1881) RX_TASK: 0x3ffb74a4   e3 59 59 03 00 a2 15 70  09 e5 59 59 03 00 96 15  |.YY....p..YY....|[0m
+[0;32mI (1891) RX_TASK: 0x3ffb74b4   70 09 d9 59 59 03 00 a4  15 70 09 e7 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1901) RX_TASK: 0x3ffb74c4   a8 15 70 09 eb 59 59 03  00 a4 15 70 09 e7 59 59  |..p..YY....p..YY|[0m
+[0;32mI (1911) RX_TASK: 0x3ffb74d4   03 00 9d 15 70 09 e0 59  59 03 00 a4 15 70 09 e7  |....p..YY....p..|[0m
+[0;32mI (1921) RX_TASK: 0x3ffb74e4   59 59 03 00 9f 15 70 09  e2 59 59 03 00 a0 15 70  |YY....p..YY....p|[0m
+[0;32mI (1931) RX_TASK: 0x3ffb74f4   09 e3 59 59 03 00 a3 15  70 09 e6 59 59 03 00 a6  |..YY....p..YY...|[0m
+[0;32mI (1941) RX_TASK: 0x3ffb7504   15 70 09 e9 59 59 03 00  a0 15 70 09 e3 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (1951) RX_TASK: 0x3ffb7514   00 9b 15 70 09 de 59 59  03 00 a2 15 70 09 e5 59  |...p..YY....p..Y|[0m
+[0;32mI (1961) RX_TASK: 0x3ffb7524   59 03 00 9d 15 70 09 e0  59 59 03 00 9c 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (1971) RX_TASK: 0x3ffb7534   df 59 59 03 00 9e 15 70  09 e1 59 59 03 00 9f 15  |.YY....p..YY....|[0m
+[0;32mI (1981) RX_TASK: 0x3ffb7544   70 09 e2 59 59 03 00 9b  15 70 09 de 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (1991) RX_TASK: 0x3ffb7554   a3 15 70 09 e6 59 59 03  00 a2 15 70 09 e5 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2001) RX_TASK: 0x3ffb7564   03 00 a5 15 70 09 e8 59  59 03 00 a4 15 70 09 e7  |....p..YY....p..|[0m
+[0;32mI (2011) RX_TASK: 0x3ffb7574   59 59 03 00 a0 15 70 09  e3 59 59 03 00 a5 15 70  |YY....p..YY....p|[0m
+[0;32mI (2011) RX_TASK: 0x3ffb7584   09 e8 59 59 03 00 a2 15  70 09 e5 59 59 03 00 a4  |..YY....p..YY...|[0m
+[0;32mI (2021) RX_TASK: 0x3ffb7594   15 70 09 e7 59 59 03 00  aa 15 70 09 ed 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2031) RX_TASK: 0x3ffb75a4   00 a2 15 70 09 e5 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (2041) RX_TASK: 0x3ffb75b4   59 03 00 a1 15 70 09 e4  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2051) RX_TASK: 0x3ffb75c4   e1 59 59 03 00 a4 15 70  09 e7 59 59 03 00 9b 15  |.YY....p..YY....|[0m
+[0;32mI (2061) RX_TASK: 0x3ffb75d4   70 09 de 59 59 03 00 9d  15 70 09 e0 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2071) RX_TASK: 0x3ffb75e4   a4 15 70 09 e7 59 59 03  00 a4 15 70 09 e7 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2081) RX_TASK: 0x3ffb75f4   03 00 a2 15 70 09 e5 59  59 03 00 9e 15 70 09 e1  |....p..YY....p..|[0m
+[0;32mI (2091) RX_TASK: 0x3ffb7604   59 59 03 00 9a 15 70 09  dd 59 59 03 00 a3 15 70  |YY....p..YY....p|[0m
+[0;32mI (2331) TX_TASK: Wrote 11 bytes[0m
+[0;32mI (2651) RX_TASK: Read 1024 bytes: '	�YY'[0m
+[0;32mI (2651) RX_TASK: 0x3ffb7214   09 e6 59 59 03 00 9b 15  70 09 de 59 59 03 00 a4  |..YY....p..YY...|[0m
+[0;32mI (2651) RX_TASK: 0x3ffb7224   15 70 09 e7 59 59 03 00  a2 15 70 09 e5 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2661) RX_TASK: 0x3ffb7234   00 a7 15 70 09 ea 59 59  03 00 9d 15 70 09 e0 59  |...p..YY....p..Y|[0m
+[0;32mI (2671) RX_TASK: 0x3ffb7244   59 03 00 a0 15 70 09 e3  59 59 03 00 9c 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2681) RX_TASK: 0x3ffb7254   df 59 59 03 00 9d 15 70  09 e0 59 59 03 00 a4 15  |.YY....p..YY....|[0m
+[0;32mI (2691) RX_TASK: 0x3ffb7264   70 09 e7 59 59 03 00 a6  15 70 09 e9 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2701) RX_TASK: 0x3ffb7274   a3 15 70 09 e6 59 59 03  00 a9 15 70 09 ec 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2711) RX_TASK: 0x3ffb7284   03 00 9e 15 70 09 e1 59  59 03 00 9c 15 70 09 df  |....p..YY....p..|[0m
+[0;32mI (2721) RX_TASK: 0x3ffb7294   59 59 03 00 9c 15 70 09  df 59 59 03 00 a2 15 70  |YY....p..YY....p|[0m
+[0;32mI (2731) RX_TASK: 0x3ffb72a4   09 e5 59 59 03 00 9c 15  70 09 df 59 59 03 00 9e  |..YY....p..YY...|[0m
+[0;32mI (2741) RX_TASK: 0x3ffb72b4   15 70 09 e1 59 59 03 00  9b 15 70 09 de 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2751) RX_TASK: 0x3ffb72c4   00 98 15 70 09 db 59 59  03 00 9e 15 70 09 e1 59  |...p..YY....p..Y|[0m
+[0;32mI (2761) RX_TASK: 0x3ffb72d4   59 03 00 9d 15 70 09 e0  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2771) RX_TASK: 0x3ffb72e4   e3 59 59 03 00 9e 15 70  09 e1 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (2781) RX_TASK: 0x3ffb72f4   70 09 e0 59 59 03 00 a0  15 70 09 e3 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2791) RX_TASK: 0x3ffb7304   9c 15 70 09 df 59 59 03  00 9e 15 70 09 e1 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2801) RX_TASK: 0x3ffb7314   03 00 a5 15 70 09 e8 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (2811) RX_TASK: 0x3ffb7324   59 59 03 00 9a 15 70 09  dd 59 59 03 00 a2 15 70  |YY....p..YY....p|[0m
+[0;32mI (2821) RX_TASK: 0x3ffb7334   09 e5 59 59 03 00 9f 15  70 09 e2 59 59 03 00 9d  |..YY....p..YY...|[0m
+[0;32mI (2831) RX_TASK: 0x3ffb7344   15 70 09 e0 59 59 03 00  a0 15 70 09 e3 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2841) RX_TASK: 0x3ffb7354   00 9e 15 70 09 e1 59 59  03 00 a4 15 70 09 e7 59  |...p..YY....p..Y|[0m
+[0;32mI (2851) RX_TASK: 0x3ffb7364   59 03 00 9d 15 70 09 e0  59 59 03 00 9b 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2861) RX_TASK: 0x3ffb7374   de 59 59 03 00 9c 15 70  09 df 59 59 03 00 a3 15  |.YY....p..YY....|[0m
+[0;32mI (2871) RX_TASK: 0x3ffb7384   70 09 e6 59 59 03 00 9b  15 70 09 de 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2881) RX_TASK: 0x3ffb7394   9d 15 70 09 e0 59 59 03  00 9d 15 70 09 e0 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2881) RX_TASK: 0x3ffb73a4   03 00 a4 15 70 09 e7 59  59 03 00 9e 15 70 09 e1  |....p..YY....p..|[0m
+[0;32mI (2891) RX_TASK: 0x3ffb73b4   59 59 03 00 9f 15 70 09  e2 59 59 03 00 9b 15 70  |YY....p..YY....p|[0m
+[0;32mI (2901) RX_TASK: 0x3ffb73c4   09 de 59 59 03 00 a1 15  70 09 e4 59 59 03 00 9e  |..YY....p..YY...|[0m
+[0;32mI (2911) RX_TASK: 0x3ffb73d4   15 70 09 e1 59 59 03 00  a9 15 70 09 ec 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (2921) RX_TASK: 0x3ffb73e4   00 a1 15 70 09 e4 59 59  03 00 97 15 70 09 da 59  |...p..YY....p..Y|[0m
+[0;32mI (2931) RX_TASK: 0x3ffb73f4   59 03 00 9c 15 70 09 df  59 59 03 00 9d 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (2941) RX_TASK: 0x3ffb7404   e0 59 59 03 00 9f 15 70  09 e2 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (2951) RX_TASK: 0x3ffb7414   70 09 e5 59 59 03 00 9e  15 70 09 e1 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (2961) RX_TASK: 0x3ffb7424   96 15 70 09 d9 59 59 03  00 a2 15 70 09 e5 59 59  |..p..YY....p..YY|[0m
+[0;32mI (2971) RX_TASK: 0x3ffb7434   03 00 a6 15 70 09 e9 59  59 03 00 9b 15 70 09 de  |....p..YY....p..|[0m
+[0;32mI (2981) RX_TASK: 0x3ffb7444   59 59 03 00 9d 15 70 09  e0 59 59 03 00 9f 15 70  |YY....p..YY....p|[0m
+[0;32mI (2991) RX_TASK: 0x3ffb7454   09 e2 59 59 03 00 a2 15  70 09 e5 59 59 03 00 9c  |..YY....p..YY...|[0m
+[0;32mI (3001) RX_TASK: 0x3ffb7464   15 70 09 df 59 59 03 00  a4 15 70 09 e7 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3011) RX_TASK: 0x3ffb7474   00 9c 15 70 09 df 59 59  03 00 9e 15 70 09 e1 59  |...p..YY....p..Y|[0m
+[0;32mI (3021) RX_TASK: 0x3ffb7484   59 03 00 a3 15 70 09 e6  59 59 03 00 9f 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3031) RX_TASK: 0x3ffb7494   e2 59 59 03 00 9a 15 70  09 dd 59 59 03 00 9b 15  |.YY....p..YY....|[0m
+[0;32mI (3041) RX_TASK: 0x3ffb74a4   70 09 de 59 59 03 00 a5  15 70 09 e8 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3051) RX_TASK: 0x3ffb74b4   a1 15 70 09 e4 59 59 03  00 a6 15 70 09 e9 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3061) RX_TASK: 0x3ffb74c4   03 00 9f 15 70 09 e2 59  59 03 00 9c 15 70 09 df  |....p..YY....p..|[0m
+[0;32mI (3071) RX_TASK: 0x3ffb74d4   59 59 03 00 a1 15 70 09  e4 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (3081) RX_TASK: 0x3ffb74e4   09 e4 59 59 03 00 a0 15  70 09 e3 59 59 03 00 a3  |..YY....p..YY...|[0m
+[0;32mI (3091) RX_TASK: 0x3ffb74f4   15 70 09 e6 59 59 03 00  a1 15 70 09 e4 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3101) RX_TASK: 0x3ffb7504   00 9f 15 70 09 e2 59 59  03 00 9f 15 70 09 e2 59  |...p..YY....p..Y|[0m
+[0;32mI (3111) RX_TASK: 0x3ffb7514   59 03 00 9d 15 70 09 e0  59 59 03 00 a1 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3121) RX_TASK: 0x3ffb7524   e4 59 59 03 00 a1 15 70  09 e4 59 59 03 00 9e 15  |.YY....p..YY....|[0m
+[0;32mI (3131) RX_TASK: 0x3ffb7534   70 09 e1 59 59 03 00 a5  15 70 09 e8 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3141) RX_TASK: 0x3ffb7544   a0 15 70 09 e3 59 59 03  00 99 15 70 09 dc 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3151) RX_TASK: 0x3ffb7554   03 00 9b 15 70 09 de 59  59 03 00 9f 15 70 09 e2  |....p..YY....p..|[0m
+[0;32mI (3161) RX_TASK: 0x3ffb7564   59 59 03 00 a4 15 70 09  e7 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (3171) RX_TASK: 0x3ffb7574   09 e4 59 59 03 00 9e 15  70 09 e1 59 59 03 00 9c  |..YY....p..YY...|[0m
+[0;32mI (3181) RX_TASK: 0x3ffb7584   15 70 09 df 59 59 03 00  a5 15 70 09 e8 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3191) RX_TASK: 0x3ffb7594   00 9f 15 70 09 e2 59 59  03 00 a3 15 70 09 e6 59  |...p..YY....p..Y|[0m
+[0;32mI (3201) RX_TASK: 0x3ffb75a4   59 03 00 a4 15 70 09 e7  59 59 03 00 97 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3211) RX_TASK: 0x3ffb75b4   da 59 59 03 00 9e 15 70  09 e1 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (3221) RX_TASK: 0x3ffb75c4   70 09 e0 59 59 03 00 9f  15 70 09 e2 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3231) RX_TASK: 0x3ffb75d4   99 15 70 09 dc 59 59 03  00 9a 15 70 09 dd 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3231) RX_TASK: 0x3ffb75e4   03 00 9e 15 70 09 e1 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (3241) RX_TASK: 0x3ffb75f4   59 59 03 00 9f 15 70 09  e2 59 59 03 00 9e 15 70  |YY....p..YY....p|[0m
+[0;32mI (3251) RX_TASK: 0x3ffb7604   09 e1 59 59 03 00 9e 15  70 09 e1 59 59 03 00 9c  |..YY....p..YY...|[0m
+[0;32mI (3811) RX_TASK: Read 1024 bytes: 'p	�YY'[0m
+[0;32mI (3811) RX_TASK: 0x3ffb7214   15 70 09 df 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3811) RX_TASK: 0x3ffb7224   00 9d 15 70 09 e0 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (3821) RX_TASK: 0x3ffb7234   59 03 00 9d 15 70 09 e0  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3831) RX_TASK: 0x3ffb7244   e3 59 59 03 00 99 15 70  09 dc 59 59 03 00 a0 15  |.YY....p..YY....|[0m
+[0;32mI (3841) RX_TASK: 0x3ffb7254   70 09 e3 59 59 03 00 a0  15 70 09 e3 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3851) RX_TASK: 0x3ffb7264   9b 15 70 09 de 59 59 03  00 9f 15 70 09 e2 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3861) RX_TASK: 0x3ffb7274   03 00 9f 15 70 09 e2 59  59 03 00 a3 15 70 09 e6  |....p..YY....p..|[0m
+[0;32mI (3871) RX_TASK: 0x3ffb7284   59 59 03 00 a5 15 70 09  e8 59 59 03 00 99 15 70  |YY....p..YY....p|[0m
+[0;32mI (3881) RX_TASK: 0x3ffb7294   09 dc 59 59 03 00 9d 15  70 09 e0 59 59 03 00 9f  |..YY....p..YY...|[0m
+[0;32mI (3891) RX_TASK: 0x3ffb72a4   15 70 09 e2 59 59 03 00  a2 15 70 09 e5 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3901) RX_TASK: 0x3ffb72b4   00 9e 15 70 09 e1 59 59  03 00 a7 15 70 09 ea 59  |...p..YY....p..Y|[0m
+[0;32mI (3911) RX_TASK: 0x3ffb72c4   59 03 00 a3 15 70 09 e6  59 59 03 00 a3 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (3921) RX_TASK: 0x3ffb72d4   e6 59 59 03 00 a5 15 70  09 e8 59 59 03 00 a1 15  |.YY....p..YY....|[0m
+[0;32mI (3931) RX_TASK: 0x3ffb72e4   70 09 e4 59 59 03 00 9f  15 70 09 e2 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (3941) RX_TASK: 0x3ffb72f4   9e 15 70 09 e1 59 59 03  00 a0 15 70 09 e3 59 59  |..p..YY....p..YY|[0m
+[0;32mI (3951) RX_TASK: 0x3ffb7304   03 00 a2 15 70 09 e5 59  59 03 00 a7 15 70 09 ea  |....p..YY....p..|[0m
+[0;32mI (3961) RX_TASK: 0x3ffb7314   59 59 03 00 a2 15 70 09  e5 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (3971) RX_TASK: 0x3ffb7324   09 e4 59 59 03 00 a0 15  70 09 e3 59 59 03 00 a7  |..YY....p..YY...|[0m
+[0;32mI (3981) RX_TASK: 0x3ffb7334   15 70 09 ea 59 59 03 00  9b 15 70 09 de 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (3991) RX_TASK: 0x3ffb7344   00 98 15 70 09 db 59 59  03 00 9f 15 70 09 e2 59  |...p..YY....p..Y|[0m
+[0;32mI (4001) RX_TASK: 0x3ffb7354   59 03 00 a1 15 70 09 e4  59 59 03 00 9b 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4011) RX_TASK: 0x3ffb7364   de 59 59 03 00 a1 15 70  09 e4 59 59 03 00 9f 15  |.YY....p..YY....|[0m
+[0;32mI (4021) RX_TASK: 0x3ffb7374   70 09 e2 59 59 03 00 a5  15 70 09 e8 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4031) RX_TASK: 0x3ffb7384   a3 15 70 09 e6 59 59 03  00 9c 15 70 09 df 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4041) RX_TASK: 0x3ffb7394   03 00 9a 15 70 09 dd 59  59 03 00 9d 15 70 09 e0  |....p..YY....p..|[0m
+[0;32mI (4051) RX_TASK: 0x3ffb73a4   59 59 03 00 9f 15 70 09  e2 59 59 03 00 97 15 70  |YY....p..YY....p|[0m
+[0;32mI (4061) RX_TASK: 0x3ffb73b4   09 da 59 59 03 00 a0 15  70 09 e3 59 59 03 00 a1  |..YY....p..YY...|[0m
+[0;32mI (4071) RX_TASK: 0x3ffb73c4   15 70 09 e4 59 59 03 00  a1 15 70 09 e4 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4081) RX_TASK: 0x3ffb73d4   00 a3 15 70 09 e6 59 59  03 00 a6 15 70 09 e9 59  |...p..YY....p..Y|[0m
+[0;32mI (4091) RX_TASK: 0x3ffb73e4   59 03 00 a3 15 70 09 e6  59 59 03 00 9f 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4101) RX_TASK: 0x3ffb73f4   e2 59 59 03 00 a0 15 70  09 e3 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (4111) RX_TASK: 0x3ffb7404   70 09 e5 59 59 03 00 a0  15 70 09 e3 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4111) RX_TASK: 0x3ffb7414   9d 15 70 09 e0 59 59 03  00 a1 15 70 09 e4 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4121) RX_TASK: 0x3ffb7424   03 00 a0 15 70 09 e3 59  59 03 00 a3 15 70 09 e6  |....p..YY....p..|[0m
+[0;32mI (4131) RX_TASK: 0x3ffb7434   59 59 03 00 a8 15 70 09  eb 59 59 03 00 a4 15 70  |YY....p..YY....p|[0m
+[0;32mI (4141) RX_TASK: 0x3ffb7444   09 e7 59 59 03 00 9f 15  70 09 e2 59 59 03 00 9b  |..YY....p..YY...|[0m
+[0;32mI (4151) RX_TASK: 0x3ffb7454   15 70 09 de 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4161) RX_TASK: 0x3ffb7464   00 9f 15 70 09 e2 59 59  03 00 a0 15 70 09 e3 59  |...p..YY....p..Y|[0m
+[0;32mI (4171) RX_TASK: 0x3ffb7474   59 03 00 9f 15 70 09 e2  59 59 03 00 9c 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4181) RX_TASK: 0x3ffb7484   df 59 59 03 00 a0 15 70  09 e3 59 59 03 00 9f 15  |.YY....p..YY....|[0m
+[0;32mI (4191) RX_TASK: 0x3ffb7494   70 09 e2 59 59 03 00 a7  15 70 09 ea 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4201) RX_TASK: 0x3ffb74a4   9c 15 70 09 df 59 59 03  00 9d 15 70 09 e0 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4211) RX_TASK: 0x3ffb74b4   03 00 9c 15 70 09 df 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (4221) RX_TASK: 0x3ffb74c4   59 59 03 00 9d 15 70 09  e0 59 59 03 00 9d 15 70  |YY....p..YY....p|[0m
+[0;32mI (4231) RX_TASK: 0x3ffb74d4   09 e0 59 59 03 00 9a 15  70 09 dd 59 59 03 00 9e  |..YY....p..YY...|[0m
+[0;32mI (4241) RX_TASK: 0x3ffb74e4   15 70 09 e1 59 59 03 00  9b 15 70 09 de 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4251) RX_TASK: 0x3ffb74f4   00 9e 15 70 09 e1 59 59  03 00 9e 15 70 09 e1 59  |...p..YY....p..Y|[0m
+[0;32mI (4261) RX_TASK: 0x3ffb7504   59 03 00 a0 15 70 09 e3  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4271) RX_TASK: 0x3ffb7514   e1 59 59 03 00 a2 15 70  09 e5 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (4281) RX_TASK: 0x3ffb7524   70 09 e0 59 59 03 00 9b  15 70 09 de 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4291) RX_TASK: 0x3ffb7534   9b 15 70 09 de 59 59 03  00 9c 15 70 09 df 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4301) RX_TASK: 0x3ffb7544   03 00 a0 15 70 09 e3 59  59 03 00 a6 15 70 09 e9  |....p..YY....p..|[0m
+[0;32mI (4311) RX_TASK: 0x3ffb7554   59 59 03 00 9c 15 70 09  df 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (4321) RX_TASK: 0x3ffb7564   09 e4 59 59 03 00 a4 15  70 09 e7 59 59 03 00 a5  |..YY....p..YY...|[0m
+[0;32mI (4331) TX_TASK: Wrote 11 bytes[0m
+[0;32mI (4331) RX_TASK: 0x3ffb7574   15 70 09 e8 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4341) RX_TASK: 0x3ffb7584   00 a1 15 70 09 e4 59 59  03 00 9f 15 70 09 e2 59  |...p..YY....p..Y|[0m
+[0;32mI (4351) RX_TASK: 0x3ffb7594   59 03 00 9c 15 70 09 df  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4361) RX_TASK: 0x3ffb75a4   e3 59 59 03 00 9c 15 70  09 df 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (4371) RX_TASK: 0x3ffb75b4   70 09 e5 59 59 03 00 a1  15 70 09 e4 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (4381) RX_TASK: 0x3ffb75c4   a0 15 70 09 e3 59 59 03  00 9f 15 70 09 e2 59 59  |..p..YY....p..YY|[0m
+[0;32mI (4391) RX_TASK: 0x3ffb75d4   03 00 a2 15 70 09 e5 59  59 03 00 97 15 70 09 da  |....p..YY....p..|[0m
+[0;32mI (4401) RX_TASK: 0x3ffb75e4   59 59 03 00 9d 15 70 09  e0 59 59 03 00 a5 15 70  |YY....p..YY....p|[0m
+[0;32mI (4411) RX_TASK: 0x3ffb75f4   09 e8 59 59 03 00 9f 15  70 09 e2 59 59 03 00 a1  |..YY....p..YY...|[0m
+[0;32mI (4421) RX_TASK: 0x3ffb7604   15 70 09 e4 59 59 03 00  97 15 70 09 da 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (4971) RX_TASK: Read 1024 bytes: ''[0m
+[0;32mI (4971) RX_TASK: 0x3ffb7214   00 96 15 70 09 d9 59 59  03 00 a2 15 70 09 e5 59  |...p..YY....p..Y|[0m
+[0;32mI (4971) RX_TASK: 0x3ffb7224   59 03 00 a5 15 70 09 e8  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (4981) RX_TASK: 0x3ffb7234   e1 59 59 03 00 a0 15 70  09 e3 59 59 03 00 a0 15  |.YY....p..YY....|[0m
+[0;32mI (4991) RX_TASK: 0x3ffb7244   70 09 e3 59 59 03 00 a0  15 70 09 e3 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (5001) RX_TASK: 0x3ffb7254   9f 15 70 09 e2 59 59 03  00 9f 15 70 09 e2 59 59  |..p..YY....p..YY|[0m
+[0;32mI (5011) RX_TASK: 0x3ffb7264   03 00 9c 15 70 09 df 59  59 03 00 9f 15 70 09 e2  |....p..YY....p..|[0m
+[0;32mI (5021) RX_TASK: 0x3ffb7274   59 59 03 00 9e 15 70 09  e1 59 59 03 00 a4 15 70  |YY....p..YY....p|[0m
+[0;32mI (5031) RX_TASK: 0x3ffb7284   09 e7 59 59 03 00 9f 15  70 09 e2 59 59 03 00 a9  |..YY....p..YY...|[0m
+[0;32mI (5041) RX_TASK: 0x3ffb7294   15 70 09 ec 59 59 03 00  a0 15 70 09 e3 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (5051) RX_TASK: 0x3ffb72a4   00 a3 15 70 09 e6 59 59  03 00 a7 15 70 09 ea 59  |...p..YY....p..Y|[0m
+[0;32mI (5061) RX_TASK: 0x3ffb72b4   59 03 00 9b 15 70 09 de  59 59 03 00 a0 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (5071) RX_TASK: 0x3ffb72c4   e3 59 59 03 00 a2 15 70  09 e5 59 59 03 00 9b 15  |.YY....p..YY....|[0m
+[0;32mI (5081) RX_TASK: 0x3ffb72d4   70 09 de 59 59 03 00 9f  15 70 09 e2 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (5091) RX_TASK: 0x3ffb72e4   a0 15 70 09 e3 59 59 03  00 a6 15 70 09 e9 59 59  |..p..YY....p..YY|[0m
+[0;32mI (5101) RX_TASK: 0x3ffb72f4   03 00 9b 15 70 09 de 59  59 03 00 a2 15 70 09 e5  |....p..YY....p..|[0m
+[0;32mI (5111) RX_TASK: 0x3ffb7304   59 59 03 00 9a 15 70 09  dd 59 59 03 00 9b 15 70  |YY....p..YY....p|[0m
+[0;32mI (5121) RX_TASK: 0x3ffb7314   09 de 59 59 03 00 9f 15  70 09 e2 59 59 03 00 a0  |..YY....p..YY...|[0m
+[0;32mI (5131) RX_TASK: 0x3ffb7324   15 70 09 e3 59 59 03 00  9b 15 70 09 de 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (5141) RX_TASK: 0x3ffb7334   00 9f 15 70 09 e2 59 59  03 00 a2 15 70 09 e5 59  |...p..YY....p..Y|[0m
+[0;32mI (5151) RX_TASK: 0x3ffb7344   59 03 00 a5 15 70 09 e8  59 59 03 00 a4 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (5161) RX_TASK: 0x3ffb7354   e7 59 59 03 00 a5 15 70  09 e8 59 59 03 00 9e 15  |.YY....p..YY....|[0m
+[0;32mI (5171) RX_TASK: 0x3ffb7364   70 09 e1 59 59 03 00 9c  15 70 09 df 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (5181) RX_TASK: 0x3ffb7374   a4 15 70 09 e7 59 59 03  00 9b 15 70 09 de 59 59  |..p..YY....p..YY|[0m
+[0;32mI (5191) RX_TASK: 0x3ffb7384   03 00 9d 15 70 09 e0 59  59 03 00 9b 15 70 09 de  |....p..YY....p..|[0m
+[0;32mI (5201) RX_TASK: 0x3ffb7394   59 59 03 00 a4 15 70 09  e7 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (5211) RX_TASK: 0x3ffb73a4   09 e4 59 59 03 00 a5 15  70 09 e8 59 59 03 00 9d  |..YY....p..YY...|[0m
+[0;32mI (5221) RX_TASK: 0x3ffb73b4   15 70 09 e0 59 59 03 00  a2 15 70 09 e5 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (5231) RX_TASK: 0x3ffb73c4   00 a6 15 70 09 e9 59 59  03 00 9c 15 70 09 df 59  |...p..YY....p..Y|[0m
+[0;32mI (5241) RX_TASK: 0x3ffb73d4   59 03 00 a1 15 70 09 e4  59 59 03 00 9e 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (5251) RX_TASK: 0x3ffb73e4   e1 59 59 03 00 9b 15 70  09 de 59 59 03 00 9b 15  |.YY....p..YY....|[0m
+[0;32mI (5261) RX_TASK: 0x3ffb73f4   70 09 de 59 59 03 00 a1  15 70 09 e4 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (5271) RX_TASK: 0x3ffb7404   a4 15 70 09 e7 59 59 03  00 9d 15 70 09 e0 59 59  |..p..YY....p..YY|[0m
+[0;32mI (5281) RX_TASK: 0x3ffb7414   03 00 a3 15 70 09 e6 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (5291) RX_TASK: 0x3ffb7424   59 59 03 00 9c 15 70 09  df 59 59 03 00 9a 15 70  |YY....p..YY....p|[0m
+[0;32mI (5301) RX_TASK: 0x3ffb7434   09 dd 59 59 03 00 98 15  70 09 db 59 59 03 00 9d  |..YY....p..YY...|[0m
+[0;32mI (5311) RX_TASK: 0x3ffb7444   15 70 09 e0 59 59 03 00  9e 15 70 09 e1 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (5311) RX_TASK: 0x3ffb7454   00 9f 15 70 09 e2 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (5321) RX_TASK: 0x3ffb7464   59 03 00 a3 15 70 09 e6  59 59 03 00 9d 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (5331) RX_TASK: 0x3ffb7474   e0 59 59 03 00 a2 15 70  09 e5 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (5341) RX_TASK: 0x3ffb7484   70 09 e0 59 59 03 00 9b  15 70 09 de 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (5351) RX_TASK: 0x3ffb7494   9f 15 70 09 e2 59 59 03  00 9f 15 70 09 e2 59 59  |..p..YY....p..YY|[0m
+[0;32mI (5361) RX_TASK: 0x3ffb74a4   03 00 97 15 70 09 da 59  59 03 00 97 15 70 09 da  |....p..YY....p..|[0m
+[0;32mI (5371) RX_TASK: 0x3ffb74b4   59 59 03 00 99 15 70 09  dc 59 59 03 00 9e 15 70  |YY....p..YY....p|[0m
+[0;32mI (5381) RX_TASK: 0x3ffb74c4   09 e1 59 59 03 00 a2 15  70 09 e5 59 59 03 00 9f  |..YY....p..YY...|[0m
+[0;32mI (5391) RX_TASK: 0x3ffb74d4   15 70 09 e2 59 59 03 00  a2 15 70 09 e5 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (5401) RX_TASK: 0x3ffb74e4   00 a3 15 70 09 e6 59 59  03 00 9f 15 70 09 e2 59  |...p..YY....p..Y|[0m
+[0;32mI (5411) RX_TASK: 0x3ffb74f4   59 03 00 9a 15 70 09 dd  59 59 03 00 a2 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (5421) RX_TASK: 0x3ffb7504   e5 59 59 03 00 a0 15 70  09 e3 59 59 03 00 9a 15  |.YY....p..YY....|[0m
+[0;32mI (5431) RX_TASK: 0x3ffb7514   70 09 dd 59 59 03 00 9a  15 70 09 dd 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (5441) RX_TASK: 0x3ffb7524   9b 15 70 09 de 59 59 03  00 a2 15 70 09 e5 59 59  |..p..YY....p..YY|[0m
+[0;32mI (5451) RX_TASK: 0x3ffb7534   03 00 a4 15 70 09 e7 59  59 03 00 95 15 70 09 d8  |....p..YY....p..|[0m
+[0;32mI (5461) RX_TASK: 0x3ffb7544   59 59 03 00 a2 15 70 09  e5 59 59 03 00 a1 15 70  |YY....p..YY....p|[0m
+[0;32mI (5471) RX_TASK: 0x3ffb7554   09 e4 59 59 03 00 9c 15  70 09 df 59 59 03 00 9c  |..YY....p..YY...|[0m
+[0;32mI (5481) RX_TASK: 0x3ffb7564   15 70 09 df 59 59 03 00  a8 15 70 09 eb 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (5491) RX_TASK: 0x3ffb7574   00 9f 15 70 09 e2 59 59  03 00 a0 15 70 09 e3 59  |...p..YY....p..Y|[0m
+[0;32mI (5501) RX_TASK: 0x3ffb7584   59 03 00 a0 15 70 09 e3  59 59 03 00 9a 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (5511) RX_TASK: 0x3ffb7594   dd 59 59 03 00 a0 15 70  09 e3 59 59 03 00 9d 15  |.YY....p..YY....|[0m
+[0;32mI (5521) RX_TASK: 0x3ffb75a4   70 09 e0 59 59 03 00 9a  15 70 09 dd 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (5531) RX_TASK: 0x3ffb75b4   9f 15 70 09 e2 59 59 03  00 9b 15 70 09 de 59 59  |..p..YY....p..YY|[0m
+[0;32mI (5541) RX_TASK: 0x3ffb75c4   03 00 a0 15 70 09 e3 59  59 03 00 9d 15 70 09 e0  |....p..YY....p..|[0m
+[0;32mI (5551) RX_TASK: 0x3ffb75d4   59 59 03 00 9b 15 70 09  de 59 59 03 00 98 15 70  |YY....p..YY....p|[0m
+[0;32mI (5561) RX_TASK: 0x3ffb75e4   09 db 59 59 03 00 9f 15  70 09 e2 59 59 03 00 9e  |..YY....p..YY...|[0m
+[0;32mI (5571) RX_TASK: 0x3ffb75f4   15 70 09 e1 59 59 03 00  96 15 70 09 d9 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (5581) RX_TASK: 0x3ffb7604   00 a0 15 70 09 e3 59 59  03 00 a1 15 70 09 e4 59  |...p..YY....p..Y|[0m
+[0;32mI (6121) RX_TASK: Read 1024 bytes: 'Y'[0m
+[0;32mI (6121) RX_TASK: 0x3ffb7214   59 03 00 a0 15 70 09 e3  59 59 03 00 9f 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (6131) RX_TASK: 0x3ffb7224   e2 59 59 03 00 a2 15 70  09 e5 59 59 03 00 9f 15  |.YY....p..YY....|[0m
+[0;32mI (6141) RX_TASK: 0x3ffb7234   70 09 e2 59 59 03 00 a2  15 70 09 e5 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (6151) RX_TASK: 0x3ffb7244   a5 15 70 09 e8 59 59 03  00 9f 15 70 09 e2 59 59  |..p..YY....p..YY|[0m
+[0;32mI (6161) RX_TASK: 0x3ffb7254   03 00 a4 15 70 09 e7 59  59 03 00 a0 15 70 09 e3  |....p..YY....p..|[0m
+[0;32mI (6161) RX_TASK: 0x3ffb7264   59 59 03 00 a3 15 70 09  e6 59 59 03 00 ad 15 70  |YY....p..YY....p|[0m
+[0;32mI (6171) RX_TASK: 0x3ffb7274   09 f0 59 59 03 00 a2 15  70 09 e5 59 59 03 00 a8  |..YY....p..YY...|[0m
+[0;32mI (6181) RX_TASK: 0x3ffb7284   15 70 09 eb 59 59 03 00  ab 15 70 09 ee 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (6191) RX_TASK: 0x3ffb7294   00 aa 15 70 09 ed 59 59  03 00 a5 15 70 09 e8 59  |...p..YY....p..Y|[0m
+[0;32mI (6201) RX_TASK: 0x3ffb72a4   59 03 00 a5 15 70 09 e8  59 59 03 00 af 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (6211) RX_TASK: 0x3ffb72b4   f2 59 59 03 00 a3 15 70  09 e6 59 59 03 00 a1 15  |.YY....p..YY....|[0m
+[0;32mI (6221) RX_TASK: 0x3ffb72c4   70 09 e4 59 59 03 00 aa  15 70 09 ed 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (6231) RX_TASK: 0x3ffb72d4   a8 15 70 09 eb 59 59 03  00 a3 15 70 09 e6 59 59  |..p..YY....p..YY|[0m
+[0;32mI (6241) RX_TASK: 0x3ffb72e4   03 00 a4 15 70 09 e7 59  59 03 00 a4 15 70 09 e7  |....p..YY....p..|[0m
+[0;32mI (6251) RX_TASK: 0x3ffb72f4   59 59 03 00 a9 15 70 09  ec 59 59 03 00 a0 15 70  |YY....p..YY....p|[0m
+[0;32mI (6261) RX_TASK: 0x3ffb7304   09 e3 59 59 03 00 a6 15  70 09 e9 59 59 03 00 a3  |..YY....p..YY...|[0m
+[0;32mI (6271) RX_TASK: 0x3ffb7314   15 70 09 e6 59 59 03 00  9d 15 70 09 e0 59 59 03  |.p..YY....p..YY.|[0m
+[0;32mI (6281) RX_TASK: 0x3ffb7324   00 a0 15 70 09 e3 59 59  03 00 a0 15 70 09 e3 59  |...p..YY....p..Y|[0m
+[0;32mI (6291) RX_TASK: 0x3ffb7334   59 03 00 a4 15 70 09 e7  59 59 03 00 9f 15 70 09  |Y....p..YY....p.|[0m
+[0;32mI (6301) RX_TASK: 0x3ffb7344   e2 59 59 03 00 a3 15 70  09 e6 59 59 03 00 a2 15  |.YY....p..YY....|[0m
+[0;32mI (6311) RX_TASK: 0x3ffb7354   70 09 e5 59 59 03 00 a3  15 70 09 e6 59 59 03 00  |p..YY....p..YY..|[0m
+[0;32mI (6321) RX_TASK: 0x3ffb7364   a4 15 70 09 e7 59 59 03  00 a1 15 70 09 e4 59 59  |..p..YY....p..YY|[0m

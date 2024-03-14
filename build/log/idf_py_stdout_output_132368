@@ -1,0 +1,2555 @@
+(210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:   �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-1288-g5524b692ee-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb 23 2024 13:22:45[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ad60h ( 44384) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ad88 vaddr=3ffb0000 size=02268h (  8808) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001cff8 vaddr=40080000 size=03020h ( 12320) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=164fch ( 91388) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00036524 vaddr=40083020 size=0a79ch ( 42908) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     lidar[0m
+[0;32mI (217) cpu_start: App version:      1[0m
+[0;32mI (222) cpu_start: Compile time:     Feb 23 2024 13:22:39[0m
+[0;32mI (228) cpu_start: ELF file SHA256:  8314e0fe6...[0m
+[0;32mI (233) cpu_start: ESP-IDF:          v5.3-dev-1288-g5524b692ee-dirty[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D7BC len 00012844 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) main_task: Returned from app_main()[0m
+[0;32mI (346) RX_TASK: dist = 1[0m
+[0;31mE (346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (356) RX_TASK: dist = 1[0m
+[0;31mE (356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (366) RX_TASK: dist = 1[0m
+[0;31mE (366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (376) RX_TASK: dist = 1[0m
+[0;31mE (376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (386) RX_TASK: dist = 1[0m
+[0;31mE (386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (396) RX_TASK: dist = 1[0m
+[0;31mE (396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (406) RX_TASK: dist = 1[0m
+[0;31mE (406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (416) RX_TASK: dist = 1[0m
+[0;31mE (416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (426) RX_TASK: dist = 1[0m
+[0;31mE (426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (436) RX_TASK: dist = 1[0m
+[0;31mE (436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (446) RX_TASK: dist = 1[0m
+[0;31mE (446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (456) RX_TASK: dist = 1[0m
+[0;31mE (456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (466) RX_TASK: dist = 1[0m
+[0;31mE (466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (476) RX_TASK: dist = 1[0m
+[0;31mE (476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (486) RX_TASK: dist = 1[0m
+[0;31mE (486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (496) RX_TASK: dist = 1[0m
+[0;31mE (496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (506) RX_TASK: dist = 1[0m
+[0;31mE (506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (516) RX_TASK: dist = 1[0m
+[0;31mE (516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (526) RX_TASK: dist = 1[0m
+[0;31mE (526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (536) RX_TASK: dist = 1[0m
+[0;31mE (536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (546) RX_TASK: dist = 1[0m
+[0;31mE (546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (556) RX_TASK: dist = 1[0m
+[0;31mE (556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (566) RX_TASK: dist = 1[0m
+[0;31mE (566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (576) RX_TASK: dist = 1[0m
+[0;31mE (576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (586) RX_TASK: dist = 1[0m
+[0;31mE (586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (596) RX_TASK: dist = 1[0m
+[0;31mE (596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (606) RX_TASK: dist = 1[0m
+[0;31mE (606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (616) RX_TASK: dist = 1[0m
+[0;31mE (616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (626) RX_TASK: dist = 1[0m
+[0;31mE (626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (636) RX_TASK: dist = 1[0m
+[0;31mE (636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (656) RX_TASK: dist = 1[0m
+[0;31mE (656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (666) RX_TASK: dist = 1[0m
+[0;31mE (666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (676) RX_TASK: dist = 1[0m
+[0;31mE (676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (686) RX_TASK: dist = 1[0m
+[0;31mE (686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (696) RX_TASK: dist = 1[0m
+[0;31mE (696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (706) RX_TASK: dist = 1[0m
+[0;31mE (706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (716) RX_TASK: dist = 1[0m
+[0;31mE (716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (726) RX_TASK: dist = 1[0m
+[0;31mE (726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (736) RX_TASK: dist = 1[0m
+[0;31mE (736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (746) RX_TASK: dist = 1[0m
+[0;31mE (746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (756) RX_TASK: dist = 1[0m
+[0;31mE (756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (766) RX_TASK: dist = 1[0m
+[0;31mE (766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (776) RX_TASK: dist = 1[0m
+[0;31mE (776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (786) RX_TASK: dist = 1[0m
+[0;31mE (786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (796) RX_TASK: dist = 1[0m
+[0;31mE (796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (806) RX_TASK: dist = 1[0m
+[0;31mE (806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (816) RX_TASK: dist = 1[0m
+[0;31mE (816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (826) RX_TASK: dist = 1[0m
+[0;31mE (826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (836) RX_TASK: dist = 1[0m
+[0;31mE (836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (846) RX_TASK: dist = 1[0m
+[0;31mE (846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (856) RX_TASK: dist = 1[0m
+[0;31mE (856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (866) RX_TASK: dist = 1[0m
+[0;31mE (866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (876) RX_TASK: dist = 1[0m
+[0;31mE (876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (886) RX_TASK: dist = 1[0m
+[0;31mE (886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (896) RX_TASK: dist = 0[0m
+[0;31mE (896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (906) RX_TASK: dist = 1[0m
+[0;31mE (906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (916) RX_TASK: dist = 1[0m
+[0;31mE (916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (926) RX_TASK: dist = 1[0m
+[0;31mE (926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (936) RX_TASK: dist = 1[0m
+[0;31mE (936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (946) RX_TASK: dist = 1[0m
+[0;31mE (946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (956) RX_TASK: dist = 1[0m
+[0;31mE (956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (966) RX_TASK: dist = 1[0m
+[0;31mE (966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (976) RX_TASK: dist = 1[0m
+[0;31mE (976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (986) RX_TASK: dist = 1[0m
+[0;31mE (986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (996) RX_TASK: dist = 1[0m
+[0;31mE (996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1006) RX_TASK: dist = 1[0m
+[0;31mE (1006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1016) RX_TASK: dist = 1[0m
+[0;31mE (1016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1026) RX_TASK: dist = 1[0m
+[0;31mE (1026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1036) RX_TASK: dist = 1[0m
+[0;31mE (1036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1046) RX_TASK: dist = 1[0m
+[0;31mE (1046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1056) RX_TASK: dist = 1[0m
+[0;31mE (1056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1066) RX_TASK: dist = 1[0m
+[0;31mE (1066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1076) RX_TASK: dist = 1[0m
+[0;31mE (1076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1086) RX_TASK: dist = 1[0m
+[0;31mE (1086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1096) RX_TASK: dist = 1[0m
+[0;31mE (1096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1106) RX_TASK: dist = 1[0m
+[0;31mE (1106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1116) RX_TASK: dist = 1[0m
+[0;31mE (1116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1126) RX_TASK: dist = 1[0m
+[0;31mE (1126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1136) RX_TASK: dist = 1[0m
+[0;31mE (1136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1146) RX_TASK: dist = 1[0m
+[0;31mE (1146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1156) RX_TASK: dist = 1[0m
+[0;31mE (1156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1166) RX_TASK: dist = 1[0m
+[0;31mE (1166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1176) RX_TASK: dist = 1[0m
+[0;31mE (1176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1186) RX_TASK: dist = 1[0m
+[0;31mE (1186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1196) RX_TASK: dist = 1[0m
+[0;31mE (1196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1206) RX_TASK: dist = 1[0m
+[0;31mE (1206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1216) RX_TASK: dist = 1[0m
+[0;31mE (1216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1236) RX_TASK: dist = 1[0m
+[0;31mE (1236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1246) RX_TASK: dist = 1[0m
+[0;31mE (1246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1256) RX_TASK: dist = 1[0m
+[0;31mE (1256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1266) RX_TASK: dist = 1[0m
+[0;31mE (1266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1276) RX_TASK: dist = 1[0m
+[0;31mE (1276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1286) RX_TASK: dist = 1[0m
+[0;31mE (1286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1296) RX_TASK: dist = 1[0m
+[0;31mE (1296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1306) RX_TASK: dist = 1[0m
+[0;31mE (1306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1316) RX_TASK: dist = 1[0m
+[0;31mE (1316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1326) RX_TASK: dist = 1[0m
+[0;31mE (1326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1336) RX_TASK: dist = 1[0m
+[0;31mE (1336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1346) RX_TASK: dist = 1[0m
+[0;31mE (1346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1356) RX_TASK: dist = 1[0m
+[0;31mE (1356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1366) RX_TASK: dist = 1[0m
+[0;31mE (1366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1376) RX_TASK: dist = 1[0m
+[0;31mE (1376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1386) RX_TASK: dist = 1[0m
+[0;31mE (1386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1396) RX_TASK: dist = 1[0m
+[0;31mE (1396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1406) RX_TASK: dist = 1[0m
+[0;31mE (1406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1416) RX_TASK: dist = 1[0m
+[0;31mE (1416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1426) RX_TASK: dist = 1[0m
+[0;31mE (1426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1436) RX_TASK: dist = 1[0m
+[0;31mE (1436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1446) RX_TASK: dist = 1[0m
+[0;31mE (1446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1456) RX_TASK: dist = 1[0m
+[0;31mE (1456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1466) RX_TASK: dist = 1[0m
+[0;31mE (1466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1476) RX_TASK: dist = 1[0m
+[0;31mE (1476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1486) RX_TASK: dist = 1[0m
+[0;31mE (1486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1496) RX_TASK: dist = 1[0m
+[0;31mE (1496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1506) RX_TASK: dist = 1[0m
+[0;31mE (1506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1516) RX_TASK: dist = 1[0m
+[0;31mE (1516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1526) RX_TASK: dist = 1[0m
+[0;31mE (1526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1536) RX_TASK: dist = 1[0m
+[0;31mE (1536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1546) RX_TASK: dist = 1[0m
+[0;31mE (1546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1556) RX_TASK: dist = 1[0m
+[0;31mE (1556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1566) RX_TASK: dist = 1[0m
+[0;31mE (1566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1576) RX_TASK: dist = 1[0m
+[0;31mE (1576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1586) RX_TASK: dist = 1[0m
+[0;31mE (1586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1596) RX_TASK: dist = 1[0m
+[0;31mE (1596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1606) RX_TASK: dist = 1[0m
+[0;31mE (1606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1616) RX_TASK: dist = 1[0m
+[0;31mE (1616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1626) RX_TASK: dist = 1[0m
+[0;31mE (1626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1636) RX_TASK: dist = 1[0m
+[0;31mE (1636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1646) RX_TASK: dist = 1[0m
+[0;31mE (1646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1656) RX_TASK: dist = 1[0m
+[0;31mE (1656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1666) RX_TASK: dist = 1[0m
+[0;31mE (1666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1676) RX_TASK: dist = 1[0m
+[0;31mE (1676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1686) RX_TASK: dist = 1[0m
+[0;31mE (1686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1696) RX_TASK: dist = 1[0m
+[0;31mE (1696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1706) RX_TASK: dist = 1[0m
+[0;31mE (1706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1716) RX_TASK: dist = 1[0m
+[0;31mE (1716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1726) RX_TASK: dist = 1[0m
+[0;31mE (1726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1736) RX_TASK: dist = 1[0m
+[0;31mE (1736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1746) RX_TASK: dist = 1[0m
+[0;31mE (1746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1756) RX_TASK: dist = 1[0m
+[0;31mE (1756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1766) RX_TASK: dist = 1[0m
+[0;31mE (1766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1776) RX_TASK: dist = 1[0m
+[0;31mE (1776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1786) RX_TASK: dist = 1[0m
+[0;31mE (1786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1806) RX_TASK: dist = 1[0m
+[0;31mE (1806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1816) RX_TASK: dist = 1[0m
+[0;31mE (1816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1826) RX_TASK: dist = 1[0m
+[0;31mE (1826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1836) RX_TASK: dist = 1[0m
+[0;31mE (1836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1846) RX_TASK: dist = 1[0m
+[0;31mE (1846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1856) RX_TASK: dist = 1[0m
+[0;31mE (1856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1866) RX_TASK: dist = 1[0m
+[0;31mE (1866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1876) RX_TASK: dist = 1[0m
+[0;31mE (1876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1886) RX_TASK: dist = 1[0m
+[0;31mE (1886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1896) RX_TASK: dist = 1[0m
+[0;31mE (1896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1906) RX_TASK: dist = 1[0m
+[0;31mE (1906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1916) RX_TASK: dist = 1[0m
+[0;31mE (1916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1926) RX_TASK: dist = 1[0m
+[0;31mE (1926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1936) RX_TASK: dist = 1[0m
+[0;31mE (1936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1946) RX_TASK: dist = 1[0m
+[0;31mE (1946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1956) RX_TASK: dist = 1[0m
+[0;31mE (1956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1966) RX_TASK: dist = 1[0m
+[0;31mE (1966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1976) RX_TASK: dist = 1[0m
+[0;31mE (1976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1986) RX_TASK: dist = 1[0m
+[0;31mE (1986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (1996) RX_TASK: dist = 1[0m
+[0;31mE (1996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2006) RX_TASK: dist = 1[0m
+[0;31mE (2006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2016) RX_TASK: dist = 1[0m
+[0;31mE (2016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2026) RX_TASK: dist = 1[0m
+[0;31mE (2026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2036) RX_TASK: dist = 1[0m
+[0;31mE (2036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2046) RX_TASK: dist = 1[0m
+[0;31mE (2046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2056) RX_TASK: dist = 1[0m
+[0;31mE (2056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2066) RX_TASK: dist = 1[0m
+[0;31mE (2066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2076) RX_TASK: dist = 1[0m
+[0;31mE (2076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2086) RX_TASK: dist = 1[0m
+[0;31mE (2086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2096) RX_TASK: dist = 1[0m
+[0;31mE (2096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2106) RX_TASK: dist = 0[0m
+[0;31mE (2106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2116) RX_TASK: dist = 1[0m
+[0;31mE (2116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2126) RX_TASK: dist = 1[0m
+[0;31mE (2126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2136) RX_TASK: dist = 1[0m
+[0;31mE (2136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2146) RX_TASK: dist = 1[0m
+[0;31mE (2146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2156) RX_TASK: dist = 1[0m
+[0;31mE (2156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2166) RX_TASK: dist = 1[0m
+[0;31mE (2166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2176) RX_TASK: dist = 1[0m
+[0;31mE (2176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2186) RX_TASK: dist = 1[0m
+[0;31mE (2186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2196) RX_TASK: dist = 1[0m
+[0;31mE (2196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2206) RX_TASK: dist = 1[0m
+[0;31mE (2206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2216) RX_TASK: dist = 1[0m
+[0;31mE (2216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2226) RX_TASK: dist = 1[0m
+[0;31mE (2226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2236) RX_TASK: dist = 0[0m
+[0;31mE (2236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2246) RX_TASK: dist = 1[0m
+[0;31mE (2246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2256) RX_TASK: dist = 1[0m
+[0;31mE (2256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2266) RX_TASK: dist = 1[0m
+[0;31mE (2266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2276) RX_TASK: dist = 1[0m
+[0;31mE (2276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2286) RX_TASK: dist = 1[0m
+[0;31mE (2286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2296) RX_TASK: dist = 1[0m
+[0;31mE (2296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2306) RX_TASK: dist = 1[0m
+[0;31mE (2306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2316) RX_TASK: dist = 1[0m
+[0;31mE (2316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2326) RX_TASK: dist = 1[0m
+[0;31mE (2326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2336) RX_TASK: dist = 0[0m
+[0;31mE (2336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2346) RX_TASK: dist = 1[0m
+[0;31mE (2346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2356) RX_TASK: dist = 1[0m
+[0;31mE (2356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2366) RX_TASK: dist = 1[0m
+[0;31mE (2366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2386) RX_TASK: dist = 1[0m
+[0;31mE (2386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2396) RX_TASK: dist = 1[0m
+[0;31mE (2396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2406) RX_TASK: dist = 1[0m
+[0;31mE (2406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2416) RX_TASK: dist = 1[0m
+[0;31mE (2416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2426) RX_TASK: dist = 1[0m
+[0;31mE (2426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2436) RX_TASK: dist = 1[0m
+[0;31mE (2436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2446) RX_TASK: dist = 1[0m
+[0;31mE (2446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2456) RX_TASK: dist = 1[0m
+[0;31mE (2456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2466) RX_TASK: dist = 1[0m
+[0;31mE (2466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2476) RX_TASK: dist = 1[0m
+[0;31mE (2476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2486) RX_TASK: dist = 1[0m
+[0;31mE (2486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2496) RX_TASK: dist = 0[0m
+[0;31mE (2496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2506) RX_TASK: dist = 0[0m
+[0;31mE (2506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2516) RX_TASK: dist = 1[0m
+[0;31mE (2516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2526) RX_TASK: dist = 1[0m
+[0;31mE (2526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2536) RX_TASK: dist = 1[0m
+[0;31mE (2536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2546) RX_TASK: dist = 1[0m
+[0;31mE (2546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2556) RX_TASK: dist = 1[0m
+[0;31mE (2556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2566) RX_TASK: dist = 1[0m
+[0;31mE (2566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2576) RX_TASK: dist = 1[0m
+[0;31mE (2576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2586) RX_TASK: dist = 1[0m
+[0;31mE (2586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2596) RX_TASK: dist = 0[0m
+[0;31mE (2596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2606) RX_TASK: dist = 1[0m
+[0;31mE (2606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2616) RX_TASK: dist = 1[0m
+[0;31mE (2616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2626) RX_TASK: dist = 1[0m
+[0;31mE (2626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2636) RX_TASK: dist = 1[0m
+[0;31mE (2636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2646) RX_TASK: dist = 1[0m
+[0;31mE (2646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2656) RX_TASK: dist = 1[0m
+[0;31mE (2656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2666) RX_TASK: dist = 1[0m
+[0;31mE (2666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2676) RX_TASK: dist = 1[0m
+[0;31mE (2676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2686) RX_TASK: dist = 1[0m
+[0;31mE (2686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2696) RX_TASK: dist = 1[0m
+[0;31mE (2696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2706) RX_TASK: dist = 1[0m
+[0;31mE (2706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2716) RX_TASK: dist = 1[0m
+[0;31mE (2716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2726) RX_TASK: dist = 1[0m
+[0;31mE (2726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2736) RX_TASK: dist = 1[0m
+[0;31mE (2736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2746) RX_TASK: dist = 1[0m
+[0;31mE (2746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2756) RX_TASK: dist = 1[0m
+[0;31mE (2756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2766) RX_TASK: dist = 1[0m
+[0;31mE (2766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2776) RX_TASK: dist = 1[0m
+[0;31mE (2776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2786) RX_TASK: dist = 1[0m
+[0;31mE (2786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2796) RX_TASK: dist = 1[0m
+[0;31mE (2796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2806) RX_TASK: dist = 1[0m
+[0;31mE (2806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2816) RX_TASK: dist = 1[0m
+[0;31mE (2816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2826) RX_TASK: dist = 1[0m
+[0;31mE (2826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2836) RX_TASK: dist = 1[0m
+[0;31mE (2836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2846) RX_TASK: dist = 1[0m
+[0;31mE (2846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2856) RX_TASK: dist = 1[0m
+[0;31mE (2856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2866) RX_TASK: dist = 1[0m
+[0;31mE (2866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2876) RX_TASK: dist = 1[0m
+[0;31mE (2876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2886) RX_TASK: dist = 0[0m
+[0;31mE (2886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2896) RX_TASK: dist = 0[0m
+[0;31mE (2896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2906) RX_TASK: dist = 0[0m
+[0;31mE (2906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2916) RX_TASK: dist = 0[0m
+[0;31mE (2916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2926) RX_TASK: dist = 0[0m
+[0;31mE (2926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2936) RX_TASK: dist = 0[0m
+[0;31mE (2936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2946) RX_TASK: dist = 1[0m
+[0;31mE (2946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2966) RX_TASK: dist = 1[0m
+[0;31mE (2966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2976) RX_TASK: dist = 1[0m
+[0;31mE (2976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2986) RX_TASK: dist = 2[0m
+[0;31mE (2986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (2996) RX_TASK: dist = 2[0m
+[0;31mE (2996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3006) RX_TASK: dist = 3[0m
+[0;31mE (3006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3016) RX_TASK: dist = 3[0m
+[0;31mE (3016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3026) RX_TASK: dist = 3[0m
+[0;31mE (3026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3036) RX_TASK: dist = 3[0m
+[0;31mE (3036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3046) RX_TASK: dist = 3[0m
+[0;31mE (3046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3056) RX_TASK: dist = 3[0m
+[0;31mE (3056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3066) RX_TASK: dist = 3[0m
+[0;31mE (3066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3076) RX_TASK: dist = 3[0m
+[0;31mE (3076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3086) RX_TASK: dist = 3[0m
+[0;31mE (3086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3096) RX_TASK: dist = 4[0m
+[0;31mE (3096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3106) RX_TASK: dist = 4[0m
+[0;31mE (3106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3116) RX_TASK: dist = 3[0m
+[0;31mE (3116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3126) RX_TASK: dist = 4[0m
+[0;31mE (3126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3136) RX_TASK: dist = 4[0m
+[0;31mE (3136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3146) RX_TASK: dist = 4[0m
+[0;31mE (3146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3156) RX_TASK: dist = 4[0m
+[0;31mE (3156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3166) RX_TASK: dist = 4[0m
+[0;31mE (3166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3176) RX_TASK: dist = 3[0m
+[0;31mE (3176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3186) RX_TASK: dist = 4[0m
+[0;31mE (3186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3196) RX_TASK: dist = 4[0m
+[0;31mE (3196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3206) RX_TASK: dist = 3[0m
+[0;31mE (3206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3216) RX_TASK: dist = 3[0m
+[0;31mE (3216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3226) RX_TASK: dist = 3[0m
+[0;31mE (3226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3236) RX_TASK: dist = 3[0m
+[0;31mE (3236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3246) RX_TASK: dist = 3[0m
+[0;31mE (3246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3256) RX_TASK: dist = 3[0m
+[0;31mE (3256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3266) RX_TASK: dist = 3[0m
+[0;31mE (3266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3276) RX_TASK: dist = 3[0m
+[0;31mE (3276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3286) RX_TASK: dist = 3[0m
+[0;31mE (3286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3296) RX_TASK: dist = 3[0m
+[0;31mE (3296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3306) RX_TASK: dist = 4[0m
+[0;31mE (3306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3316) RX_TASK: dist = 4[0m
+[0;31mE (3316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3326) RX_TASK: dist = 4[0m
+[0;31mE (3326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3336) RX_TASK: dist = 4[0m
+[0;31mE (3336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3346) RX_TASK: dist = 4[0m
+[0;31mE (3346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3356) RX_TASK: dist = 4[0m
+[0;31mE (3356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3366) RX_TASK: dist = 4[0m
+[0;31mE (3366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3376) RX_TASK: dist = 4[0m
+[0;31mE (3376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3386) RX_TASK: dist = 5[0m
+[0;31mE (3386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3396) RX_TASK: dist = 5[0m
+[0;31mE (3396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3406) RX_TASK: dist = 5[0m
+[0;31mE (3406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3416) RX_TASK: dist = 5[0m
+[0;31mE (3416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3426) RX_TASK: dist = 5[0m
+[0;31mE (3426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3436) RX_TASK: dist = 5[0m
+[0;31mE (3436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3446) RX_TASK: dist = 6[0m
+[0;31mE (3446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3456) RX_TASK: dist = 6[0m
+[0;31mE (3456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3466) RX_TASK: dist = 6[0m
+[0;31mE (3466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3476) RX_TASK: dist = 7[0m
+[0;31mE (3476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3486) RX_TASK: dist = 7[0m
+[0;31mE (3486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3496) RX_TASK: dist = 7[0m
+[0;31mE (3496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3506) RX_TASK: dist = 7[0m
+[0;31mE (3506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3516) RX_TASK: dist = 7[0m
+[0;31mE (3516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3526) RX_TASK: dist = 7[0m
+[0;31mE (3526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3546) RX_TASK: dist = 7[0m
+[0;31mE (3546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3556) RX_TASK: dist = 8[0m
+[0;31mE (3556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3566) RX_TASK: dist = 8[0m
+[0;31mE (3566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3576) RX_TASK: dist = 8[0m
+[0;31mE (3576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3586) RX_TASK: dist = 9[0m
+[0;31mE (3586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3596) RX_TASK: dist = 10[0m
+[0;31mE (3596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3606) RX_TASK: dist = 12[0m
+[0;31mE (3606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3616) RX_TASK: dist = 13[0m
+[0;31mE (3616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3626) RX_TASK: dist = 13[0m
+[0;31mE (3626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3636) RX_TASK: dist = 14[0m
+[0;31mE (3636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3646) RX_TASK: dist = 14[0m
+[0;31mE (3646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3656) RX_TASK: dist = 14[0m
+[0;31mE (3656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3666) RX_TASK: dist = 15[0m
+[0;31mE (3666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3676) RX_TASK: dist = 15[0m
+[0;31mE (3676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3686) RX_TASK: dist = 16[0m
+[0;31mE (3686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3696) RX_TASK: dist = 16[0m
+[0;31mE (3696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3706) RX_TASK: dist = 16[0m
+[0;31mE (3706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3716) RX_TASK: dist = 16[0m
+[0;31mE (3716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3726) RX_TASK: dist = 16[0m
+[0;31mE (3726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3736) RX_TASK: dist = 15[0m
+[0;31mE (3736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3746) RX_TASK: dist = 15[0m
+[0;31mE (3746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3756) RX_TASK: dist = 14[0m
+[0;31mE (3756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3766) RX_TASK: dist = 14[0m
+[0;31mE (3766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3776) RX_TASK: dist = 14[0m
+[0;31mE (3776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3786) RX_TASK: dist = 14[0m
+[0;31mE (3786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3796) RX_TASK: dist = 13[0m
+[0;31mE (3796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3806) RX_TASK: dist = 13[0m
+[0;31mE (3806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3816) RX_TASK: dist = 13[0m
+[0;31mE (3816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3826) RX_TASK: dist = 12[0m
+[0;31mE (3826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3836) RX_TASK: dist = 13[0m
+[0;31mE (3836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3846) RX_TASK: dist = 13[0m
+[0;31mE (3846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3856) RX_TASK: dist = 13[0m
+[0;31mE (3856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3866) RX_TASK: dist = 13[0m
+[0;31mE (3866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3876) RX_TASK: dist = 14[0m
+[0;31mE (3876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3886) RX_TASK: dist = 14[0m
+[0;31mE (3886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3896) RX_TASK: dist = 14[0m
+[0;31mE (3896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3906) RX_TASK: dist = 14[0m
+[0;31mE (3906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3916) RX_TASK: dist = 15[0m
+[0;31mE (3916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3926) RX_TASK: dist = 15[0m
+[0;31mE (3926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3936) RX_TASK: dist = 15[0m
+[0;31mE (3936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3946) RX_TASK: dist = 16[0m
+[0;31mE (3946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3956) RX_TASK: dist = 16[0m
+[0;31mE (3956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3966) RX_TASK: dist = 16[0m
+[0;31mE (3966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3976) RX_TASK: dist = 17[0m
+[0;31mE (3976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3986) RX_TASK: dist = 17[0m
+[0;31mE (3986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (3996) RX_TASK: dist = 17[0m
+[0;31mE (3996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4006) RX_TASK: dist = 17[0m
+[0;31mE (4006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4016) RX_TASK: dist = 18[0m
+[0;31mE (4016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4026) RX_TASK: dist = 18[0m
+[0;31mE (4026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4036) RX_TASK: dist = 18[0m
+[0;31mE (4036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4046) RX_TASK: dist = 19[0m
+[0;31mE (4046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4056) RX_TASK: dist = 19[0m
+[0;31mE (4056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4066) RX_TASK: dist = 19[0m
+[0;31mE (4066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4076) RX_TASK: dist = 20[0m
+[0;31mE (4076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4086) RX_TASK: dist = 20[0m
+[0;31mE (4086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4096) RX_TASK: dist = 21[0m
+[0;31mE (4096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4106) RX_TASK: dist = 21[0m
+[0;31mE (4106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4126) RX_TASK: dist = 22[0m
+[0;31mE (4126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4136) RX_TASK: dist = 22[0m
+[0;31mE (4136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4146) RX_TASK: dist = 22[0m
+[0;31mE (4146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4156) RX_TASK: dist = 23[0m
+[0;31mE (4156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4166) RX_TASK: dist = 23[0m
+[0;31mE (4166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4176) RX_TASK: dist = 24[0m
+[0;31mE (4176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4186) RX_TASK: dist = 24[0m
+[0;31mE (4186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4196) RX_TASK: dist = 24[0m
+[0;31mE (4196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4206) RX_TASK: dist = 24[0m
+[0;31mE (4206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4216) RX_TASK: dist = 24[0m
+[0;31mE (4216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4226) RX_TASK: dist = 25[0m
+[0;31mE (4226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4236) RX_TASK: dist = 25[0m
+[0;31mE (4236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4246) RX_TASK: dist = 25[0m
+[0;31mE (4246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4256) RX_TASK: dist = 25[0m
+[0;31mE (4256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4266) RX_TASK: dist = 24[0m
+[0;31mE (4266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4276) RX_TASK: dist = 25[0m
+[0;31mE (4276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4286) RX_TASK: dist = 26[0m
+[0;31mE (4286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4296) RX_TASK: dist = 26[0m
+[0;31mE (4296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4306) RX_TASK: dist = 27[0m
+[0;31mE (4306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4316) RX_TASK: dist = 27[0m
+[0;31mE (4316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4326) RX_TASK: dist = 28[0m
+[0;31mE (4326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4336) RX_TASK: dist = 28[0m
+[0;31mE (4336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4346) RX_TASK: dist = 29[0m
+[0;31mE (4346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4356) RX_TASK: dist = 29[0m
+[0;31mE (4356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4366) RX_TASK: dist = 29[0m
+[0;31mE (4366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4376) RX_TASK: dist = 30[0m
+[0;31mE (4376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4386) RX_TASK: dist = 30[0m
+[0;31mE (4386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4396) RX_TASK: dist = 30[0m
+[0;31mE (4396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4406) RX_TASK: dist = 30[0m
+[0;31mE (4406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4416) RX_TASK: dist = 30[0m
+[0;31mE (4416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4426) RX_TASK: dist = 30[0m
+[0;31mE (4426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4436) RX_TASK: dist = 30[0m
+[0;31mE (4436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4446) RX_TASK: dist = 30[0m
+[0;31mE (4446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4456) RX_TASK: dist = 30[0m
+[0;31mE (4456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4466) RX_TASK: dist = 30[0m
+[0;31mE (4466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4476) RX_TASK: dist = 30[0m
+[0;31mE (4476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4486) RX_TASK: dist = 29[0m
+[0;31mE (4486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4496) RX_TASK: dist = 29[0m
+[0;31mE (4496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4506) RX_TASK: dist = 28[0m
+[0;31mE (4506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4516) RX_TASK: dist = 27[0m
+[0;31mE (4516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4526) RX_TASK: dist = 28[0m
+[0;31mE (4526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4536) RX_TASK: dist = 28[0m
+[0;31mE (4536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4546) RX_TASK: dist = 27[0m
+[0;31mE (4546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4556) RX_TASK: dist = 25[0m
+[0;31mE (4556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4566) RX_TASK: dist = 23[0m
+[0;31mE (4566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4576) RX_TASK: dist = 23[0m
+[0;31mE (4576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4586) RX_TASK: dist = 22[0m
+[0;31mE (4586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4596) RX_TASK: dist = 21[0m
+[0;31mE (4596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4606) RX_TASK: dist = 21[0m
+[0;31mE (4606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4616) RX_TASK: dist = 21[0m
+[0;31mE (4616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4626) RX_TASK: dist = 22[0m
+[0;31mE (4626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4636) RX_TASK: dist = 22[0m
+[0;31mE (4636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4646) RX_TASK: dist = 22[0m
+[0;31mE (4646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4656) RX_TASK: dist = 22[0m
+[0;31mE (4656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4666) RX_TASK: dist = 22[0m
+[0;31mE (4666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4676) RX_TASK: dist = 22[0m
+[0;31mE (4676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4696) RX_TASK: dist = 22[0m
+[0;31mE (4696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4706) RX_TASK: dist = 22[0m
+[0;31mE (4706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4716) RX_TASK: dist = 21[0m
+[0;31mE (4716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4726) RX_TASK: dist = 21[0m
+[0;31mE (4726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4736) RX_TASK: dist = 20[0m
+[0;31mE (4736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4746) RX_TASK: dist = 20[0m
+[0;31mE (4746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4756) RX_TASK: dist = 21[0m
+[0;31mE (4756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4766) RX_TASK: dist = 20[0m
+[0;31mE (4766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4776) RX_TASK: dist = 20[0m
+[0;31mE (4776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4786) RX_TASK: dist = 20[0m
+[0;31mE (4786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4796) RX_TASK: dist = 20[0m
+[0;31mE (4796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4806) RX_TASK: dist = 19[0m
+[0;31mE (4806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4816) RX_TASK: dist = 20[0m
+[0;31mE (4816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4826) RX_TASK: dist = 19[0m
+[0;31mE (4826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4836) RX_TASK: dist = 19[0m
+[0;31mE (4836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4846) RX_TASK: dist = 18[0m
+[0;31mE (4846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4856) RX_TASK: dist = 19[0m
+[0;31mE (4856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4866) RX_TASK: dist = 19[0m
+[0;31mE (4866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4876) RX_TASK: dist = 18[0m
+[0;31mE (4876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4886) RX_TASK: dist = 18[0m
+[0;31mE (4886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4896) RX_TASK: dist = 19[0m
+[0;31mE (4896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4906) RX_TASK: dist = 18[0m
+[0;31mE (4906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4916) RX_TASK: dist = 18[0m
+[0;31mE (4916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4926) RX_TASK: dist = 18[0m
+[0;31mE (4926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4936) RX_TASK: dist = 18[0m
+[0;31mE (4936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4946) RX_TASK: dist = 18[0m
+[0;31mE (4946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4956) RX_TASK: dist = 18[0m
+[0;31mE (4956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4966) RX_TASK: dist = 17[0m
+[0;31mE (4966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4976) RX_TASK: dist = 18[0m
+[0;31mE (4976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4986) RX_TASK: dist = 17[0m
+[0;31mE (4986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (4996) RX_TASK: dist = 17[0m
+[0;31mE (4996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5006) RX_TASK: dist = 18[0m
+[0;31mE (5006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5016) RX_TASK: dist = 18[0m
+[0;31mE (5016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5026) RX_TASK: dist = 17[0m
+[0;31mE (5026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5036) RX_TASK: dist = 17[0m
+[0;31mE (5036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5046) RX_TASK: dist = 17[0m
+[0;31mE (5046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5056) RX_TASK: dist = 17[0m
+[0;31mE (5056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5066) RX_TASK: dist = 17[0m
+[0;31mE (5066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5076) RX_TASK: dist = 18[0m
+[0;31mE (5076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5086) RX_TASK: dist = 17[0m
+[0;31mE (5086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5096) RX_TASK: dist = 17[0m
+[0;31mE (5096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5106) RX_TASK: dist = 17[0m
+[0;31mE (5106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5116) RX_TASK: dist = 17[0m
+[0;31mE (5116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5126) RX_TASK: dist = 17[0m
+[0;31mE (5126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5136) RX_TASK: dist = 17[0m
+[0;31mE (5136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5146) RX_TASK: dist = 17[0m
+[0;31mE (5146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5156) RX_TASK: dist = 18[0m
+[0;31mE (5156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5166) RX_TASK: dist = 17[0m
+[0;31mE (5166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5176) RX_TASK: dist = 17[0m
+[0;31mE (5176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5186) RX_TASK: dist = 17[0m
+[0;31mE (5186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5196) RX_TASK: dist = 17[0m
+[0;31mE (5196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5206) RX_TASK: dist = 17[0m
+[0;31mE (5206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5216) RX_TASK: dist = 17[0m
+[0;31mE (5216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5226) RX_TASK: dist = 17[0m
+[0;31mE (5226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5236) RX_TASK: dist = 17[0m
+[0;31mE (5236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5246) RX_TASK: dist = 17[0m
+[0;31mE (5246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5256) RX_TASK: dist = 17[0m
+[0;31mE (5256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5266) RX_TASK: dist = 17[0m
+[0;31mE (5266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5286) RX_TASK: dist = 17[0m
+[0;31mE (5286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5296) RX_TASK: dist = 17[0m
+[0;31mE (5296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5306) RX_TASK: dist = 17[0m
+[0;31mE (5306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5316) RX_TASK: dist = 17[0m
+[0;31mE (5316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5326) RX_TASK: dist = 17[0m
+[0;31mE (5326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5336) RX_TASK: dist = 17[0m
+[0;31mE (5336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5346) RX_TASK: dist = 17[0m
+[0;31mE (5346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5356) RX_TASK: dist = 17[0m
+[0;31mE (5356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5366) RX_TASK: dist = 17[0m
+[0;31mE (5366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5376) RX_TASK: dist = 17[0m
+[0;31mE (5376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5386) RX_TASK: dist = 17[0m
+[0;31mE (5386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5396) RX_TASK: dist = 17[0m
+[0;31mE (5396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5406) RX_TASK: dist = 17[0m
+[0;31mE (5406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5416) RX_TASK: dist = 17[0m
+[0;31mE (5416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5426) RX_TASK: dist = 16[0m
+[0;31mE (5426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5436) RX_TASK: dist = 17[0m
+[0;31mE (5436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5446) RX_TASK: dist = 17[0m
+[0;31mE (5446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5456) RX_TASK: dist = 16[0m
+[0;31mE (5456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5466) RX_TASK: dist = 17[0m
+[0;31mE (5466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5476) RX_TASK: dist = 16[0m
+[0;31mE (5476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5486) RX_TASK: dist = 17[0m
+[0;31mE (5486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5496) RX_TASK: dist = 17[0m
+[0;31mE (5496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5506) RX_TASK: dist = 17[0m
+[0;31mE (5506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5516) RX_TASK: dist = 17[0m
+[0;31mE (5516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5526) RX_TASK: dist = 17[0m
+[0;31mE (5526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5536) RX_TASK: dist = 17[0m
+[0;31mE (5536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5546) RX_TASK: dist = 17[0m
+[0;31mE (5546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5556) RX_TASK: dist = 16[0m
+[0;31mE (5556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5566) RX_TASK: dist = 17[0m
+[0;31mE (5566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5576) RX_TASK: dist = 17[0m
+[0;31mE (5576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5586) RX_TASK: dist = 17[0m
+[0;31mE (5586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5596) RX_TASK: dist = 17[0m
+[0;31mE (5596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5606) RX_TASK: dist = 17[0m
+[0;31mE (5606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5616) RX_TASK: dist = 17[0m
+[0;31mE (5616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5626) RX_TASK: dist = 17[0m
+[0;31mE (5626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5636) RX_TASK: dist = 17[0m
+[0;31mE (5636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5646) RX_TASK: dist = 18[0m
+[0;31mE (5646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5656) RX_TASK: dist = 17[0m
+[0;31mE (5656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5666) RX_TASK: dist = 18[0m
+[0;31mE (5666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5676) RX_TASK: dist = 19[0m
+[0;31mE (5676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5686) RX_TASK: dist = 19[0m
+[0;31mE (5686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5696) RX_TASK: dist = 16[0m
+[0;31mE (5696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5706) RX_TASK: dist = 17[0m
+[0;31mE (5706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5716) RX_TASK: dist = 17[0m
+[0;31mE (5716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5726) RX_TASK: dist = 18[0m
+[0;31mE (5726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5736) RX_TASK: dist = 20[0m
+[0;31mE (5736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5746) RX_TASK: dist = 17[0m
+[0;31mE (5746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5756) RX_TASK: dist = 19[0m
+[0;31mE (5756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5766) RX_TASK: dist = 21[0m
+[0;31mE (5766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5776) RX_TASK: dist = 22[0m
+[0;31mE (5776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5786) RX_TASK: dist = 22[0m
+[0;31mE (5786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5796) RX_TASK: dist = 22[0m
+[0;31mE (5796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5806) RX_TASK: dist = 22[0m
+[0;31mE (5806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5816) RX_TASK: dist = 22[0m
+[0;31mE (5816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5826) RX_TASK: dist = 21[0m
+[0;31mE (5826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5836) RX_TASK: dist = 22[0m
+[0;31mE (5836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5846) RX_TASK: dist = 24[0m
+[0;31mE (5846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5866) RX_TASK: dist = 24[0m
+[0;31mE (5866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5876) RX_TASK: dist = 25[0m
+[0;31mE (5876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5886) RX_TASK: dist = 25[0m
+[0;31mE (5886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5896) RX_TASK: dist = 25[0m
+[0;31mE (5896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5906) RX_TASK: dist = 26[0m
+[0;31mE (5906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5916) RX_TASK: dist = 26[0m
+[0;31mE (5916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5926) RX_TASK: dist = 27[0m
+[0;31mE (5926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5936) RX_TASK: dist = 28[0m
+[0;31mE (5936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5946) RX_TASK: dist = 28[0m
+[0;31mE (5946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5956) RX_TASK: dist = 28[0m
+[0;31mE (5956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5966) RX_TASK: dist = 27[0m
+[0;31mE (5966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5976) RX_TASK: dist = 27[0m
+[0;31mE (5976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5986) RX_TASK: dist = 28[0m
+[0;31mE (5986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (5996) RX_TASK: dist = 28[0m
+[0;31mE (5996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6006) RX_TASK: dist = 28[0m
+[0;31mE (6006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6016) RX_TASK: dist = 28[0m
+[0;31mE (6016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6026) RX_TASK: dist = 28[0m
+[0;31mE (6026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6036) RX_TASK: dist = 29[0m
+[0;31mE (6036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6046) RX_TASK: dist = 29[0m
+[0;31mE (6046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6056) RX_TASK: dist = 29[0m
+[0;31mE (6056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6066) RX_TASK: dist = 29[0m
+[0;31mE (6066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6076) RX_TASK: dist = 30[0m
+[0;31mE (6076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6086) RX_TASK: dist = 30[0m
+[0;31mE (6086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6096) RX_TASK: dist = 30[0m
+[0;31mE (6096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6106) RX_TASK: dist = 30[0m
+[0;31mE (6106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6116) RX_TASK: dist = 30[0m
+[0;31mE (6116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6126) RX_TASK: dist = 30[0m
+[0;31mE (6126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6136) RX_TASK: dist = 30[0m
+[0;31mE (6136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6146) RX_TASK: dist = 30[0m
+[0;31mE (6146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6156) RX_TASK: dist = 30[0m
+[0;31mE (6156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6166) RX_TASK: dist = 30[0m
+[0;31mE (6166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6176) RX_TASK: dist = 30[0m
+[0;31mE (6176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6186) RX_TASK: dist = 30[0m
+[0;31mE (6186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6196) RX_TASK: dist = 30[0m
+[0;31mE (6196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6206) RX_TASK: dist = 30[0m
+[0;31mE (6206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6216) RX_TASK: dist = 29[0m
+[0;31mE (6216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6226) RX_TASK: dist = 30[0m
+[0;31mE (6226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6236) RX_TASK: dist = 30[0m
+[0;31mE (6236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6246) RX_TASK: dist = 30[0m
+[0;31mE (6246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6256) RX_TASK: dist = 30[0m
+[0;31mE (6256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6266) RX_TASK: dist = 30[0m
+[0;31mE (6266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6276) RX_TASK: dist = 31[0m
+[0;31mE (6276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6286) RX_TASK: dist = 30[0m
+[0;31mE (6286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6296) RX_TASK: dist = 30[0m
+[0;31mE (6296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6306) RX_TASK: dist = 31[0m
+[0;31mE (6306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6316) RX_TASK: dist = 31[0m
+[0;31mE (6316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6326) RX_TASK: dist = 31[0m
+[0;31mE (6326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6336) RX_TASK: dist = 32[0m
+[0;31mE (6336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6346) RX_TASK: dist = 32[0m
+[0;31mE (6346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6356) RX_TASK: dist = 32[0m
+[0;31mE (6356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6366) RX_TASK: dist = 32[0m
+[0;31mE (6366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6376) RX_TASK: dist = 32[0m
+[0;31mE (6376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6386) RX_TASK: dist = 33[0m
+[0;31mE (6386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6396) RX_TASK: dist = 33[0m
+[0;31mE (6396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6406) RX_TASK: dist = 32[0m
+[0;31mE (6406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6416) RX_TASK: dist = 33[0m
+[0;31mE (6416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6426) RX_TASK: dist = 33[0m
+[0;31mE (6426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6446) RX_TASK: dist = 33[0m
+[0;31mE (6446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6456) RX_TASK: dist = 34[0m
+[0;31mE (6456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6466) RX_TASK: dist = 34[0m
+[0;31mE (6466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6476) RX_TASK: dist = 35[0m
+[0;31mE (6476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6486) RX_TASK: dist = 35[0m
+[0;31mE (6486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6496) RX_TASK: dist = 35[0m
+[0;31mE (6496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6506) RX_TASK: dist = 35[0m
+[0;31mE (6506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6516) RX_TASK: dist = 36[0m
+[0;31mE (6516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6526) RX_TASK: dist = 36[0m
+[0;31mE (6526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6536) RX_TASK: dist = 36[0m
+[0;31mE (6536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6546) RX_TASK: dist = 36[0m
+[0;31mE (6546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6556) RX_TASK: dist = 36[0m
+[0;31mE (6556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6566) RX_TASK: dist = 36[0m
+[0;31mE (6566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6576) RX_TASK: dist = 37[0m
+[0;31mE (6576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6586) RX_TASK: dist = 38[0m
+[0;31mE (6586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6596) RX_TASK: dist = 38[0m
+[0;31mE (6596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6606) RX_TASK: dist = 38[0m
+[0;31mE (6606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6616) RX_TASK: dist = 39[0m
+[0;31mE (6616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6626) RX_TASK: dist = 39[0m
+[0;31mE (6626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6636) RX_TASK: dist = 40[0m
+[0;31mE (6636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6646) RX_TASK: dist = 40[0m
+[0;31mE (6646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6656) RX_TASK: dist = 40[0m
+[0;31mE (6656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6666) RX_TASK: dist = 40[0m
+[0;31mE (6666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6676) RX_TASK: dist = 39[0m
+[0;31mE (6676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6686) RX_TASK: dist = 39[0m
+[0;31mE (6686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6696) RX_TASK: dist = 38[0m
+[0;31mE (6696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6706) RX_TASK: dist = 37[0m
+[0;31mE (6706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6716) RX_TASK: dist = 37[0m
+[0;31mE (6716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6726) RX_TASK: dist = 37[0m
+[0;31mE (6726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6736) RX_TASK: dist = 38[0m
+[0;31mE (6736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6746) RX_TASK: dist = 39[0m
+[0;31mE (6746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6756) RX_TASK: dist = 39[0m
+[0;31mE (6756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6766) RX_TASK: dist = 41[0m
+[0;31mE (6766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6776) RX_TASK: dist = 42[0m
+[0;31mE (6776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6786) RX_TASK: dist = 42[0m
+[0;31mE (6786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6796) RX_TASK: dist = 43[0m
+[0;31mE (6796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6806) RX_TASK: dist = 43[0m
+[0;31mE (6806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6816) RX_TASK: dist = 42[0m
+[0;31mE (6816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6826) RX_TASK: dist = 43[0m
+[0;31mE (6826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6836) RX_TASK: dist = 43[0m
+[0;31mE (6836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6846) RX_TASK: dist = 43[0m
+[0;31mE (6846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6856) RX_TASK: dist = 44[0m
+[0;31mE (6856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6866) RX_TASK: dist = 44[0m
+[0;31mE (6866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6876) RX_TASK: dist = 43[0m
+[0;31mE (6876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6886) RX_TASK: dist = 43[0m
+[0;31mE (6886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6896) RX_TASK: dist = 44[0m
+[0;31mE (6896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6906) RX_TASK: dist = 43[0m
+[0;31mE (6906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6916) RX_TASK: dist = 42[0m
+[0;31mE (6916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6926) RX_TASK: dist = 43[0m
+[0;31mE (6926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6936) RX_TASK: dist = 41[0m
+[0;31mE (6936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6946) RX_TASK: dist = 42[0m
+[0;31mE (6946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6956) RX_TASK: dist = 42[0m
+[0;31mE (6956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6966) RX_TASK: dist = 44[0m
+[0;31mE (6966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6976) RX_TASK: dist = 43[0m
+[0;31mE (6976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6986) RX_TASK: dist = 43[0m
+[0;31mE (6986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (6996) RX_TASK: dist = 44[0m
+[0;31mE (6996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7006) RX_TASK: dist = 45[0m
+[0;31mE (7006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7016) RX_TASK: dist = 46[0m
+[0;31mE (7016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7036) RX_TASK: dist = 47[0m
+[0;31mE (7036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7046) RX_TASK: dist = 47[0m
+[0;31mE (7046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7056) RX_TASK: dist = 48[0m
+[0;31mE (7056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7066) RX_TASK: dist = 48[0m
+[0;31mE (7066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7076) RX_TASK: dist = 49[0m
+[0;31mE (7076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7086) RX_TASK: dist = 49[0m
+[0;31mE (7086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7096) RX_TASK: dist = 49[0m
+[0;31mE (7096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7106) RX_TASK: dist = 49[0m
+[0;31mE (7106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7116) RX_TASK: dist = 49[0m
+[0;31mE (7116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7126) RX_TASK: dist = 49[0m
+[0;31mE (7126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7136) RX_TASK: dist = 49[0m
+[0;31mE (7136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7146) RX_TASK: dist = 49[0m
+[0;31mE (7146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7156) RX_TASK: dist = 49[0m
+[0;31mE (7156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7166) RX_TASK: dist = 49[0m
+[0;31mE (7166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7176) RX_TASK: dist = 49[0m
+[0;31mE (7176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7186) RX_TASK: dist = 49[0m
+[0;31mE (7186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7196) RX_TASK: dist = 49[0m
+[0;31mE (7196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7206) RX_TASK: dist = 49[0m
+[0;31mE (7206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7216) RX_TASK: dist = 49[0m
+[0;31mE (7216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7226) RX_TASK: dist = 50[0m
+[0;31mE (7226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7236) RX_TASK: dist = 50[0m
+[0;31mE (7236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7246) RX_TASK: dist = 50[0m
+[0;31mE (7246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7256) RX_TASK: dist = 50[0m
+[0;31mE (7256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7266) RX_TASK: dist = 51[0m
+[0;31mE (7266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7276) RX_TASK: dist = 50[0m
+[0;31mE (7276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7286) RX_TASK: dist = 51[0m
+[0;31mE (7286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7296) RX_TASK: dist = 50[0m
+[0;31mE (7296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7306) RX_TASK: dist = 51[0m
+[0;31mE (7306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7316) RX_TASK: dist = 51[0m
+[0;31mE (7316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7326) RX_TASK: dist = 51[0m
+[0;31mE (7326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7336) RX_TASK: dist = 51[0m
+[0;31mE (7336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7346) RX_TASK: dist = 51[0m
+[0;31mE (7346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7356) RX_TASK: dist = 51[0m
+[0;31mE (7356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7366) RX_TASK: dist = 51[0m
+[0;31mE (7366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7376) RX_TASK: dist = 51[0m
+[0;31mE (7376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7386) RX_TASK: dist = 51[0m
+[0;31mE (7386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7396) RX_TASK: dist = 51[0m
+[0;31mE (7396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7406) RX_TASK: dist = 51[0m
+[0;31mE (7406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7416) RX_TASK: dist = 52[0m
+[0;31mE (7416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7426) RX_TASK: dist = 52[0m
+[0;31mE (7426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7436) RX_TASK: dist = 52[0m
+[0;31mE (7436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7446) RX_TASK: dist = 52[0m
+[0;31mE (7446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7456) RX_TASK: dist = 52[0m
+[0;31mE (7456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7466) RX_TASK: dist = 52[0m
+[0;31mE (7466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7476) RX_TASK: dist = 52[0m
+[0;31mE (7476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7486) RX_TASK: dist = 52[0m
+[0;31mE (7486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7496) RX_TASK: dist = 52[0m
+[0;31mE (7496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7506) RX_TASK: dist = 52[0m
+[0;31mE (7506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7516) RX_TASK: dist = 52[0m
+[0;31mE (7516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7526) RX_TASK: dist = 53[0m
+[0;31mE (7526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7536) RX_TASK: dist = 53[0m
+[0;31mE (7536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7546) RX_TASK: dist = 53[0m
+[0;31mE (7546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7556) RX_TASK: dist = 53[0m
+[0;31mE (7556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7566) RX_TASK: dist = 53[0m
+[0;31mE (7566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7576) RX_TASK: dist = 53[0m
+[0;31mE (7576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7586) RX_TASK: dist = 53[0m
+[0;31mE (7586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7596) RX_TASK: dist = 53[0m
+[0;31mE (7596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7616) RX_TASK: dist = 54[0m
+[0;31mE (7616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7626) RX_TASK: dist = 54[0m
+[0;31mE (7626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7636) RX_TASK: dist = 54[0m
+[0;31mE (7636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7646) RX_TASK: dist = 54[0m
+[0;31mE (7646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7656) RX_TASK: dist = 54[0m
+[0;31mE (7656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7666) RX_TASK: dist = 54[0m
+[0;31mE (7666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7676) RX_TASK: dist = 54[0m
+[0;31mE (7676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7686) RX_TASK: dist = 54[0m
+[0;31mE (7686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7696) RX_TASK: dist = 54[0m
+[0;31mE (7696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7706) RX_TASK: dist = 54[0m
+[0;31mE (7706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7716) RX_TASK: dist = 55[0m
+[0;31mE (7716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7726) RX_TASK: dist = 55[0m
+[0;31mE (7726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7736) RX_TASK: dist = 55[0m
+[0;31mE (7736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7746) RX_TASK: dist = 55[0m
+[0;31mE (7746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7756) RX_TASK: dist = 55[0m
+[0;31mE (7756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7766) RX_TASK: dist = 55[0m
+[0;31mE (7766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7776) RX_TASK: dist = 55[0m
+[0;31mE (7776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7786) RX_TASK: dist = 56[0m
+[0;31mE (7786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7796) RX_TASK: dist = 56[0m
+[0;31mE (7796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7806) RX_TASK: dist = 57[0m
+[0;31mE (7806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7816) RX_TASK: dist = 57[0m
+[0;31mE (7816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7826) RX_TASK: dist = 58[0m
+[0;31mE (7826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7836) RX_TASK: dist = 58[0m
+[0;31mE (7836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7846) RX_TASK: dist = 59[0m
+[0;31mE (7846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7856) RX_TASK: dist = 59[0m
+[0;31mE (7856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7866) RX_TASK: dist = 59[0m
+[0;31mE (7866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7876) RX_TASK: dist = 60[0m
+[0;31mE (7876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7886) RX_TASK: dist = 60[0m
+[0;31mE (7886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7896) RX_TASK: dist = 60[0m
+[0;31mE (7896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7906) RX_TASK: dist = 60[0m
+[0;31mE (7906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7916) RX_TASK: dist = 60[0m
+[0;31mE (7916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7926) RX_TASK: dist = 60[0m
+[0;31mE (7926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7936) RX_TASK: dist = 60[0m
+[0;31mE (7936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7946) RX_TASK: dist = 60[0m
+[0;31mE (7946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7956) RX_TASK: dist = 60[0m
+[0;31mE (7956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7966) RX_TASK: dist = 60[0m
+[0;31mE (7966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7976) RX_TASK: dist = 60[0m
+[0;31mE (7976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7986) RX_TASK: dist = 60[0m
+[0;31mE (7986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (7996) RX_TASK: dist = 60[0m
+[0;31mE (7996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8006) RX_TASK: dist = 61[0m
+[0;31mE (8006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8016) RX_TASK: dist = 61[0m
+[0;31mE (8016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8026) RX_TASK: dist = 61[0m
+[0;31mE (8026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8036) RX_TASK: dist = 60[0m
+[0;31mE (8036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8046) RX_TASK: dist = 60[0m
+[0;31mE (8046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8056) RX_TASK: dist = 60[0m
+[0;31mE (8056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8066) RX_TASK: dist = 60[0m
+[0;31mE (8066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8076) RX_TASK: dist = 60[0m
+[0;31mE (8076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8086) RX_TASK: dist = 60[0m
+[0;31mE (8086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8096) RX_TASK: dist = 60[0m
+[0;31mE (8096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8106) RX_TASK: dist = 60[0m
+[0;31mE (8106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8116) RX_TASK: dist = 59[0m
+[0;31mE (8116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8126) RX_TASK: dist = 59[0m
+[0;31mE (8126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8136) RX_TASK: dist = 59[0m
+[0;31mE (8136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8146) RX_TASK: dist = 59[0m
+[0;31mE (8146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8156) RX_TASK: dist = 59[0m
+[0;31mE (8156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8166) RX_TASK: dist = 59[0m
+[0;31mE (8166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8176) RX_TASK: dist = 58[0m
+[0;31mE (8176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8186) RX_TASK: dist = 58[0m
+[0;31mE (8186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8206) RX_TASK: dist = 58[0m
+[0;31mE (8206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8216) RX_TASK: dist = 58[0m
+[0;31mE (8216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8226) RX_TASK: dist = 57[0m
+[0;31mE (8226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8236) RX_TASK: dist = 57[0m
+[0;31mE (8236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8246) RX_TASK: dist = 56[0m
+[0;31mE (8246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8256) RX_TASK: dist = 55[0m
+[0;31mE (8256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8266) RX_TASK: dist = 55[0m
+[0;31mE (8266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8276) RX_TASK: dist = 54[0m
+[0;31mE (8276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8286) RX_TASK: dist = 54[0m
+[0;31mE (8286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8296) RX_TASK: dist = 54[0m
+[0;31mE (8296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8306) RX_TASK: dist = 53[0m
+[0;31mE (8306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8316) RX_TASK: dist = 53[0m
+[0;31mE (8316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8326) RX_TASK: dist = 52[0m
+[0;31mE (8326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8336) RX_TASK: dist = 52[0m
+[0;31mE (8336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8346) RX_TASK: dist = 52[0m
+[0;31mE (8346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8356) RX_TASK: dist = 51[0m
+[0;31mE (8356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8366) RX_TASK: dist = 51[0m
+[0;31mE (8366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8376) RX_TASK: dist = 50[0m
+[0;31mE (8376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8386) RX_TASK: dist = 49[0m
+[0;31mE (8386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8396) RX_TASK: dist = 49[0m
+[0;31mE (8396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8406) RX_TASK: dist = 48[0m
+[0;31mE (8406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8416) RX_TASK: dist = 48[0m
+[0;31mE (8416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8426) RX_TASK: dist = 47[0m
+[0;31mE (8426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8436) RX_TASK: dist = 47[0m
+[0;31mE (8436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8446) RX_TASK: dist = 46[0m
+[0;31mE (8446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8456) RX_TASK: dist = 46[0m
+[0;31mE (8456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8466) RX_TASK: dist = 46[0m
+[0;31mE (8466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8476) RX_TASK: dist = 46[0m
+[0;31mE (8476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8486) RX_TASK: dist = 45[0m
+[0;31mE (8486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8496) RX_TASK: dist = 45[0m
+[0;31mE (8496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8506) RX_TASK: dist = 44[0m
+[0;31mE (8506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8516) RX_TASK: dist = 43[0m
+[0;31mE (8516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8526) RX_TASK: dist = 43[0m
+[0;31mE (8526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8536) RX_TASK: dist = 41[0m
+[0;31mE (8536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8546) RX_TASK: dist = 40[0m
+[0;31mE (8546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8556) RX_TASK: dist = 37[0m
+[0;31mE (8556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8566) RX_TASK: dist = 36[0m
+[0;31mE (8566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8576) RX_TASK: dist = 36[0m
+[0;31mE (8576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8586) RX_TASK: dist = 36[0m
+[0;31mE (8586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8596) RX_TASK: dist = 36[0m
+[0;31mE (8596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8606) RX_TASK: dist = 35[0m
+[0;31mE (8606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8616) RX_TASK: dist = 35[0m
+[0;31mE (8616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8626) RX_TASK: dist = 35[0m
+[0;31mE (8626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8636) RX_TASK: dist = 33[0m
+[0;31mE (8636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8646) RX_TASK: dist = 32[0m
+[0;31mE (8646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8656) RX_TASK: dist = 31[0m
+[0;31mE (8656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8666) RX_TASK: dist = 30[0m
+[0;31mE (8666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8676) RX_TASK: dist = 28[0m
+[0;31mE (8676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8686) RX_TASK: dist = 27[0m
+[0;31mE (8686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8696) RX_TASK: dist = 26[0m
+[0;31mE (8696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8706) RX_TASK: dist = 26[0m
+[0;31mE (8706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8716) RX_TASK: dist = 25[0m
+[0;31mE (8716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8726) RX_TASK: dist = 24[0m
+[0;31mE (8726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8736) RX_TASK: dist = 23[0m
+[0;31mE (8736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8746) RX_TASK: dist = 23[0m
+[0;31mE (8746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8756) RX_TASK: dist = 22[0m
+[0;31mE (8756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8766) RX_TASK: dist = 21[0m
+[0;31mE (8766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8776) RX_TASK: dist = 19[0m
+[0;31mE (8776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8796) RX_TASK: dist = 19[0m
+[0;31mE (8796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8806) RX_TASK: dist = 19[0m
+[0;31mE (8806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8816) RX_TASK: dist = 18[0m
+[0;31mE (8816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8826) RX_TASK: dist = 18[0m
+[0;31mE (8826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8836) RX_TASK: dist = 18[0m
+[0;31mE (8836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8846) RX_TASK: dist = 18[0m
+[0;31mE (8846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8856) RX_TASK: dist = 17[0m
+[0;31mE (8856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8866) RX_TASK: dist = 17[0m
+[0;31mE (8866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8876) RX_TASK: dist = 17[0m
+[0;31mE (8876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8886) RX_TASK: dist = 16[0m
+[0;31mE (8886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8896) RX_TASK: dist = 16[0m
+[0;31mE (8896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8906) RX_TASK: dist = 15[0m
+[0;31mE (8906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8916) RX_TASK: dist = 15[0m
+[0;31mE (8916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8926) RX_TASK: dist = 14[0m
+[0;31mE (8926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8936) RX_TASK: dist = 13[0m
+[0;31mE (8936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8946) RX_TASK: dist = 13[0m
+[0;31mE (8946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8956) RX_TASK: dist = 12[0m
+[0;31mE (8956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8966) RX_TASK: dist = 12[0m
+[0;31mE (8966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8976) RX_TASK: dist = 11[0m
+[0;31mE (8976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8986) RX_TASK: dist = 11[0m
+[0;31mE (8986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (8996) RX_TASK: dist = 11[0m
+[0;31mE (8996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9006) RX_TASK: dist = 11[0m
+[0;31mE (9006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9016) RX_TASK: dist = 10[0m
+[0;31mE (9016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9026) RX_TASK: dist = 10[0m
+[0;31mE (9026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9036) RX_TASK: dist = 10[0m
+[0;31mE (9036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9046) RX_TASK: dist = 10[0m
+[0;31mE (9046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9056) RX_TASK: dist = 10[0m
+[0;31mE (9056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9066) RX_TASK: dist = 10[0m
+[0;31mE (9066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9076) RX_TASK: dist = 10[0m
+[0;31mE (9076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9086) RX_TASK: dist = 10[0m
+[0;31mE (9086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9096) RX_TASK: dist = 10[0m
+[0;31mE (9096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9106) RX_TASK: dist = 9[0m
+[0;31mE (9106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9116) RX_TASK: dist = 9[0m
+[0;31mE (9116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9126) RX_TASK: dist = 9[0m
+[0;31mE (9126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9136) RX_TASK: dist = 9[0m
+[0;31mE (9136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9146) RX_TASK: dist = 9[0m
+[0;31mE (9146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9156) RX_TASK: dist = 9[0m
+[0;31mE (9156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9166) RX_TASK: dist = 9[0m
+[0;31mE (9166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9176) RX_TASK: dist = 9[0m
+[0;31mE (9176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9186) RX_TASK: dist = 8[0m
+[0;31mE (9186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9196) RX_TASK: dist = 8[0m
+[0;31mE (9196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9206) RX_TASK: dist = 8[0m
+[0;31mE (9206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9216) RX_TASK: dist = 8[0m
+[0;31mE (9216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9226) RX_TASK: dist = 8[0m
+[0;31mE (9226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9236) RX_TASK: dist = 8[0m
+[0;31mE (9236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9246) RX_TASK: dist = 8[0m
+[0;31mE (9246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9256) RX_TASK: dist = 7[0m
+[0;31mE (9256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9266) RX_TASK: dist = 7[0m
+[0;31mE (9266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9276) RX_TASK: dist = 7[0m
+[0;31mE (9276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9286) RX_TASK: dist = 7[0m
+[0;31mE (9286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9296) RX_TASK: dist = 6[0m
+[0;31mE (9296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9306) RX_TASK: dist = 6[0m
+[0;31mE (9306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9316) RX_TASK: dist = 5[0m
+[0;31mE (9316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9326) RX_TASK: dist = 5[0m
+[0;31mE (9326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9336) RX_TASK: dist = 4[0m
+[0;31mE (9336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9346) RX_TASK: dist = 4[0m
+[0;31mE (9346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9356) RX_TASK: dist = 4[0m
+[0;31mE (9356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9376) RX_TASK: dist = 4[0m
+[0;31mE (9376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9386) RX_TASK: dist = 3[0m
+[0;31mE (9386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9396) RX_TASK: dist = 3[0m
+[0;31mE (9396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9406) RX_TASK: dist = 3[0m
+[0;31mE (9406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9416) RX_TASK: dist = 3[0m
+[0;31mE (9416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9426) RX_TASK: dist = 3[0m
+[0;31mE (9426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9436) RX_TASK: dist = 3[0m
+[0;31mE (9436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9446) RX_TASK: dist = 3[0m
+[0;31mE (9446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9456) RX_TASK: dist = 3[0m
+[0;31mE (9456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9466) RX_TASK: dist = 2[0m
+[0;31mE (9466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9476) RX_TASK: dist = 2[0m
+[0;31mE (9476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9486) RX_TASK: dist = 2[0m
+[0;31mE (9486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9496) RX_TASK: dist = 2[0m
+[0;31mE (9496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9506) RX_TASK: dist = 2[0m
+[0;31mE (9506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9516) RX_TASK: dist = 2[0m
+[0;31mE (9516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9526) RX_TASK: dist = 2[0m
+[0;31mE (9526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9536) RX_TASK: dist = 2[0m
+[0;31mE (9536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9546) RX_TASK: dist = 2[0m
+[0;31mE (9546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9556) RX_TASK: dist = 2[0m
+[0;31mE (9556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9566) RX_TASK: dist = 2[0m
+[0;31mE (9566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9576) RX_TASK: dist = 2[0m
+[0;31mE (9576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9586) RX_TASK: dist = 2[0m
+[0;31mE (9586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9596) RX_TASK: dist = 1[0m
+[0;31mE (9596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9606) RX_TASK: dist = 1[0m
+[0;31mE (9606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9616) RX_TASK: dist = 1[0m
+[0;31mE (9616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9626) RX_TASK: dist = 1[0m
+[0;31mE (9626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9636) RX_TASK: dist = 1[0m
+[0;31mE (9636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9646) RX_TASK: dist = 1[0m
+[0;31mE (9646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9656) RX_TASK: dist = 1[0m
+[0;31mE (9656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9666) RX_TASK: dist = 1[0m
+[0;31mE (9666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9676) RX_TASK: dist = 1[0m
+[0;31mE (9676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9686) RX_TASK: dist = 1[0m
+[0;31mE (9686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9696) RX_TASK: dist = 1[0m
+[0;31mE (9696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9706) RX_TASK: dist = 1[0m
+[0;31mE (9706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9716) RX_TASK: dist = 1[0m
+[0;31mE (9716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9726) RX_TASK: dist = 1[0m
+[0;31mE (9726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9736) RX_TASK: dist = 1[0m
+[0;31mE (9736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9746) RX_TASK: dist = 1[0m
+[0;31mE (9746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9756) RX_TASK: dist = 1[0m
+[0;31mE (9756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9766) RX_TASK: dist = 1[0m
+[0;31mE (9766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9776) RX_TASK: dist = 1[0m
+[0;31mE (9776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9786) RX_TASK: dist = 1[0m
+[0;31mE (9786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9796) RX_TASK: dist = 1[0m
+[0;31mE (9796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9806) RX_TASK: dist = 1[0m
+[0;31mE (9806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9816) RX_TASK: dist = 1[0m
+[0;31mE (9816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9826) RX_TASK: dist = 1[0m
+[0;31mE (9826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9836) RX_TASK: dist = 1[0m
+[0;31mE (9836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9846) RX_TASK: dist = 1[0m
+[0;31mE (9846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9856) RX_TASK: dist = 1[0m
+[0;31mE (9856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9866) RX_TASK: dist = 1[0m
+[0;31mE (9866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9876) RX_TASK: dist = 1[0m
+[0;31mE (9876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9886) RX_TASK: dist = 1[0m
+[0;31mE (9886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9896) RX_TASK: dist = 1[0m
+[0;31mE (9896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9906) RX_TASK: dist = 1[0m
+[0;31mE (9906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9916) RX_TASK: dist = 1[0m
+[0;31mE (9916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9926) RX_TASK: dist = 1[0m
+[0;31mE (9926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9936) RX_TASK: dist = 1[0m
+[0;31mE (9936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9946) RX_TASK: dist = 1[0m
+[0;31mE (9946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9966) RX_TASK: dist = 1[0m
+[0;31mE (9966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9976) RX_TASK: dist = 1[0m
+[0;31mE (9976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9986) RX_TASK: dist = 1[0m
+[0;31mE (9986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (9996) RX_TASK: dist = 1[0m
+[0;31mE (9996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10006) RX_TASK: dist = 1[0m
+[0;31mE (10006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10016) RX_TASK: dist = 1[0m
+[0;31mE (10016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10026) RX_TASK: dist = 1[0m
+[0;31mE (10026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10036) RX_TASK: dist = 1[0m
+[0;31mE (10036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10046) RX_TASK: dist = 1[0m
+[0;31mE (10046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10056) RX_TASK: dist = 1[0m
+[0;31mE (10056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10066) RX_TASK: dist = 1[0m
+[0;31mE (10066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10076) RX_TASK: dist = 1[0m
+[0;31mE (10076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10086) RX_TASK: dist = 1[0m
+[0;31mE (10086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10096) RX_TASK: dist = 1[0m
+[0;31mE (10096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10106) RX_TASK: dist = 1[0m
+[0;31mE (10106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10116) RX_TASK: dist = 1[0m
+[0;31mE (10116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10126) RX_TASK: dist = 1[0m
+[0;31mE (10126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10136) RX_TASK: dist = 1[0m
+[0;31mE (10136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10146) RX_TASK: dist = 1[0m
+[0;31mE (10146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10156) RX_TASK: dist = 1[0m
+[0;31mE (10156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10166) RX_TASK: dist = 1[0m
+[0;31mE (10166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10176) RX_TASK: dist = 1[0m
+[0;31mE (10176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10186) RX_TASK: dist = 1[0m
+[0;31mE (10186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10196) RX_TASK: dist = 1[0m
+[0;31mE (10196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10206) RX_TASK: dist = 1[0m
+[0;31mE (10206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10216) RX_TASK: dist = 1[0m
+[0;31mE (10216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10226) RX_TASK: dist = 1[0m
+[0;31mE (10226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10236) RX_TASK: dist = 1[0m
+[0;31mE (10236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10246) RX_TASK: dist = 1[0m
+[0;31mE (10246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10256) RX_TASK: dist = 1[0m
+[0;31mE (10256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10266) RX_TASK: dist = 1[0m
+[0;31mE (10266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10276) RX_TASK: dist = 1[0m
+[0;31mE (10276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10286) RX_TASK: dist = 1[0m
+[0;31mE (10286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10296) RX_TASK: dist = 1[0m
+[0;31mE (10296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10306) RX_TASK: dist = 1[0m
+[0;31mE (10306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10316) RX_TASK: dist = 1[0m
+[0;31mE (10316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10326) RX_TASK: dist = 1[0m
+[0;31mE (10326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10336) RX_TASK: dist = 1[0m
+[0;31mE (10336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10346) RX_TASK: dist = 1[0m
+[0;31mE (10346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10356) RX_TASK: dist = 1[0m
+[0;31mE (10356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10366) RX_TASK: dist = 1[0m
+[0;31mE (10366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10376) RX_TASK: dist = 1[0m
+[0;31mE (10376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10386) RX_TASK: dist = 1[0m
+[0;31mE (10386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10396) RX_TASK: dist = 1[0m
+[0;31mE (10396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10406) RX_TASK: dist = 1[0m
+[0;31mE (10406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10416) RX_TASK: dist = 1[0m
+[0;31mE (10416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10426) RX_TASK: dist = 1[0m
+[0;31mE (10426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10436) RX_TASK: dist = 1[0m
+[0;31mE (10436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10446) RX_TASK: dist = 1[0m
+[0;31mE (10446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10456) RX_TASK: dist = 1[0m
+[0;31mE (10456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10466) RX_TASK: dist = 1[0m
+[0;31mE (10466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10476) RX_TASK: dist = 1[0m
+[0;31mE (10476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10486) RX_TASK: dist = 1[0m
+[0;31mE (10486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10496) RX_TASK: dist = 1[0m
+[0;31mE (10496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10506) RX_TASK: dist = 1[0m
+[0;31mE (10506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10516) RX_TASK: dist = 1[0m
+[0;31mE (10516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10526) RX_TASK: dist = 1[0m
+[0;31mE (10526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10546) RX_TASK: dist = 1[0m
+[0;31mE (10546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10556) RX_TASK: dist = 1[0m
+[0;31mE (10556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10566) RX_TASK: dist = 1[0m
+[0;31mE (10566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10576) RX_TASK: dist = 1[0m
+[0;31mE (10576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10586) RX_TASK: dist = 1[0m
+[0;31mE (10586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10596) RX_TASK: dist = 1[0m
+[0;31mE (10596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10606) RX_TASK: dist = 1[0m
+[0;31mE (10606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10616) RX_TASK: dist = 1[0m
+[0;31mE (10616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10626) RX_TASK: dist = 1[0m
+[0;31mE (10626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10636) RX_TASK: dist = 1[0m
+[0;31mE (10636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10646) RX_TASK: dist = 1[0m
+[0;31mE (10646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10656) RX_TASK: dist = 1[0m
+[0;31mE (10656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10666) RX_TASK: dist = 1[0m
+[0;31mE (10666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10676) RX_TASK: dist = 1[0m
+[0;31mE (10676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10686) RX_TASK: dist = 1[0m
+[0;31mE (10686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10696) RX_TASK: dist = 1[0m
+[0;31mE (10696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10706) RX_TASK: dist = 1[0m
+[0;31mE (10706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10716) RX_TASK: dist = 1[0m
+[0;31mE (10716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10726) RX_TASK: dist = 1[0m
+[0;31mE (10726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10736) RX_TASK: dist = 1[0m
+[0;31mE (10736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10746) RX_TASK: dist = 1[0m
+[0;31mE (10746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10756) RX_TASK: dist = 1[0m
+[0;31mE (10756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10766) RX_TASK: dist = 1[0m
+[0;31mE (10766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10776) RX_TASK: dist = 1[0m
+[0;31mE (10776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10786) RX_TASK: dist = 1[0m
+[0;31mE (10786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10796) RX_TASK: dist = 1[0m
+[0;31mE (10796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10806) RX_TASK: dist = 1[0m
+[0;31mE (10806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10816) RX_TASK: dist = 1[0m
+[0;31mE (10816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10826) RX_TASK: dist = 1[0m
+[0;31mE (10826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10836) RX_TASK: dist = 1[0m
+[0;31mE (10836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10846) RX_TASK: dist = 1[0m
+[0;31mE (10846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10856) RX_TASK: dist = 1[0m
+[0;31mE (10856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10866) RX_TASK: dist = 1[0m
+[0;31mE (10866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10876) RX_TASK: dist = 1[0m
+[0;31mE (10876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10886) RX_TASK: dist = 1[0m
+[0;31mE (10886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10896) RX_TASK: dist = 1[0m
+[0;31mE (10896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10906) RX_TASK: dist = 1[0m
+[0;31mE (10906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10916) RX_TASK: dist = 1[0m
+[0;31mE (10916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10926) RX_TASK: dist = 1[0m
+[0;31mE (10926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10936) RX_TASK: dist = 1[0m
+[0;31mE (10936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10946) RX_TASK: dist = 1[0m
+[0;31mE (10946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10956) RX_TASK: dist = 1[0m
+[0;31mE (10956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10966) RX_TASK: dist = 1[0m
+[0;31mE (10966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10976) RX_TASK: dist = 1[0m
+[0;31mE (10976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10986) RX_TASK: dist = 1[0m
+[0;31mE (10986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (10996) RX_TASK: dist = 1[0m
+[0;31mE (10996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11006) RX_TASK: dist = 1[0m
+[0;31mE (11006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11016) RX_TASK: dist = 1[0m
+[0;31mE (11016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11026) RX_TASK: dist = 1[0m
+[0;31mE (11026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11036) RX_TASK: dist = 1[0m
+[0;31mE (11036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11046) RX_TASK: dist = 1[0m
+[0;31mE (11046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11056) RX_TASK: dist = 1[0m
+[0;31mE (11056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11066) RX_TASK: dist = 1[0m
+[0;31mE (11066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11076) RX_TASK: dist = 1[0m
+[0;31mE (11076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11086) RX_TASK: dist = 1[0m
+[0;31mE (11086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11096) RX_TASK: dist = 1[0m
+[0;31mE (11096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11106) RX_TASK: dist = 1[0m
+[0;31mE (11106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11126) RX_TASK: dist = 1[0m
+[0;31mE (11126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11136) RX_TASK: dist = 1[0m
+[0;31mE (11136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11146) RX_TASK: dist = 1[0m
+[0;31mE (11146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11156) RX_TASK: dist = 1[0m
+[0;31mE (11156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11166) RX_TASK: dist = 1[0m
+[0;31mE (11166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11176) RX_TASK: dist = 1[0m
+[0;31mE (11176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11186) RX_TASK: dist = 1[0m
+[0;31mE (11186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11196) RX_TASK: dist = 1[0m
+[0;31mE (11196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11206) RX_TASK: dist = 1[0m
+[0;31mE (11206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11216) RX_TASK: dist = 1[0m
+[0;31mE (11216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11226) RX_TASK: dist = 1[0m
+[0;31mE (11226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11236) RX_TASK: dist = 1[0m
+[0;31mE (11236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11246) RX_TASK: dist = 1[0m
+[0;31mE (11246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11256) RX_TASK: dist = 1[0m
+[0;31mE (11256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11266) RX_TASK: dist = 1[0m
+[0;31mE (11266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11276) RX_TASK: dist = 1[0m
+[0;31mE (11276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11286) RX_TASK: dist = 1[0m
+[0;31mE (11286) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11296) RX_TASK: dist = 1[0m
+[0;31mE (11296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11306) RX_TASK: dist = 1[0m
+[0;31mE (11306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11316) RX_TASK: dist = 1[0m
+[0;31mE (11316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11326) RX_TASK: dist = 1[0m
+[0;31mE (11326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11336) RX_TASK: dist = 1[0m
+[0;31mE (11336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11346) RX_TASK: dist = 1[0m
+[0;31mE (11346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11356) RX_TASK: dist = 1[0m
+[0;31mE (11356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11366) RX_TASK: dist = 1[0m
+[0;31mE (11366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11376) RX_TASK: dist = 2[0m
+[0;31mE (11376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11386) RX_TASK: dist = 2[0m
+[0;31mE (11386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11396) RX_TASK: dist = 1[0m
+[0;31mE (11396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11406) RX_TASK: dist = 1[0m
+[0;31mE (11406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11416) RX_TASK: dist = 1[0m
+[0;31mE (11416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11426) RX_TASK: dist = 1[0m
+[0;31mE (11426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11436) RX_TASK: dist = 1[0m
+[0;31mE (11436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11446) RX_TASK: dist = 1[0m
+[0;31mE (11446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11456) RX_TASK: dist = 1[0m
+[0;31mE (11456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11466) RX_TASK: dist = 1[0m
+[0;31mE (11466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11476) RX_TASK: dist = 1[0m
+[0;31mE (11476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11486) RX_TASK: dist = 1[0m
+[0;31mE (11486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11496) RX_TASK: dist = 1[0m
+[0;31mE (11496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11506) RX_TASK: dist = 1[0m
+[0;31mE (11506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11516) RX_TASK: dist = 1[0m
+[0;31mE (11516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11526) RX_TASK: dist = 1[0m
+[0;31mE (11526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11536) RX_TASK: dist = 1[0m
+[0;31mE (11536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11546) RX_TASK: dist = 1[0m
+[0;31mE (11546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11556) RX_TASK: dist = 1[0m
+[0;31mE (11556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11566) RX_TASK: dist = 1[0m
+[0;31mE (11566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11576) RX_TASK: dist = 1[0m
+[0;31mE (11576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11586) RX_TASK: dist = 1[0m
+[0;31mE (11586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11596) RX_TASK: dist = 1[0m
+[0;31mE (11596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11606) RX_TASK: dist = 1[0m
+[0;31mE (11606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11616) RX_TASK: dist = 1[0m
+[0;31mE (11616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11626) RX_TASK: dist = 1[0m
+[0;31mE (11626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11636) RX_TASK: dist = 1[0m
+[0;31mE (11636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11646) RX_TASK: dist = 1[0m
+[0;31mE (11646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11656) RX_TASK: dist = 2[0m
+[0;31mE (11656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11666) RX_TASK: dist = 1[0m
+[0;31mE (11666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11676) RX_TASK: dist = 1[0m
+[0;31mE (11676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11686) RX_TASK: dist = 2[0m
+[0;31mE (11686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11696) RX_TASK: dist = 1[0m
+[0;31mE (11696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11716) RX_TASK: dist = 1[0m
+[0;31mE (11716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11726) RX_TASK: dist = 1[0m
+[0;31mE (11726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11736) RX_TASK: dist = 1[0m
+[0;31mE (11736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11746) RX_TASK: dist = 1[0m
+[0;31mE (11746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11756) RX_TASK: dist = 1[0m
+[0;31mE (11756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11766) RX_TASK: dist = 1[0m
+[0;31mE (11766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11776) RX_TASK: dist = 1[0m
+[0;31mE (11776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11786) RX_TASK: dist = 1[0m
+[0;31mE (11786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11796) RX_TASK: dist = 1[0m
+[0;31mE (11796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11806) RX_TASK: dist = 1[0m
+[0;31mE (11806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11816) RX_TASK: dist = 1[0m
+[0;31mE (11816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11826) RX_TASK: dist = 1[0m
+[0;31mE (11826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11836) RX_TASK: dist = 1[0m
+[0;31mE (11836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11846) RX_TASK: dist = 1[0m
+[0;31mE (11846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11856) RX_TASK: dist = 1[0m
+[0;31mE (11856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11866) RX_TASK: dist = 2[0m
+[0;31mE (11866) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11876) RX_TASK: dist = 1[0m
+[0;31mE (11876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11886) RX_TASK: dist = 1[0m
+[0;31mE (11886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11896) RX_TASK: dist = 1[0m
+[0;31mE (11896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11906) RX_TASK: dist = 1[0m
+[0;31mE (11906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11916) RX_TASK: dist = 1[0m
+[0;31mE (11916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11926) RX_TASK: dist = 1[0m
+[0;31mE (11926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11936) RX_TASK: dist = 1[0m
+[0;31mE (11936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11946) RX_TASK: dist = 1[0m
+[0;31mE (11946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11956) RX_TASK: dist = 2[0m
+[0;31mE (11956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11966) RX_TASK: dist = 1[0m
+[0;31mE (11966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11976) RX_TASK: dist = 1[0m
+[0;31mE (11976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11986) RX_TASK: dist = 1[0m
+[0;31mE (11986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (11996) RX_TASK: dist = 1[0m
+[0;31mE (11996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12006) RX_TASK: dist = 1[0m
+[0;31mE (12006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12016) RX_TASK: dist = 1[0m
+[0;31mE (12016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12026) RX_TASK: dist = 1[0m
+[0;31mE (12026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12036) RX_TASK: dist = 1[0m
+[0;31mE (12036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12046) RX_TASK: dist = 1[0m
+[0;31mE (12046) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12056) RX_TASK: dist = 1[0m
+[0;31mE (12056) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12066) RX_TASK: dist = 1[0m
+[0;31mE (12066) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12076) RX_TASK: dist = 1[0m
+[0;31mE (12076) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12086) RX_TASK: dist = 1[0m
+[0;31mE (12086) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12096) RX_TASK: dist = 1[0m
+[0;31mE (12096) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12106) RX_TASK: dist = 1[0m
+[0;31mE (12106) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12116) RX_TASK: dist = 1[0m
+[0;31mE (12116) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12126) RX_TASK: dist = 1[0m
+[0;31mE (12126) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12136) RX_TASK: dist = 1[0m
+[0;31mE (12136) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12146) RX_TASK: dist = 1[0m
+[0;31mE (12146) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12156) RX_TASK: dist = 1[0m
+[0;31mE (12156) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12166) RX_TASK: dist = 1[0m
+[0;31mE (12166) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12176) RX_TASK: dist = 1[0m
+[0;31mE (12176) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12186) RX_TASK: dist = 1[0m
+[0;31mE (12186) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12196) RX_TASK: dist = 1[0m
+[0;31mE (12196) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12206) RX_TASK: dist = 1[0m
+[0;31mE (12206) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12216) RX_TASK: dist = 1[0m
+[0;31mE (12216) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12226) RX_TASK: dist = 1[0m
+[0;31mE (12226) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12236) RX_TASK: dist = 1[0m
+[0;31mE (12236) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12246) RX_TASK: dist = 1[0m
+[0;31mE (12246) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12256) RX_TASK: dist = 1[0m
+[0;31mE (12256) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12266) RX_TASK: dist = 1[0m
+[0;31mE (12266) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12276) RX_TASK: dist = 1[0m
+[0;31mE (12276) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12296) RX_TASK: dist = 1[0m
+[0;31mE (12296) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12306) RX_TASK: dist = 1[0m
+[0;31mE (12306) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12316) RX_TASK: dist = 1[0m
+[0;31mE (12316) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12326) RX_TASK: dist = 2[0m
+[0;31mE (12326) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12336) RX_TASK: dist = 1[0m
+[0;31mE (12336) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12346) RX_TASK: dist = 2[0m
+[0;31mE (12346) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12356) RX_TASK: dist = 1[0m
+[0;31mE (12356) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12366) RX_TASK: dist = 1[0m
+[0;31mE (12366) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12376) RX_TASK: dist = 2[0m
+[0;31mE (12376) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12386) RX_TASK: dist = 2[0m
+[0;31mE (12386) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12396) RX_TASK: dist = 2[0m
+[0;31mE (12396) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12406) RX_TASK: dist = 1[0m
+[0;31mE (12406) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12416) RX_TASK: dist = 1[0m
+[0;31mE (12416) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12426) RX_TASK: dist = 1[0m
+[0;31mE (12426) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12436) RX_TASK: dist = 1[0m
+[0;31mE (12436) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12446) RX_TASK: dist = 2[0m
+[0;31mE (12446) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12456) RX_TASK: dist = 2[0m
+[0;31mE (12456) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12466) RX_TASK: dist = 1[0m
+[0;31mE (12466) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12476) RX_TASK: dist = 2[0m
+[0;31mE (12476) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12486) RX_TASK: dist = 2[0m
+[0;31mE (12486) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12496) RX_TASK: dist = 1[0m
+[0;31mE (12496) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12506) RX_TASK: dist = 1[0m
+[0;31mE (12506) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12516) RX_TASK: dist = 1[0m
+[0;31mE (12516) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12526) RX_TASK: dist = 1[0m
+[0;31mE (12526) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12536) RX_TASK: dist = 1[0m
+[0;31mE (12536) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12546) RX_TASK: dist = 1[0m
+[0;31mE (12546) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12556) RX_TASK: dist = 1[0m
+[0;31mE (12556) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12566) RX_TASK: dist = 1[0m
+[0;31mE (12566) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12576) RX_TASK: dist = 1[0m
+[0;31mE (12576) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12586) RX_TASK: dist = 1[0m
+[0;31mE (12586) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12596) RX_TASK: dist = 1[0m
+[0;31mE (12596) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12606) RX_TASK: dist = 1[0m
+[0;31mE (12606) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12616) RX_TASK: dist = 1[0m
+[0;31mE (12616) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12626) RX_TASK: dist = 1[0m
+[0;31mE (12626) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12636) RX_TASK: dist = 1[0m
+[0;31mE (12636) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12646) RX_TASK: dist = 1[0m
+[0;31mE (12646) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12656) RX_TASK: dist = 1[0m
+[0;31mE (12656) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12666) RX_TASK: dist = 2[0m
+[0;31mE (12666) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12676) RX_TASK: dist = 1[0m
+[0;31mE (12676) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12686) RX_TASK: dist = 1[0m
+[0;31mE (12686) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12696) RX_TASK: dist = 1[0m
+[0;31mE (12696) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12706) RX_TASK: dist = 1[0m
+[0;31mE (12706) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12716) RX_TASK: dist = 1[0m
+[0;31mE (12716) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12726) RX_TASK: dist = 1[0m
+[0;31mE (12726) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12736) RX_TASK: dist = 2[0m
+[0;31mE (12736) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12746) RX_TASK: dist = 1[0m
+[0;31mE (12746) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12756) RX_TASK: dist = 1[0m
+[0;31mE (12756) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12766) RX_TASK: dist = 1[0m
+[0;31mE (12766) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12776) RX_TASK: dist = 1[0m
+[0;31mE (12776) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12786) RX_TASK: dist = 1[0m
+[0;31mE (12786) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12796) RX_TASK: dist = 1[0m
+[0;31mE (12796) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12806) RX_TASK: dist = 1[0m
+[0;31mE (12806) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12816) RX_TASK: dist = 1[0m
+[0;31mE (12816) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12826) RX_TASK: dist = 2[0m
+[0;31mE (12826) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12836) RX_TASK: dist = 2[0m
+[0;31mE (12836) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12846) RX_TASK: dist = 2[0m
+[0;31mE (12846) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12856) RX_TASK: dist = 1[0m
+[0;31mE (12856) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12876) RX_TASK: dist = 1[0m
+[0;31mE (12876) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12886) RX_TASK: dist = 1[0m
+[0;31mE (12886) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12896) RX_TASK: dist = 1[0m
+[0;31mE (12896) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12906) RX_TASK: dist = 2[0m
+[0;31mE (12906) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12916) RX_TASK: dist = 1[0m
+[0;31mE (12916) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12926) RX_TASK: dist = 2[0m
+[0;31mE (12926) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12936) RX_TASK: dist = 2[0m
+[0;31mE (12936) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12946) RX_TASK: dist = 1[0m
+[0;31mE (12946) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12956) RX_TASK: dist = 1[0m
+[0;31mE (12956) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12966) RX_TASK: dist = 2[0m
+[0;31mE (12966) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12976) RX_TASK: dist = 2[0m
+[0;31mE (12976) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12986) RX_TASK: dist = 1[0m
+[0;31mE (12986) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (12996) RX_TASK: dist = 1[0m
+[0;31mE (12996) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (13006) RX_TASK: dist = 2[0m
+[0;31mE (13006) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (13016) RX_TASK: dist = 2[0m
+[0;31mE (13016) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (13026) RX_TASK: dist = 1[0m
+[0;31mE (13026) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (13036) RX_TASK: dist = 1[0m
+[0;31mE (13036) uart: uart_flush_input(1456): uart driver error[0m
+[0;32mI (13046) RX_TASK: dist = 1[0m

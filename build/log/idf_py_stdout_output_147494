@@ -1,0 +1,386 @@
+rt: App version:      1[0m
+[0;32mI (222) cpu_start: Compile time:     Feb 23 2024 13:22:39[0m
+[0;32mI (228) cpu_start: ELF file SHA256:  05c67d7fd...�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-1288-g5524b692ee-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb 23 2024 13:22:45[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ad60h ( 44384) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ad88 vaddr=3ffb0000 size=02268h (  8808) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001cff8 vaddr=40080000 size=03020h ( 12320) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=164fch ( 91388) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00036524 vaddr=40083020 size=0a79ch ( 42908) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     lidar[0m
+[0;32mI (217) cpu_start: App version:      1[0m
+[0;32mI (222) cpu_start: Compile time:     Feb 23 2024 13:22:39[0m
+[0;32mI (228) cpu_start: ELF file SHA256:  05c67d7fd...[0m
+[0;32mI (233) cpu_start: ESP-IDF:          v5.3-dev-1288-g5524b692ee-dirty[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008D7BC len 00012844 (74 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) main_task: Returned from app_main()[0m
+[0;32mI (346) RX_TASK: dist = 1[0m
+[0;32mI (376) RX_TASK: dist = 1[0m
+[0;32mI (406) RX_TASK: dist = 1[0m
+[0;32mI (446) RX_TASK: dist = 1[0m
+[0;32mI (466) RX_TASK: dist = 1[0m
+[0;32mI (486) RX_TASK: dist = 0[0m
+[0;32mI (506) RX_TASK: dist = 1[0m
+[0;32mI (526) RX_TASK: dist = 1[0m
+[0;32mI (546) RX_TASK: dist = 1[0m
+[0;32mI (566) RX_TASK: dist = 1[0m
+[0;32mI (586) RX_TASK: dist = 1[0m
+[0;32mI (606) RX_TASK: dist = 1[0m
+[0;32mI (626) RX_TASK: dist = 1[0m
+[0;32mI (646) RX_TASK: dist = 1[0m
+[0;32mI (666) RX_TASK: dist = 1[0m
+[0;32mI (686) RX_TASK: dist = 1[0m
+[0;32mI (706) RX_TASK: dist = 1[0m
+[0;32mI (726) RX_TASK: dist = 1[0m
+[0;32mI (746) RX_TASK: dist = 1[0m
+[0;32mI (766) RX_TASK: dist = 1[0m
+[0;32mI (786) RX_TASK: dist = 1[0m
+[0;32mI (806) RX_TASK: dist = 1[0m
+[0;32mI (826) RX_TASK: dist = 1[0m
+[0;32mI (846) RX_TASK: dist = 1[0m
+[0;32mI (866) RX_TASK: dist = 1[0m
+[0;32mI (886) RX_TASK: dist = 1[0m
+[0;32mI (906) RX_TASK: dist = 1[0m
+[0;32mI (936) RX_TASK: dist = 1[0m
+[0;32mI (966) RX_TASK: dist = 1[0m
+[0;32mI (1006) RX_TASK: dist = 1[0m
+[0;32mI (1026) RX_TASK: dist = 1[0m
+[0;32mI (1046) RX_TASK: dist = 1[0m
+[0;32mI (1066) RX_TASK: dist = 1[0m
+[0;32mI (1086) RX_TASK: dist = 1[0m
+[0;32mI (1106) RX_TASK: dist = 1[0m
+[0;32mI (1126) RX_TASK: dist = 1[0m
+[0;32mI (1146) RX_TASK: dist = 1[0m
+[0;32mI (1166) RX_TASK: dist = 1[0m
+[0;32mI (1186) RX_TASK: dist = 1[0m
+[0;32mI (1206) RX_TASK: dist = 1[0m
+[0;32mI (1226) RX_TASK: dist = 1[0m
+[0;32mI (1246) RX_TASK: dist = 0[0m
+[0;32mI (1266) RX_TASK: dist = 1[0m
+[0;32mI (1286) RX_TASK: dist = 1[0m
+[0;32mI (1306) RX_TASK: dist = 1[0m
+[0;32mI (1326) RX_TASK: dist = 1[0m
+[0;32mI (1346) RX_TASK: dist = 1[0m
+[0;32mI (1366) RX_TASK: dist = 1[0m
+[0;32mI (1386) RX_TASK: dist = 0[0m
+[0;32mI (1406) RX_TASK: dist = 1[0m
+[0;32mI (1426) RX_TASK: dist = 1[0m
+[0;32mI (1446) RX_TASK: dist = 1[0m
+[0;32mI (1476) RX_TASK: dist = 1[0m
+[0;32mI (1506) RX_TASK: dist = 1[0m
+[0;32mI (1566) RX_TASK: dist = 1[0m
+[0;32mI (1586) RX_TASK: dist = 1[0m
+[0;32mI (1606) RX_TASK: dist = 1[0m
+[0;32mI (1626) RX_TASK: dist = 1[0m
+[0;32mI (1646) RX_TASK: dist = 1[0m
+[0;32mI (1666) RX_TASK: dist = 1[0m
+[0;32mI (1686) RX_TASK: dist = 1[0m
+[0;32mI (1706) RX_TASK: dist = 1[0m
+[0;32mI (1726) RX_TASK: dist = 1[0m
+[0;32mI (1746) RX_TASK: dist = 1[0m
+[0;32mI (1766) RX_TASK: dist = 1[0m
+[0;32mI (1786) RX_TASK: dist = 1[0m
+[0;32mI (1806) RX_TASK: dist = 1[0m
+[0;32mI (1826) RX_TASK: dist = 1[0m
+[0;32mI (1846) RX_TASK: dist = 1[0m
+[0;32mI (1866) RX_TASK: dist = 1[0m
+[0;32mI (1886) RX_TASK: dist = 1[0m
+[0;32mI (1906) RX_TASK: dist = 1[0m
+[0;32mI (1926) RX_TASK: dist = 1[0m
+[0;32mI (1946) RX_TASK: dist = 1[0m
+[0;32mI (1966) RX_TASK: dist = 1[0m
+[0;32mI (1986) RX_TASK: dist = 1[0m
+[0;32mI (2006) RX_TASK: dist = 1[0m
+[0;32mI (2036) RX_TASK: dist = 1[0m
+[0;32mI (2066) RX_TASK: dist = 1[0m
+[0;32mI (2126) RX_TASK: dist = 1[0m
+[0;32mI (2146) RX_TASK: dist = 1[0m
+[0;32mI (2166) RX_TASK: dist = 1[0m
+[0;32mI (2186) RX_TASK: dist = 1[0m
+[0;32mI (2206) RX_TASK: dist = 1[0m
+[0;32mI (2226) RX_TASK: dist = 1[0m
+[0;32mI (2246) RX_TASK: dist = 1[0m
+[0;32mI (2266) RX_TASK: dist = 1[0m
+[0;32mI (2286) RX_TASK: dist = 1[0m
+[0;32mI (2306) RX_TASK: dist = 1[0m
+[0;32mI (2326) RX_TASK: dist = 1[0m
+[0;32mI (2346) RX_TASK: dist = 1[0m
+[0;32mI (2366) RX_TASK: dist = 1[0m
+[0;32mI (2386) RX_TASK: dist = 1[0m
+[0;32mI (2406) RX_TASK: dist = 1[0m
+[0;32mI (2426) RX_TASK: dist = 1[0m
+[0;32mI (2446) RX_TASK: dist = 1[0m
+[0;32mI (2466) RX_TASK: dist = 1[0m
+[0;32mI (2486) RX_TASK: dist = 1[0m
+[0;32mI (2506) RX_TASK: dist = 1[0m
+[0;32mI (2526) RX_TASK: dist = 1[0m
+[0;32mI (2546) RX_TASK: dist = 1[0m
+[0;32mI (2566) RX_TASK: dist = 2[0m
+[0;32mI (2596) RX_TASK: dist = 4[0m
+[0;32mI (2626) RX_TASK: dist = 5[0m
+[0;32mI (2686) RX_TASK: dist = 8[0m
+[0;32mI (2706) RX_TASK: dist = 8[0m
+[0;32mI (2726) RX_TASK: dist = 9[0m
+[0;32mI (2746) RX_TASK: dist = 9[0m
+[0;32mI (2766) RX_TASK: dist = 10[0m
+[0;32mI (2786) RX_TASK: dist = 10[0m
+[0;32mI (2806) RX_TASK: dist = 11[0m
+[0;32mI (2826) RX_TASK: dist = 9[0m
+[0;32mI (2846) RX_TASK: dist = 7[0m
+[0;32mI (2866) RX_TASK: dist = 8[0m
+[0;32mI (2886) RX_TASK: dist = 9[0m
+[0;32mI (2906) RX_TASK: dist = 9[0m
+[0;32mI (2926) RX_TASK: dist = 9[0m
+[0;32mI (2946) RX_TASK: dist = 10[0m
+[0;32mI (2966) RX_TASK: dist = 11[0m
+[0;32mI (2986) RX_TASK: dist = 11[0m
+[0;32mI (3006) RX_TASK: dist = 13[0m
+[0;32mI (3026) RX_TASK: dist = 13[0m
+[0;32mI (3046) RX_TASK: dist = 14[0m
+[0;32mI (3066) RX_TASK: dist = 16[0m
+[0;32mI (3086) RX_TASK: dist = 18[0m
+[0;32mI (3106) RX_TASK: dist = 20[0m
+[0;32mI (3126) RX_TASK: dist = 21[0m
+[0;32mI (3156) RX_TASK: dist = 22[0m
+[0;32mI (3186) RX_TASK: dist = 23[0m
+[0;32mI (3246) RX_TASK: dist = 26[0m
+[0;32mI (3266) RX_TASK: dist = 27[0m
+[0;32mI (3286) RX_TASK: dist = 27[0m
+[0;32mI (3306) RX_TASK: dist = 27[0m
+[0;32mI (3326) RX_TASK: dist = 28[0m
+[0;32mI (3346) RX_TASK: dist = 28[0m
+[0;32mI (3366) RX_TASK: dist = 29[0m
+[0;32mI (3386) RX_TASK: dist = 29[0m
+[0;32mI (3406) RX_TASK: dist = 31[0m
+[0;32mI (3426) RX_TASK: dist = 32[0m
+[0;32mI (3446) RX_TASK: dist = 33[0m
+[0;32mI (3466) RX_TASK: dist = 34[0m
+[0;32mI (3486) RX_TASK: dist = 35[0m
+[0;32mI (3506) RX_TASK: dist = 36[0m
+[0;32mI (3526) RX_TASK: dist = 36[0m
+[0;32mI (3546) RX_TASK: dist = 37[0m
+[0;32mI (3566) RX_TASK: dist = 38[0m
+[0;32mI (3586) RX_TASK: dist = 39[0m
+[0;32mI (3606) RX_TASK: dist = 39[0m
+[0;32mI (3626) RX_TASK: dist = 39[0m
+[0;32mI (3646) RX_TASK: dist = 40[0m
+[0;32mI (3666) RX_TASK: dist = 41[0m
+[0;32mI (3686) RX_TASK: dist = 42[0m
+[0;32mI (3716) RX_TASK: dist = 42[0m
+[0;32mI (3746) RX_TASK: dist = 44[0m
+[0;32mI (3806) RX_TASK: dist = 45[0m
+[0;32mI (3826) RX_TASK: dist = 47[0m
+[0;32mI (3846) RX_TASK: dist = 47[0m
+[0;32mI (3866) RX_TASK: dist = 48[0m
+[0;32mI (3886) RX_TASK: dist = 48[0m
+[0;32mI (3906) RX_TASK: dist = 49[0m
+[0;32mI (3926) RX_TASK: dist = 49[0m
+[0;32mI (3946) RX_TASK: dist = 50[0m
+[0;32mI (3966) RX_TASK: dist = 50[0m
+[0;32mI (3986) RX_TASK: dist = 51[0m
+[0;32mI (4006) RX_TASK: dist = 51[0m
+[0;32mI (4026) RX_TASK: dist = 52[0m
+[0;32mI (4046) RX_TASK: dist = 53[0m
+[0;32mI (4066) RX_TASK: dist = 53[0m
+[0;32mI (4086) RX_TASK: dist = 53[0m
+[0;32mI (4106) RX_TASK: dist = 53[0m
+[0;32mI (4126) RX_TASK: dist = 53[0m
+[0;32mI (4146) RX_TASK: dist = 52[0m
+[0;32mI (4166) RX_TASK: dist = 52[0m
+[0;32mI (4186) RX_TASK: dist = 51[0m
+[0;32mI (4206) RX_TASK: dist = 51[0m
+[0;32mI (4226) RX_TASK: dist = 51[0m
+[0;32mI (4246) RX_TASK: dist = 50[0m
+[0;32mI (4276) RX_TASK: dist = 49[0m
+[0;32mI (4306) RX_TASK: dist = 48[0m
+[0;32mI (4366) RX_TASK: dist = 47[0m
+[0;32mI (4386) RX_TASK: dist = 46[0m
+[0;32mI (4406) RX_TASK: dist = 46[0m
+[0;32mI (4426) RX_TASK: dist = 45[0m
+[0;32mI (4446) RX_TASK: dist = 43[0m
+[0;32mI (4466) RX_TASK: dist = 41[0m
+[0;32mI (4486) RX_TASK: dist = 39[0m
+[0;32mI (4506) RX_TASK: dist = 37[0m
+[0;32mI (4526) RX_TASK: dist = 36[0m
+[0;32mI (4546) RX_TASK: dist = 35[0m
+[0;32mI (4566) RX_TASK: dist = 35[0m
+[0;32mI (4586) RX_TASK: dist = 35[0m
+[0;32mI (4606) RX_TASK: dist = 34[0m
+[0;32mI (4626) RX_TASK: dist = 33[0m
+[0;32mI (4646) RX_TASK: dist = 32[0m
+[0;32mI (4666) RX_TASK: dist = 31[0m
+[0;32mI (4686) RX_TASK: dist = 30[0m
+[0;32mI (4706) RX_TASK: dist = 28[0m
+[0;32mI (4726) RX_TASK: dist = 26[0m
+[0;32mI (4746) RX_TASK: dist = 25[0m
+[0;32mI (4766) RX_TASK: dist = 25[0m
+[0;32mI (4786) RX_TASK: dist = 26[0m
+[0;32mI (4806) RX_TASK: dist = 25[0m
+[0;32mI (4836) RX_TASK: dist = 24[0m
+[0;32mI (4866) RX_TASK: dist = 22[0m
+[0;32mI (4926) RX_TASK: dist = 21[0m
+[0;32mI (4946) RX_TASK: dist = 20[0m
+[0;32mI (4966) RX_TASK: dist = 20[0m
+[0;32mI (4986) RX_TASK: dist = 19[0m
+[0;32mI (5006) RX_TASK: dist = 19[0m
+[0;32mI (5026) RX_TASK: dist = 19[0m
+[0;32mI (5046) RX_TASK: dist = 18[0m
+[0;32mI (5066) RX_TASK: dist = 17[0m
+[0;32mI (5086) RX_TASK: dist = 16[0m
+[0;32mI (5106) RX_TASK: dist = 15[0m
+[0;32mI (5126) RX_TASK: dist = 14[0m
+[0;32mI (5146) RX_TASK: dist = 13[0m
+[0;32mI (5166) RX_TASK: dist = 13[0m
+[0;32mI (5186) RX_TASK: dist = 12[0m
+[0;32mI (5206) RX_TASK: dist = 11[0m
+[0;32mI (5226) RX_TASK: dist = 11[0m
+[0;32mI (5246) RX_TASK: dist = 10[0m
+[0;32mI (5266) RX_TASK: dist = 9[0m
+[0;32mI (5286) RX_TASK: dist = 8[0m
+[0;32mI (5306) RX_TASK: dist = 7[0m
+[0;32mI (5326) RX_TASK: dist = 7[0m
+[0;32mI (5346) RX_TASK: dist = 6[0m
+[0;32mI (5366) RX_TASK: dist = 5[0m
+[0;32mI (5396) RX_TASK: dist = 5[0m
+[0;32mI (5426) RX_TASK: dist = 5[0m
+[0;32mI (5486) RX_TASK: dist = 2[0m
+[0;32mI (5506) RX_TASK: dist = 1[0m
+[0;32mI (5526) RX_TASK: dist = 1[0m
+[0;32mI (5546) RX_TASK: dist = 1[0m
+[0;32mI (5566) RX_TASK: dist = 1[0m
+[0;32mI (5586) RX_TASK: dist = 1[0m
+[0;32mI (5606) RX_TASK: dist = 1[0m
+[0;32mI (5626) RX_TASK: dist = 1[0m
+[0;32mI (5646) RX_TASK: dist = 1[0m
+[0;32mI (5666) RX_TASK: dist = 1[0m
+[0;32mI (5686) RX_TASK: dist = 1[0m
+[0;32mI (5706) RX_TASK: dist = 1[0m
+[0;32mI (5726) RX_TASK: dist = 1[0m
+[0;32mI (5746) RX_TASK: dist = 1[0m
+[0;32mI (5766) RX_TASK: dist = 1[0m
+[0;32mI (5786) RX_TASK: dist = 1[0m
+[0;32mI (5806) RX_TASK: dist = 1[0m
+[0;32mI (5826) RX_TASK: dist = 1[0m
+[0;32mI (5846) RX_TASK: dist = 1[0m
+[0;32mI (5866) RX_TASK: dist = 1[0m
+[0;32mI (5886) RX_TASK: dist = 1[0m
+[0;32mI (5906) RX_TASK: dist = 1[0m
+[0;32mI (5926) RX_TASK: dist = 1[0m
+[0;32mI (5956) RX_TASK: dist = 1[0m
+[0;32mI (5986) RX_TASK: dist = 1[0m
+[0;32mI (6046) RX_TASK: dist = 1[0m
+[0;32mI (6066) RX_TASK: dist = 1[0m
+[0;32mI (6086) RX_TASK: dist = 1[0m
+[0;32mI (6106) RX_TASK: dist = 1[0m
+[0;32mI (6126) RX_TASK: dist = 1[0m
+[0;32mI (6146) RX_TASK: dist = 1[0m
+[0;32mI (6166) RX_TASK: dist = 1[0m
+[0;32mI (6186) RX_TASK: dist = 1[0m
+[0;32mI (6206) RX_TASK: dist = 1[0m
+[0;32mI (6226) RX_TASK: dist = 1[0m
+[0;32mI (6246) RX_TASK: dist = 1[0m
+[0;32mI (6266) RX_TASK: dist = 1[0m
+[0;32mI (6286) RX_TASK: dist = 1[0m
+[0;32mI (6306) RX_TASK: dist = 1[0m
+[0;32mI (6326) RX_TASK: dist = 1[0m
+[0;32mI (6346) RX_TASK: dist = 1[0m
+[0;32mI (6366) RX_TASK: dist = 1[0m
+[0;32mI (6386) RX_TASK: dist = 1[0m
+[0;32mI (6406) RX_TASK: dist = 1[0m
+[0;32mI (6426) RX_TASK: dist = 1[0m
+[0;32mI (6446) RX_TASK: dist = 1[0m
+[0;32mI (6466) RX_TASK: dist = 1[0m
+[0;32mI (6486) RX_TASK: dist = 1[0m
+[0;32mI (6516) RX_TASK: dist = 1[0m
+[0;32mI (6546) RX_TASK: dist = 1[0m
+[0;32mI (6606) RX_TASK: dist = 1[0m
+[0;32mI (6626) RX_TASK: dist = 1[0m
+[0;32mI (6646) RX_TASK: dist = 1[0m
+[0;32mI (6666) RX_TASK: dist = 1[0m
+[0;32mI (6686) RX_TASK: dist = 1[0m
+[0;32mI (6706) RX_TASK: dist = 1[0m
+[0;32mI (6726) RX_TASK: dist = 1[0m
+[0;32mI (6746) RX_TASK: dist = 1[0m
+[0;32mI (6766) RX_TASK: dist = 1[0m
+[0;32mI (6786) RX_TASK: dist = 1[0m
+[0;32mI (6806) RX_TASK: dist = 1[0m
+[0;32mI (6826) RX_TASK: dist = 1[0m
+[0;32mI (6846) RX_TASK: dist = 1[0m
+[0;32mI (6866) RX_TASK: dist = 1[0m
+[0;32mI (6886) RX_TASK: dist = 1[0m
+[0;32mI (6906) RX_TASK: dist = 1[0m
+[0;32mI (6926) RX_TASK: dist = 1[0m
+[0;32mI (6946) RX_TASK: dist = 1[0m
+[0;32mI (6966) RX_TASK: dist = 1[0m
+[0;32mI (6986) RX_TASK: dist = 1[0m
+[0;32mI (7006) RX_TASK: dist = 1[0m
+[0;32mI (7026) RX_TASK: dist = 1[0m
+[0;32mI (7046) RX_TASK: dist = 1[0m
+[0;32mI (7076) RX_TASK: dist = 1[0m
+[0;32mI (7106) RX_TASK: dist = 1[0m
+[0;32mI (7166) RX_TASK: dist = 1[0m
+[0;32mI (7186) RX_TASK: dist = 1[0m
+[0;32mI (7206) RX_TASK: dist = 1[0m
+[0;32mI (7226) RX_TASK: dist = 1[0m
+[0;32mI (7246) RX_TASK: dist = 1[0m
+[0;32mI (7266) RX_TASK: dist = 1[0m
+[0;32mI (7286) RX_TASK: dist = 1[0m
+[0;32mI (7306) RX_TASK: dist = 1[0m
+[0;32mI (7326) RX_TASK: dist = 1[0m
+[0;32mI (7346) RX_TASK: dist = 1[0m
+[0;32mI (7366) RX_TASK: dist = 1[0m
+[0;32mI (7386) RX_TASK: dist = 1[0m
+[0;32mI (7406) RX_TASK: dist = 1[0m
+[0;32mI (7426) RX_TASK: dist = 1[0m
+[0;32mI (7446) RX_TASK: dist = 1[0m
+[0;32mI (7466) RX_TASK: dist = 1[0m
+[0;32mI (7486) RX_TASK: dist = 1[0m
+[0;32mI (7506) RX_TASK: dist = 1[0m
+[0;32mI (7526) RX_TASK: dist = 1[0m
+[0;32mI (7546) RX_TASK: dist = 1[0m
+[0;32mI (7566) RX_TASK: dist = 1[0m
+[0;32mI (7586) RX_TASK: dist = 1[0m
+[0;32mI (7606) RX_TASK: dist = 1[0m
+[0;32mI (7636) RX_TASK: dist = 1[0m

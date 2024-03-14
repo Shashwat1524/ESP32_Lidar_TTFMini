@@ -1,0 +1,518 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081952: panic_abort at /home/shashwat/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40086655: esp_system_abort at /home/shashwat/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008c241: __assert_func at /home/shashwat/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40087ed7: prvInitialiseNewTask at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1061 (discriminator 1)
+[0m
+[0;33m0x40089698: xTaskCreatePinnedToCore at /home/shashwat/esp/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:284
+[0m
+[0;33m0x400d7b6d: xTaskCreate at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:394
+ (inlined by) app_main at /home/shashwat/lidar/main/lidar.c:85
+[0m
+[0;33m0x400e5b74: main_task at /home/shashwat/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087079: vPortTaskWrapper at /home/shashwat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
