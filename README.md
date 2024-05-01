@@ -15,7 +15,7 @@ https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html
 
 Clone this repository by executing the following command:
 ```bash
-git clone https://github.com/micro-ROS/micro_ros_espidf_component
+git clone https://github.com/Shashwat1524/ESP32_Lidar_TTFMini.git 
 ```
 
 ### Once the repository is cloned, perform the following steps:
