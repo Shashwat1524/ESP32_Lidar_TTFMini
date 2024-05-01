@@ -11,7 +11,7 @@ https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html
 
 ## Usage
 
-**Cloning micro-ROS Repository**
+### Cloning micro-ROS Repository
 
 Clone this repository by executing the following command:
 ```bash
